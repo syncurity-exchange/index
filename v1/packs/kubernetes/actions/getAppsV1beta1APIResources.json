@@ -1,8 +1,0 @@
-{
-    "description": "get available resources",
-    "enabled": true,
-    "entry_point": "getAppsV1beta1APIResources.py",
-    "name": "getAppsV1beta1APIResources",
-    "pack": "kubernetes",
-    "runner_type": "python-script"
-}

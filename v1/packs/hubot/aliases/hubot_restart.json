@@ -1,9 +1,0 @@
-{
-    "action_ref": "hubot.restart",
-    "description": "Restart Hubot",
-    "formats": [
-        "hubot restart",
-        "hubot restart on {{hosts}}"
-    ],
-    "name": "hubot_restart"
-}

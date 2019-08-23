@@ -1,8 +1,0 @@
-{
-    "token": {
-        "description": "Travis Authentication token",
-        "required": true,
-        "secret": true,
-        "type": "string"
-    }
-}

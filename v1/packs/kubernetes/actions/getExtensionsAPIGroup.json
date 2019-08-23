@@ -1,8 +1,0 @@
-{
-    "description": "get information of a group",
-    "enabled": true,
-    "entry_point": "getExtensionsAPIGroup.py",
-    "name": "getExtensionsAPIGroup",
-    "pack": "kubernetes",
-    "runner_type": "python-script"
-}

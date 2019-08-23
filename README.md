@@ -9,7 +9,7 @@ worthy of the world to see.
 ### Structure
 
 The index is currently compiled into a single JSON object and stored as a file:
-[v1/index.json](https://github.com/StackStorm-Exchange/index/blob/master/v1/index.json).
+[v1/index.json](https://github.com/syncurity-exchange/index/blob/master/v1/index.json).
 Packs are identified by names, and their metadata is copied as is from the
 `pack.yaml` files. `repo_url` is the only property that is stored in the index
 but not in `pack.yaml`; it contains, quite unsurprisingly, a URL for the git
@@ -48,7 +48,7 @@ rebuild is automatic and rarely takes more than a couple minutes. If your PR
 has been merged for some time, and the index has not been updated, please
 raise an issue.
 
-Our [CI repository](https://github.com/StackStorm-Exchange/ci) contains the
+Our [CI repository](https://github.com/syncurity-exchange/ci) contains the
 necessary scripts, and you can take a peek to see how the rebuild works.
 The repository is public, so the whole process is fully transparent!
 

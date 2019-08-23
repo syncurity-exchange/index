@@ -1,8 +1,0 @@
-{
-    "template": {
-        "description": "Path to PPTX template file",
-        "required": false,
-        "secret": false,
-        "type": "string"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "apikey": {
-        "description": "api key for pushbullet",
-        "required": true,
-        "secret": true,
-        "type": "string"
-    }
-}
