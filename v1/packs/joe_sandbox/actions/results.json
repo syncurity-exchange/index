@@ -1,0 +1,14 @@
+{
+    "description": "Fetch the results of a JoeSandbox file analysis",
+    "enabled": true,
+    "entry_point": "results.py",
+    "name": "results",
+    "parameters": {
+        "submission_id": {
+            "description": "The JoeSandbox submission id of the analysis",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

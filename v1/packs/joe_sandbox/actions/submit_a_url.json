@@ -1,0 +1,15 @@
+{
+    "description": "Submit a URL for analysis with Joe's Sandbox",
+    "enabled": true,
+    "entry_point": "workflows/submit_a_url.yaml",
+    "name": "submit_a_url",
+    "pack": "joe_sandbox",
+    "parameters": {
+        "url": {
+            "description": "The url to be sent to JoeSandbox",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "orquesta"
+}
