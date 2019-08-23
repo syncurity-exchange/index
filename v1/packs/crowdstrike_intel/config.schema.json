@@ -1,0 +1,23 @@
+{
+    "password": {
+        "description": "CrowdStrike Intel API key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "protocol": {
+        "default": "https",
+        "description": "Configure http or https - defaults to https",
+        "enum": [
+            "https",
+            "http"
+        ],
+        "required": false,
+        "type": "string"
+    },
+    "user": {
+        "description": "CrowdStrike Intel API user",
+        "required": true,
+        "type": "string"
+    }
+}

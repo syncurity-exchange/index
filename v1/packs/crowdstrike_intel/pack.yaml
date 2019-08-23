@@ -1,0 +1,25 @@
+name: Crowdstrike Intel
+ref: crowdstrike_intel
+description: A pack for interfacing with the Crowdstrike Intel API
+keywords:
+- crowdstike
+- security
+- syncurity
+stackstorm_version: '>=3.0.0'
+version: 0.9.0
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+contributors:
+- Max Meinhold <mmeinhold@syncurity.net>
+content:
+  actions:
+    count: 1
+    resources:
+    - search_indicator
+  tests:
+    count: 1
+    resources:
+    - __init__.py

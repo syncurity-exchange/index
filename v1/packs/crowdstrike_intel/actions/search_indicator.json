@@ -1,0 +1,14 @@
+{
+    "description": "Query CrowdStrike for a particular indicator",
+    "enabled": true,
+    "entry_point": "search_indicator.py",
+    "name": "search_indicator",
+    "parameters": {
+        "indicator": {
+            "description": "Indicator to query",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
