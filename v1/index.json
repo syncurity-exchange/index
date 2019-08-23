@@ -1,9 +1,52 @@
 {
     "metadata": {
-        "generated_ts": 1566598967,
-        "hash": "99af3cb7ecf8e0a00053a8d616af5ea5"
+        "generated_ts": 1566598977,
+        "hash": "1439b1cb33ede7021bb2953c2cc3d4cb"
     },
     "packs": {
+        "cb_defense": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 4,
+                    "resources": [
+                        "change_device_policy",
+                        "get_all_devices_status",
+                        "get_device_status_by_device_id",
+                        "get_device_status_by_name"
+                    ]
+                },
+                "rules": {
+                    "count": 1,
+                    "resources": [
+                        "notification"
+                    ]
+                },
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "CBDefenseNotificationSensor"
+                    ]
+                }
+            },
+            "description": "Carbon Black Defense API Integrations",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "security",
+                "Syncurity",
+                "Carbon Black",
+                "cb",
+                "secops",
+                "Carbon Black Defend"
+            ],
+            "name": "Carbon Black Defense",
+            "python version": [
+                "2"
+            ],
+            "ref": "cb_defense",
+            "repo_url": "https://github.com/syncurity-exchange/cb_defense",
+            "version": "0.9.1"
+        },
         "crowdstrike_intel": {
             "author": "Syncurity",
             "content": {

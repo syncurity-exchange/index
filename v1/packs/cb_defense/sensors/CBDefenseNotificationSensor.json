@@ -1,0 +1,29 @@
+{
+    "class_name": "CBDefenseNotificationSensor",
+    "description": "Get Carbon Black Defense Notifications",
+    "entry_point": "cbdefense_notification_sensor.py",
+    "poll_interval": 30,
+    "trigger_types": [
+        {
+            "description": "A notification from CB Defense",
+            "name": "notification",
+            "payload_schema": {
+                "properties": {
+                    "deviceName": {
+                        "type": "string"
+                    },
+                    "originalAlertUrl": {
+                        "type": "string"
+                    },
+                    "response": {
+                        "type": "object"
+                    },
+                    "summary": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}
