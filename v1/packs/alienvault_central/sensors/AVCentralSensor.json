@@ -1,0 +1,62 @@
+{
+    "class_name": "AVCentralSensor",
+    "description": "Get AlienVault Central Alerts",
+    "entry_point": "av_central_sensor.py",
+    "poll_interval": 120,
+    "trigger_types": [
+        {
+            "description": "An Alert from Alienvault Central",
+            "name": "alert",
+            "payload_schema": {
+                "properties": {
+                    "alarmRuleId": {
+                        "type": "string"
+                    },
+                    "alertId": {
+                        "type": "string"
+                    },
+                    "destinationAddressList": {
+                        "type": "array"
+                    },
+                    "eventCount": {
+                        "type": "string"
+                    },
+                    "eventList": {
+                        "type": "array"
+                    },
+                    "priority": {
+                        "type": "string"
+                    },
+                    "receiptTime": {
+                        "type": "string"
+                    },
+                    "response": {
+                        "type": "object"
+                    },
+                    "ruleStrategy": {
+                        "type": "string"
+                    },
+                    "shortDescription": {
+                        "type": "string"
+                    },
+                    "sourceAddressList": {
+                        "type": "array"
+                    },
+                    "status": {
+                        "type": "string"
+                    },
+                    "tenantId": {
+                        "type": "string"
+                    },
+                    "timeOccured": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

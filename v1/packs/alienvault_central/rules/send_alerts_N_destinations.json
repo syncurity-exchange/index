@@ -1,0 +1,35 @@
+{
+    "action": {
+        "description": "Fires off create_alert to one or more (N) IR-Flow destinations",
+        "parameters": {
+            "credential_names": [
+                "integrations_team",
+                "dev_system"
+            ],
+            "description": "{{ trigger.ruleStrategy }}",
+            "incoming_field_group_name": "AlienVault - {{ trigger.tenantId }}",
+            "payload": "{{ trigger.response }}",
+            "suppress_missing_field_warning": true
+        },
+        "ref": "irflow.n_create_alert_destinations"
+    },
+    "context": {
+        "user": "st2admin"
+    },
+    "criteria": {},
+    "description": "Sends alerts to two or more IR-Flow servers",
+    "enabled": false,
+    "metadata_file": "",
+    "name": "send_alerts_N_destinations",
+    "pack": "alienvault_central",
+    "ref": "alienvault_central.send_alerts_N_destinations",
+    "trigger": {
+        "description": "An Alert from Alienvault Central",
+        "parameters": {},
+        "type": "alienvault_central.alert"
+    },
+    "type": {
+        "parameters": {},
+        "ref": "standard"
+    }
+}
