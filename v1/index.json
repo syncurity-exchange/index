@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1566600140,
-        "hash": "4e64dbcd3714b077efeadcfc633f2d74"
+        "generated_ts": 1566759228,
+        "hash": "b6d1e365d27c29b7cdb2d32316156bcc"
     },
     "packs": {
         "alienvault_central": {
@@ -148,8 +148,8 @@
             ],
             "ref": "joe_sandbox",
             "repo_url": "https://github.com/syncurity-exchange/joe_sandbox",
-            "stackstorm_version": ">=2.9.0",
-            "version": "0.9.0"
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.9.1"
         }
     }
 }
