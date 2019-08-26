@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1566759228,
-        "hash": "b6d1e365d27c29b7cdb2d32316156bcc"
+        "generated_ts": 1566827258,
+        "hash": "5960823545dfcfc40e7802624432fab7"
     },
     "packs": {
         "alienvault_central": {
@@ -150,6 +150,66 @@
             "repo_url": "https://github.com/syncurity-exchange/joe_sandbox",
             "stackstorm_version": ">=3.0.0",
             "version": "0.9.1"
+        },
+        "opswat_metadefender": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 18,
+                    "resources": [
+                        "api_info",
+                        "api_usage_limits",
+                        "api_version",
+                        "reputation_of_domain",
+                        "reputation_of_ip",
+                        "reputation_of_list_of_domains",
+                        "reputation_of_list_of_ips",
+                        "reputation_of_list_of_urls",
+                        "reputation_of_url",
+                        "scan_file_upload",
+                        "scan_file_url",
+                        "scan_history",
+                        "scan_report_by_id",
+                        "scan_report_from_hash",
+                        "scan_report_from_multiple_hashes",
+                        "scan_repository",
+                        "submit_file_results",
+                        "submit_url_results"
+                    ]
+                },
+                "tests": {
+                    "count": 1,
+                    "resources": [
+                        "__init__.py"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>",
+                "Grace Lombardi <glombardi@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>",
+                "Max Meinhold <mmeinhold@syncurity.net>",
+                "Alex Schieppati <alex@syncurity.net>"
+            ],
+            "description": "OPSWAT MetaDefender Sandbox",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Syncurity",
+                "security",
+                "OPSWAT",
+                "metadefender",
+                "sandbox"
+            ],
+            "name": "opswat_metadefender",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "opswat_metadefender",
+            "repo_url": "https://github.com/syncurity-exchange/opswat_metadefender",
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.9.0"
         }
     }
 }

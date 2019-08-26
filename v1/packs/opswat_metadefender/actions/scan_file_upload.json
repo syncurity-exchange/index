@@ -1,0 +1,14 @@
+{
+    "description": "Scan a file by file upload",
+    "enabled": true,
+    "entry_point": "scan_file_upload.py",
+    "name": "scan_file_upload",
+    "parameters": {
+        "alert_num": {
+            "description": "The Alert Number of the IR-Flow alert to run this enrichment on, and to pull file attachment from for submission",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

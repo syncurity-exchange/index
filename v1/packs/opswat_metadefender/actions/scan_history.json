@@ -1,0 +1,14 @@
+{
+    "description": "Get Scan History of a Hash",
+    "enabled": true,
+    "entry_point": "scan_history.py",
+    "name": "scan_history",
+    "parameters": {
+        "filehash": {
+            "description": "The md5, sha1 or sha256 to find the history of",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,29 @@
+{
+    "description": "Requests a scan of a public repository",
+    "enabled": true,
+    "entry_point": "scan_repository.py",
+    "name": "scan_repository",
+    "parameters": {
+        "repository": {
+            "description": "The public repository to scan",
+            "required": true,
+            "type": "string"
+        },
+        "source": {
+            "description": "The source of the repository",
+            "enum": [
+                "github",
+                "gitlab",
+                "bitbucket"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "The username of user",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,15 @@
+{
+    "description": "Submit a file from a URL for analysis with OPSWAT MetaDefender",
+    "enabled": true,
+    "entry_point": "workflows/submit_url_results.yaml",
+    "name": "submit_url_results",
+    "pack": "opswat_metadefender",
+    "parameters": {
+        "fileurl": {
+            "description": "The file url to scan",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "orquesta"
+}

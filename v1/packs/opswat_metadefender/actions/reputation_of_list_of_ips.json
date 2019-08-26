@@ -1,0 +1,21 @@
+{
+    "description": "Find the reputation of a list of ips",
+    "enabled": true,
+    "entry_point": "reputation_list.py",
+    "name": "reputation_of_list_of_ips",
+    "parameters": {
+        "indicator_type": {
+            "default": "ip",
+            "description": "Type is ip",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "indicators": {
+            "description": "The list of ips to find reputation of",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

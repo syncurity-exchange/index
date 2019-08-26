@@ -1,0 +1,21 @@
+{
+    "description": "Find the reputation of a list of urls",
+    "enabled": true,
+    "entry_point": "reputation_list.py",
+    "name": "reputation_of_list_of_urls",
+    "parameters": {
+        "indicator_type": {
+            "default": "url",
+            "description": "Type is URL",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "indicators": {
+            "description": "The list of urls to find reputation of. URLs must begin with http:// or https://",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}
