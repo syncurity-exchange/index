@@ -1,0 +1,7 @@
+{
+    "description": "Get API Key Stats",
+    "enabled": true,
+    "entry_point": "api_info.py",
+    "name": "api_info",
+    "runner_type": "python-script"
+}

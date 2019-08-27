@@ -1,0 +1,21 @@
+{
+    "description": "Find the reputation of a list of domains",
+    "enabled": true,
+    "entry_point": "reputation_list.py",
+    "name": "reputation_of_list_of_domains",
+    "parameters": {
+        "indicator_type": {
+            "default": "domain",
+            "description": "Type is Domain",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "indicators": {
+            "description": "The list of domains to find reputation of",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

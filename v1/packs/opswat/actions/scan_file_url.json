@@ -1,0 +1,14 @@
+{
+    "description": "Scan a file by file url",
+    "enabled": true,
+    "entry_point": "scan_file_url.py",
+    "name": "scan_file_url",
+    "parameters": {
+        "fileurl": {
+            "description": "The file url to scan",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

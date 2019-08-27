@@ -1,0 +1,48 @@
+name: opswat
+ref: opswat
+description: OPSWAT MetaDefender Sandbox
+keywords:
+- Syncurity
+- security
+- OPSWAT
+- metadefender
+- sandbox
+stackstorm_version: '>=3.0.0'
+version: 0.9.2
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '3'
+contributors:
+- JP Bourget <jp@syncurity.net>
+- Ryan Markle <rmarkle@syncurity.net>
+- Grace Lombardi <glombardi@syncurity.net>
+- Brian Tackett <btackett@syncurity.net>
+- Max Meinhold <mmeinhold@syncurity.net>
+- Alex Schieppati <alex@syncurity.net>
+content:
+  actions:
+    count: 18
+    resources:
+    - api_info
+    - api_usage_limits
+    - api_version
+    - reputation_of_domain
+    - reputation_of_ip
+    - reputation_of_list_of_domains
+    - reputation_of_list_of_ips
+    - reputation_of_list_of_urls
+    - reputation_of_url
+    - scan_file_upload
+    - scan_file_url
+    - scan_history
+    - scan_report_by_id
+    - scan_report_from_hash
+    - scan_report_from_multiple_hashes
+    - scan_repository
+    - submit_file_results
+    - submit_url_results
+  tests:
+    count: 1
+    resources:
+    - __init__.py
