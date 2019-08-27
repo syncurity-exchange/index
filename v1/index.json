@@ -121,38 +121,6 @@
             "stackstorm_version": ">=3.0.0",
             "version": "0.9.0"
         },
-        "joe_sandbox": {
-            "author": "Syncurity",
-            "content": {
-                "actions": {
-                    "count": 8,
-                    "resources": [
-                        "results",
-                        "search",
-                        "submit_a_url",
-                        "submit_file_from_alert_num",
-                        "submit_file_from_url",
-                        "submit_from_alert_num",
-                        "submit_from_url",
-                        "submit_url"
-                    ]
-                }
-            },
-            "contributors": [
-                "Grace Lombardi <glombardi@syncurity.net>"
-            ],
-            "description": "JoeSandbox Pack",
-            "email": "support@syncurity.net",
-            "name": "JoeSandbox",
-            "python version": [
-                "2",
-                "3"
-            ],
-            "ref": "joe_sandbox",
-            "repo_url": "https://github.com/syncurity-exchange/syncurity-joe_sandbox",
-            "stackstorm_version": ">=3.0.0",
-            "version": "0.9.1"
-        },
         "opswat": {
             "author": "Syncurity",
             "content": {
