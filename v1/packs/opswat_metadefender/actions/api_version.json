@@ -1,7 +1,0 @@
-{
-    "description": "Get API Version",
-    "enabled": true,
-    "entry_point": "api_version.py",
-    "name": "api_version",
-    "runner_type": "python-script"
-}

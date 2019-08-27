@@ -1,7 +1,0 @@
-{
-    "description": "Get API Key Usage",
-    "enabled": true,
-    "entry_point": "api_usage_limit.py",
-    "name": "api_usage_limits",
-    "runner_type": "python-script"
-}
