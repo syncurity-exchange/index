@@ -1,0 +1,14 @@
+{
+    "description": "Submit a file to JoeSandbox to be analyzed",
+    "enabled": true,
+    "entry_point": "submit_from_alert_num.py",
+    "name": "submit_from_alert_num",
+    "parameters": {
+        "alert_num": {
+            "description": "The Alert Number of the IR-Flow alert to run this enrichment on, and to pull file attachment from for submission",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

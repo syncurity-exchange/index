@@ -1,0 +1,15 @@
+{
+    "description": "Submit a file from an IR-Flow alert number for analysis with Joe's Sandbox",
+    "enabled": true,
+    "entry_point": "workflows/submit_file_alert_num.yaml",
+    "name": "submit_file_from_alert_num",
+    "pack": "joesandbox",
+    "parameters": {
+        "alert_num": {
+            "description": "The Alert Number of the IR-Flow alert to run this enrichment on, and to pull file attachment from for submission",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "orquesta"
+}

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1566934054,
-        "hash": "ee513e4dbf94f492d8861935cd0e49ef"
+        "generated_ts": 1566935706,
+        "hash": "8886c52f6926f1c2ef6ef08514c99ca0"
     },
     "packs": {
         "alienvault": {
@@ -120,6 +120,44 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-crowdstrike_intel",
             "stackstorm_version": ">=3.0.0",
             "version": "0.9.0"
+        },
+        "joesandbox": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 8,
+                    "resources": [
+                        "results",
+                        "search",
+                        "submit_a_url",
+                        "submit_file_from_alert_num",
+                        "submit_file_from_url",
+                        "submit_from_alert_num",
+                        "submit_from_url",
+                        "submit_url"
+                    ]
+                }
+            },
+            "contributors": [
+                "Grace Lombardi <glombardi@syncurity.net>"
+            ],
+            "description": "Joe Sandbox API Integrations",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "irflow",
+                "sandbox",
+                "security",
+                "Syncurity"
+            ],
+            "name": "joesandbox",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "joesandbox",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-joesandbox",
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.9.2"
         },
         "opswat": {
             "author": "Syncurity",

@@ -1,0 +1,15 @@
+{
+    "description": "Submit a file from a URL for analysis with Joe's Sandbox",
+    "enabled": true,
+    "entry_point": "workflows/submit_file_url.yaml",
+    "name": "submit_file_from_url",
+    "pack": "joesandbox",
+    "parameters": {
+        "resource": {
+            "description": "The file-path or url with the file to be sent to JoeSandbox",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "orquesta"
+}
