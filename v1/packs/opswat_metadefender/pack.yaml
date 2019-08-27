@@ -1,5 +1,5 @@
-name: opswat_metadefender
-ref: opswat_metadefender
+name: syncurity-opswat
+ref: syncurity-opswat
 description: OPSWAT MetaDefender Sandbox
 keywords:
 - Syncurity
