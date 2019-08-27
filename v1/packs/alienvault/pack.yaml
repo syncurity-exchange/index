@@ -1,0 +1,27 @@
+name: Alienvault
+ref: alienvault
+description: Alienvault Central Alert API
+stackstorm_version: '>=2.9.0'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+keywords:
+- irflow
+- siem
+- security
+- Syncurity
+python_versions:
+- '2'
+- '3'
+contributors:
+- JP Bourget <jp@syncurity.net>
+content:
+  rules:
+    count: 2
+    resources:
+    - Create Alienvault Central Alert in IR-Flow
+    - send_alerts_N_destinations
+  sensors:
+    count: 1
+    resources:
+    - AVCentralSensor

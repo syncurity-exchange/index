@@ -1,9 +1,47 @@
 {
     "metadata": {
-        "generated_ts": 1566827258,
-        "hash": "5960823545dfcfc40e7802624432fab7"
+        "generated_ts": 1566931865,
+        "hash": "e31ab626fcaf4a4203c12916bf0b8ef4"
     },
     "packs": {
+        "alienvault": {
+            "author": "Syncurity",
+            "content": {
+                "rules": {
+                    "count": 2,
+                    "resources": [
+                        "Create Alienvault Central Alert in IR-Flow",
+                        "send_alerts_N_destinations"
+                    ]
+                },
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "AVCentralSensor"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>"
+            ],
+            "description": "Alienvault Central Alert API",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "irflow",
+                "siem",
+                "security",
+                "Syncurity"
+            ],
+            "name": "Alienvault",
+            "python_versions": [
+                "2",
+                "3"
+            ],
+            "ref": "alienvault",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-alienvault",
+            "stackstorm_version": ">=2.9.0",
+            "version": "0.9.1"
+        },
         "alienvault_central": {
             "author": "Syncurity",
             "content": {
@@ -36,7 +74,7 @@
                 "3"
             ],
             "ref": "alienvault_central",
-            "repo_url": "https://github.com/syncurity-exchange/alienvault_central",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-alienvault_central",
             "stackstorm_version": ">=2.9.0",
             "version": "0.9.0"
         },
@@ -80,7 +118,7 @@
                 "2"
             ],
             "ref": "cb_defense",
-            "repo_url": "https://github.com/syncurity-exchange/cb_defense",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-cb_defense",
             "version": "0.9.1"
         },
         "crowdstrike_intel": {
@@ -115,7 +153,7 @@
                 "3"
             ],
             "ref": "crowdstrike_intel",
-            "repo_url": "https://github.com/syncurity-exchange/crowdstrike_intel",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-crowdstrike_intel",
             "stackstorm_version": ">=3.0.0",
             "version": "0.9.0"
         },
@@ -147,7 +185,7 @@
                 "3"
             ],
             "ref": "joe_sandbox",
-            "repo_url": "https://github.com/syncurity-exchange/joe_sandbox",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-joe_sandbox",
             "stackstorm_version": ">=3.0.0",
             "version": "0.9.1"
         },
@@ -207,7 +245,7 @@
                 "3"
             ],
             "ref": "opswat_metadefender",
-            "repo_url": "https://github.com/syncurity-exchange/opswat_metadefender",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-opswat_metadefender",
             "stackstorm_version": ">=3.0.0",
             "version": "0.9.0"
         }
