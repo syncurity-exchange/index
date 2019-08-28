@@ -1,0 +1,35 @@
+{
+    "description": "Create an Alert in IR-Flow",
+    "enabled": true,
+    "entry_point": "create_alert.py",
+    "name": "create_alert",
+    "parameters": {
+        "credential_name": {
+            "description": "Name of credentials from this pack's configuration to use, which includes hostname and api creds.",
+            "required": true,
+            "type": "string"
+        },
+        "description": {
+            "description": "Alert Description",
+            "required": true,
+            "type": "string"
+        },
+        "incoming_field_group_name": {
+            "description": "This is really the Alert Type, or Incoming Data Source",
+            "required": true,
+            "type": "string"
+        },
+        "payload": {
+            "description": "Alert payload of values to send send to IR-Flow.",
+            "required": true,
+            "type": "object"
+        },
+        "suppress_missing_field_warning": {
+            "default": true,
+            "description": "Suppress missing alert field groups",
+            "required": true,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,34 @@
+{
+    "description": "Create an Incident in IR-Flow",
+    "enabled": true,
+    "entry_point": "create_incident.py",
+    "name": "create_incident",
+    "parameters": {
+        "credential_name": {
+            "description": "Name of credentials from this pack's configuration to use, which includes hostname and api creds.",
+            "required": true,
+            "type": "string"
+        },
+        "description": {
+            "description": "Incident Description",
+            "required": true,
+            "type": "string"
+        },
+        "incident_fields": {
+            "description": "Dictionary of Incident Fields to set values for Example: {\"actors\": \"Internal\", \"vmName\": \"labimage001\"}",
+            "required": true,
+            "type": "object"
+        },
+        "incident_subtype_name": {
+            "description": "Incident Subtype Name Example: Inbound Phishing",
+            "required": true,
+            "type": "string"
+        },
+        "incident_type_name": {
+            "description": "Incident Type Name. Example: Phishing",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

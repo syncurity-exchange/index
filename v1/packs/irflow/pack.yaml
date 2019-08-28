@@ -1,0 +1,24 @@
+name: Syncurity IR-Flow
+ref: irflow
+description: Syncurity IR-Flow API Actions
+version: 0.3.8
+author: Syncurity
+email: support@syncurity.net
+python_versions:
+- '2'
+- '3'
+content:
+  actions:
+    count: 11
+    resources:
+    - attach_alert_to_incident
+    - close_alert
+    - create_alert
+    - create_incident
+    - escalate_alert
+    - get_alert
+    - get_attachment
+    - get_attachment_string
+    - get_fact_group
+    - n_create_alert_destinations
+    - put_fact_group

@@ -1,0 +1,24 @@
+{
+    "description": "Attach Alert to an Incident in IR-Flow",
+    "enabled": true,
+    "entry_point": "attach_alert_to_incident.py",
+    "name": "attach_alert_to_incident",
+    "parameters": {
+        "alert_num": {
+            "description": "Alert number to attach to incident",
+            "required": true,
+            "type": "integer"
+        },
+        "credential_name": {
+            "description": "Name of credentials from this pack's configuration to use, which includes hostname and api creds.",
+            "required": true,
+            "type": "string"
+        },
+        "incident_num": {
+            "description": "Incident number to attach to incident",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

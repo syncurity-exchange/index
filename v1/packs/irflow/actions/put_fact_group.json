@@ -1,0 +1,24 @@
+{
+    "description": "Write or update json object to a fact group in IR-Flow",
+    "enabled": true,
+    "entry_point": "put_fact_group.py",
+    "name": "put_fact_group",
+    "parameters": {
+        "credential_name": {
+            "description": "Name of credentials from this pack's configuration to use, which includes hostname and api creds.",
+            "required": true,
+            "type": "string"
+        },
+        "fact_data": {
+            "description": "Key, Value pairs of fact fields as specified in IR-Flow and their values",
+            "required": true,
+            "type": "object"
+        },
+        "fact_group_id": {
+            "description": "The IR-Flow assigned ID of the fact_group to be updated",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

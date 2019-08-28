@@ -1,0 +1,24 @@
+{
+    "description": "Get an Attachment as a File Object from IR-Flow",
+    "enabled": true,
+    "entry_point": "get_attachment.py",
+    "name": "get_attachment",
+    "parameters": {
+        "attachment_id": {
+            "description": "Attachment ID From IR-Flow object",
+            "required": true,
+            "type": "integer"
+        },
+        "attachment_output_file": {
+            "description": "Full path on disk to store file",
+            "required": true,
+            "type": "string"
+        },
+        "credential_name": {
+            "description": "Name of credentials from this pack's configuration to use, which includes hostname and api creds.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

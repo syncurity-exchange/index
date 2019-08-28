@@ -1,0 +1,24 @@
+{
+    "description": "Get an Attachment as a string from IR-Flow",
+    "enabled": true,
+    "entry_point": "get_attachment_string.py",
+    "name": "get_attachment_string",
+    "parameters": {
+        "attachment_datastore_ttl": {
+            "description": "TTL in seconds to store the attachment, defaults to 30 minutes",
+            "required": false,
+            "type": "integer"
+        },
+        "attachment_id": {
+            "description": "Attachment ID From IR-Flow object",
+            "required": true,
+            "type": "integer"
+        },
+        "credential_name": {
+            "description": "Name of credentials from this pack's configuration to use, which includes hostname and api creds.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567020732,
-        "hash": "ce3f97a1a3dd2d068647a294a6a2587a"
+        "generated_ts": 1567023000,
+        "hash": "ab675ad899503f0a3d9d80686c2a2df5"
     },
     "packs": {
         "alienvault": {
@@ -161,6 +161,37 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-crowdstrike_intel",
             "stackstorm_version": ">=3.0.0",
             "version": "0.9.0"
+        },
+        "irflow": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 11,
+                    "resources": [
+                        "attach_alert_to_incident",
+                        "close_alert",
+                        "create_alert",
+                        "create_incident",
+                        "escalate_alert",
+                        "get_alert",
+                        "get_attachment",
+                        "get_attachment_string",
+                        "get_fact_group",
+                        "n_create_alert_destinations",
+                        "put_fact_group"
+                    ]
+                }
+            },
+            "description": "Syncurity IR-Flow API Actions",
+            "email": "support@syncurity.net",
+            "name": "Syncurity IR-Flow",
+            "python_versions": [
+                "2",
+                "3"
+            ],
+            "ref": "irflow",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-irflow",
+            "version": "0.3.8"
         },
         "joesandbox": {
             "author": "Syncurity",

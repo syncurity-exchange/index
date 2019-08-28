@@ -1,0 +1,40 @@
+{
+    "description": "Fires off create_alert to one or more (N) IR-Flow destinations",
+    "enabled": true,
+    "entry_point": "workflows/create_alert_n_destinations.yaml",
+    "name": "n_create_alert_destinations",
+    "pack": "irflow",
+    "parameters": {
+        "credential_names": {
+            "default": [
+                "integrations_team",
+                "dev_system"
+            ],
+            "description": "A JSON list of credential names of IR-Flow Servers to send the alert to. This credential name maps to the config.schema.yaml which will load the server address and creds. Example: \"[\"irflow_prod_creds\", \"irflow_staging_creds\"]\"",
+            "required": true,
+            "type": "array"
+        },
+        "description": {
+            "description": "Alert Description",
+            "required": true,
+            "type": "string"
+        },
+        "incoming_field_group_name": {
+            "description": "This is really the Alert Type, or Incoming Data Source",
+            "required": true,
+            "type": "string"
+        },
+        "payload": {
+            "description": "Alert payload of values to send send to IR-Flow.",
+            "required": true,
+            "type": "object"
+        },
+        "suppress_missing_field_warning": {
+            "default": true,
+            "description": "Suppress missing alert field groups",
+            "required": true,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "orquesta"
+}
