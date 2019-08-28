@@ -42,48 +42,6 @@
             "stackstorm_version": ">=2.9.0",
             "version": "0.9.1"
         },
-        "cb_defense": {
-            "author": "Syncurity",
-            "content": {
-                "actions": {
-                    "count": 4,
-                    "resources": [
-                        "change_device_policy",
-                        "get_all_devices_status",
-                        "get_device_status_by_device_id",
-                        "get_device_status_by_name"
-                    ]
-                },
-                "rules": {
-                    "count": 1,
-                    "resources": [
-                        "notification"
-                    ]
-                },
-                "sensors": {
-                    "count": 1,
-                    "resources": [
-                        "CBDefenseNotificationSensor"
-                    ]
-                }
-            },
-            "description": "Carbon Black Defense API Integrations",
-            "email": "support@syncurity.net",
-            "keywords": [
-                "security",
-                "Syncurity",
-                "secops",
-                "Carbon Black",
-                "Carbon Black Defense"
-            ],
-            "name": "Carbon Black Defense",
-            "python version": [
-                "2"
-            ],
-            "ref": "cb_defense",
-            "repo_url": "https://github.com/syncurity-exchange/syncurity-cb_defense",
-            "version": "0.9.2"
-        },
         "crowdstrike_intel": {
             "author": "Syncurity",
             "content": {
