@@ -1,0 +1,8 @@
+{
+    "vt_api_key": {
+        "default": "{{ st2kv.system.vt_api_key }}",
+        "description": "Virustotal API Key",
+        "required": true,
+        "type": "string"
+    }
+}

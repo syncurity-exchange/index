@@ -1,0 +1,11 @@
+{
+    "description": "Limits the concurrent executions of the lookup_hash action.",
+    "enabled": true,
+    "name": "lookup_hash.concurrency",
+    "pack": "virustotal",
+    "parameters": {
+        "threshold": 5
+    },
+    "policy_type": "action.concurrency",
+    "resource_ref": "virustotal.lookup_hash"
+}

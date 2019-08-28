@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567023000,
-        "hash": "ab675ad899503f0a3d9d80686c2a2df5"
+        "generated_ts": 1567024390,
+        "hash": "99e6b39d8917dcd6d3ccd0c185577464"
     },
     "packs": {
         "alienvault": {
@@ -318,6 +318,41 @@
             "ref": "sentinelone",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-sentinelone",
             "version": "0.9.5"
+        },
+        "virustotal": {
+            "author": "JP Bourget",
+            "content": {
+                "actions": {
+                    "count": 6,
+                    "resources": [
+                        "lookup_domain",
+                        "lookup_hash",
+                        "lookup_ip",
+                        "lookup_url",
+                        "submit_file_from_irflow",
+                        "submit_url"
+                    ]
+                },
+                "policies": {
+                    "count": 1,
+                    "resources": [
+                        "lookup_hash.concurrency"
+                    ]
+                }
+            },
+            "contributors": [
+                "Max Meinhold <mmeinhold@syncurity.net>"
+            ],
+            "description": "Virus Total Integration",
+            "email": "jp@syncurity.net",
+            "name": "Virustotal",
+            "python_versions": [
+                "2",
+                "3"
+            ],
+            "ref": "virustotal",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-virustotal",
+            "version": "0.9.3"
         }
     }
 }

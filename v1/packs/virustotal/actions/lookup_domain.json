@@ -1,0 +1,27 @@
+{
+    "description": "Lookup a domain in Virustotal",
+    "enabled": true,
+    "entry_point": "lookup_domain.py",
+    "name": "lookup_domain",
+    "parameters": {
+        "domain": {
+            "description": "Domain",
+            "required": true,
+            "type": "string"
+        },
+        "vt_api_key": {
+            "default": "{{ st2kv.system.virustotal_api_token | decrypt_kv }}",
+            "description": "Virustotal API key",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "wait": {
+            "default": 60,
+            "description": "Time to wait (in seconds) between retries when the file is not yet analyzed",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

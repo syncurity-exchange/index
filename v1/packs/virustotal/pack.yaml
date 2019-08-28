@@ -1,0 +1,25 @@
+name: Virustotal
+ref: virustotal
+description: Virus Total Integration
+version: 0.9.3
+author: JP Bourget
+email: jp@syncurity.net
+python_versions:
+- '2'
+- '3'
+contributors:
+- Max Meinhold <mmeinhold@syncurity.net>
+content:
+  actions:
+    count: 6
+    resources:
+    - lookup_domain
+    - lookup_hash
+    - lookup_ip
+    - lookup_url
+    - submit_file_from_irflow
+    - submit_url
+  policies:
+    count: 1
+    resources:
+    - lookup_hash.concurrency

@@ -1,0 +1,53 @@
+{
+    "description": "Submit a URL to Virustotal",
+    "enabled": true,
+    "entry_point": "submit_file_from_irflow.py",
+    "name": "submit_file_from_irflow",
+    "parameters": {
+        "alert_num": {
+            "default": "",
+            "description": "IR-Flow Alert Number with file to submit",
+            "required": true,
+            "type": "integer"
+        },
+        "api_key": {
+            "default": "{{ st2kv.system.irflow_api_key | decrypt_kv }}",
+            "description": "irflow_api_key",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "api_user": {
+            "default": "{{ st2kv.system.irflow_api_user }}",
+            "description": "IR-Flow API User",
+            "required": true,
+            "type": "string"
+        },
+        "debug": {
+            "default": false,
+            "description": "Debug flag",
+            "required": false,
+            "type": "boolean"
+        },
+        "protocol": {
+            "default": "https",
+            "description": "IR-Flow HTTP or HTTPS protocol",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "default": "{{ st2kv.system.irflow_server }}",
+            "description": "IR-Flow hostname or ip address",
+            "required": true,
+            "type": "string"
+        },
+        "vt_api_key": {
+            "default": "{{ st2kv.system.virustotal_api_token | decrypt_kv }}",
+            "description": "Virustotal API key",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
