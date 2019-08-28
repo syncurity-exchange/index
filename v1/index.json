@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567001181,
-        "hash": "71f368014aedde94d82abc3e127b0a21"
+        "generated_ts": 1567018770,
+        "hash": "c2f7e188f60fbec194ce7b35cf36ef29"
     },
     "packs": {
         "alienvault": {
@@ -72,10 +72,9 @@
             "keywords": [
                 "security",
                 "Syncurity",
-                "Carbon Black",
-                "cb",
                 "secops",
-                "Carbon Black Defend"
+                "Carbon Black",
+                "Carbon Black Defense"
             ],
             "name": "Carbon Black Defense",
             "python version": [
@@ -83,7 +82,7 @@
             ],
             "ref": "cb_defense",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-cb_defense",
-            "version": "0.9.1"
+            "version": "0.9.2"
         },
         "crowdstrike_intel": {
             "author": "Syncurity",
