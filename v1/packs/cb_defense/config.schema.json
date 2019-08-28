@@ -1,0 +1,68 @@
+{
+    "carbonblack_defense": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "credentials": {
+        "additionalProperties": false,
+        "properties": {
+            "api_host": {
+                "description": "Live Query Host",
+                "required": true,
+                "type": "string"
+            },
+            "api_id": {
+                "description": "API ID",
+                "required": true,
+                "type": "string"
+            },
+            "api_secret_key": {
+                "description": "API Secret Key",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "org": {
+                "description": "PSC Org Key",
+                "required": true,
+                "type": "string"
+            },
+            "sensor": {
+                "additionalProperties": false,
+                "description": "Sensor specific settings.",
+                "properties": {
+                    "siem_api_token": {
+                        "description": "CB Defense API key. Notifications a SIEM API token is needed. https://developer.carbonblack.com/reference/cb-defense/authentication/ ",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "siem_connector_id": {
+                        "description": "CB Defense API connector ID.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "ssl_verify": {
+                        "default": "true",
+                        "description": "Verify SSL.",
+                        "required": true,
+                        "type": "boolean"
+                    },
+                    "url": {
+                        "description": "CB Defense API Endpoint, including https://",
+                        "required": true,
+                        "type": "string"
+                    }
+                },
+                "required": false,
+                "type": "object"
+            }
+        },
+        "type": "object"
+    }
+}
