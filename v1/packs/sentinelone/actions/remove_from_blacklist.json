@@ -1,0 +1,14 @@
+{
+    "description": "Remove hash from Global Blacklist",
+    "enabled": true,
+    "entry_point": "remove_from_blacklist.py",
+    "name": "remove_from_blacklist",
+    "parameters": {
+        "file_hash": {
+            "description": "SHA1 File Hash add to blacklist.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

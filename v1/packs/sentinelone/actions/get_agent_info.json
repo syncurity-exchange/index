@@ -1,0 +1,14 @@
+{
+    "description": "Get SentinelOne Agent Info",
+    "enabled": true,
+    "entry_point": "get_agent_info.py",
+    "name": "get_agent_info",
+    "parameters": {
+        "agent": {
+            "description": "Agent eg. Computer name of S1 agent.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

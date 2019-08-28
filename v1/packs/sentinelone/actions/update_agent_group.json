@@ -1,0 +1,19 @@
+{
+    "description": "Update Agent Group",
+    "enabled": true,
+    "entry_point": "update_agent_group.py",
+    "name": "update_agent_group",
+    "parameters": {
+        "computer_name": {
+            "description": "Computer Name to Update Group.",
+            "required": true,
+            "type": "string"
+        },
+        "group_name": {
+            "description": "Group Name to move Computer to.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

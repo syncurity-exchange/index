@@ -1,0 +1,22 @@
+name: sentinelone
+ref: sentinelone
+description: SentinelOne EDR API Actions
+version: 0.9.5
+author: JP Bourget
+email: jp@syncurity.net
+python_versions:
+- '2'
+- '3'
+content:
+  actions:
+    count: 9
+    resources:
+    - abort_agent_scan
+    - add_to_blacklist
+    - broadcast_message
+    - get_agent_info
+    - get_file_info
+    - get_file_reputation
+    - launch_agent_scan
+    - remove_from_blacklist
+    - update_agent_group

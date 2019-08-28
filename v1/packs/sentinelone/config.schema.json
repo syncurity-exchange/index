@@ -1,0 +1,15 @@
+{
+    "plugin_pass": {
+        "default": "{{ st2kv.system.sentinelone_api_password }}",
+        "description": "SentinelOne API Password. The user password for a user with API access",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "plugin_user": {
+        "default": "{{ st2kv.system.sentinelone_api_user }}",
+        "description": "SentinelOne API User, an email address",
+        "required": true,
+        "type": "string"
+    }
+}

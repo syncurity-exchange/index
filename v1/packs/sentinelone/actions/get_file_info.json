@@ -1,0 +1,14 @@
+{
+    "description": "Get SentinelOne File Info",
+    "enabled": true,
+    "entry_point": "get_file_info.py",
+    "name": "get_file_info",
+    "parameters": {
+        "file_hash": {
+            "description": "SHA1 File Hash to get info of.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

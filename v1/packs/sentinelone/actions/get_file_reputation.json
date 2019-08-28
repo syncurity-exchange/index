@@ -1,0 +1,14 @@
+{
+    "description": "Get SentinelOne File Reputation",
+    "enabled": true,
+    "entry_point": "get_file_reputation.py",
+    "name": "get_file_reputation",
+    "parameters": {
+        "file_hash": {
+            "description": "SHA1 File Hash to get reputation.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,29 @@
+{
+    "description": "Add hash to Global Blacklist",
+    "enabled": true,
+    "entry_point": "add_to_blacklist.py",
+    "name": "add_to_blacklist",
+    "parameters": {
+        "description": {
+            "description": "Description for the black listed hash",
+            "required": true,
+            "type": "string"
+        },
+        "file_hash": {
+            "description": "SHA1 File Hash add to blacklist.",
+            "required": true,
+            "type": "string"
+        },
+        "os_family": {
+            "description": "OS Family to block hash on. Choices are: macos, windows, linux.",
+            "enum": [
+                "macos",
+                "linux",
+                "windows"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

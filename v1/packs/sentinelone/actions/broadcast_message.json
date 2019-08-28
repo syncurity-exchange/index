@@ -1,0 +1,19 @@
+{
+    "description": "Broadcast message to agent",
+    "enabled": true,
+    "entry_point": "broadcast_message.py",
+    "name": "broadcast_message",
+    "parameters": {
+        "agent": {
+            "description": "Agent eg. Computer name of S1 agent.",
+            "required": true,
+            "type": "string"
+        },
+        "broadcast_message": {
+            "description": "Message to Broadcast to Agent",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

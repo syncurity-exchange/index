@@ -1,0 +1,14 @@
+{
+    "description": "Abort Agent Scan",
+    "enabled": true,
+    "entry_point": "abort_agent_scan.py",
+    "name": "abort_agent_scan",
+    "parameters": {
+        "computer_name": {
+            "description": "Computer Name to Update Group.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
