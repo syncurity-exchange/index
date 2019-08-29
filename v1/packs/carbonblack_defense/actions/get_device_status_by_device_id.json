@@ -1,0 +1,19 @@
+{
+    "description": "Retrieves info on a device in CB Defense tenant by 'deviceId.",
+    "enabled": true,
+    "entry_point": "get_device_status_by_device_id.py",
+    "name": "get_device_status_by_device_id",
+    "parameters": {
+        "credential_name": {
+            "description": "Credential Name for Tenant",
+            "required": true,
+            "type": "string"
+        },
+        "device_id": {
+            "description": "Device ID to get status",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

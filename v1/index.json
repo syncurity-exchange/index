@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567117363,
-        "hash": "513e37a388034fde242169b0c84b7d54"
+        "generated_ts": 1567117919,
+        "hash": "e6985c57f667254c7c141a85d37162da"
     },
     "packs": {
         "alienvault": {
@@ -67,6 +67,48 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-alienvault_otx",
             "stackstorm_version": ">=2.9.0",
             "version": "0.9.2"
+        },
+        "carbonblack_defense": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 4,
+                    "resources": [
+                        "change_device_policy",
+                        "get_all_devices_status",
+                        "get_device_status_by_device_id",
+                        "get_device_status_by_name"
+                    ]
+                },
+                "rules": {
+                    "count": 1,
+                    "resources": [
+                        "notification"
+                    ]
+                },
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "CBDefenseNotificationSensor"
+                    ]
+                }
+            },
+            "description": "Carbon Black Defense API Integrations",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "security",
+                "Syncurity",
+                "secops",
+                "Carbon Black",
+                "Carbon Black Defense"
+            ],
+            "name": "Carbon Black Defense",
+            "python version": [
+                "2"
+            ],
+            "ref": "carbonblack_defense",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-carbonblack_defense",
+            "version": "0.9.4"
         },
         "crowdstrike_intel": {
             "author": "Syncurity",
