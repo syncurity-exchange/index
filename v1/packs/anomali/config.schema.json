@@ -1,0 +1,24 @@
+{
+    "api_key": {
+        "default": "{{ st2kv.system.anomali_api_key }}",
+        "description": "Anomali API key",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "classification": {
+        "required": false,
+        "type": "string"
+    },
+    "host": {
+        "default": "https://svlpartner-optic-api.threatstream.com/",
+        "required": false,
+        "type": "string"
+    },
+    "username": {
+        "default": "{{ st2kv.system.anomali_username }}",
+        "description": "Anomali Username",
+        "required": false,
+        "type": "string"
+    }
+}

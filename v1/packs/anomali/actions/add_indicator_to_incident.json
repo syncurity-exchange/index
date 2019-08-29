@@ -1,0 +1,19 @@
+{
+    "description": "Anomali Add Indicator to Incident",
+    "enabled": true,
+    "entry_point": "add_indicator_to_incident.py",
+    "name": "add_indicator_to_incident",
+    "parameters": {
+        "incident_id": {
+            "description": "Incident ID",
+            "required": true,
+            "type": "string"
+        },
+        "indicator_id": {
+            "description": "Indicator ID",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

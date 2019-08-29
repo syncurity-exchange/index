@@ -1,0 +1,34 @@
+name: Anomali
+ref: anomali
+description: Anomali API Integration
+version: 0.9.1
+stackstorm_version: '>=3.0.1'
+author: Syncurity
+email: support@syncurity.net
+python_versions:
+- '2'
+keywords:
+- Anomali
+- Threatstream
+- security
+- Syncurity
+- TIP
+contributors:
+- Brian Tackett <btackett@syncurity.net>
+content:
+  actions:
+    count: 4
+    resources:
+    - add_indicator_to_incident
+    - create_incident
+    - import_indicator_with_approval
+    - query
+  rules:
+    count: 2
+    resources:
+    - Create Anomali Alert in IR-Flow
+    - send_alerts_N_destinations
+  sensors:
+    count: 1
+    resources:
+    - ThreatstreamGetIntelligence

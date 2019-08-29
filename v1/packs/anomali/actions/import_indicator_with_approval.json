@@ -1,0 +1,86 @@
+{
+    "description": "Import indicator into Anomali ThreatStream, to be approved in the UI",
+    "enabled": true,
+    "entry_point": "import_indicator_with_approval.py",
+    "name": "import_indicator_with_approval",
+    "parameters": {
+        "classification": {
+            "default": "private",
+            "required": false,
+            "type": "string"
+        },
+        "confidence": {
+            "default": "50",
+            "description": "Confidence from 0-100, with 100 as the highest",
+            "required": false,
+            "type": "string"
+        },
+        "domain_mapping": {
+            "description": "Domain type for domain without explicit type",
+            "required": false,
+            "type": "string"
+        },
+        "email_mapping": {
+            "description": "Email type for email without explicit type'",
+            "required": false,
+            "type": "string"
+        },
+        "expiration_ts": {
+            "description": "Expiration date for incident. Default is 90 days. Example: 2017-01-26T00:00:00",
+            "required": false,
+            "type": "string"
+        },
+        "indicator": {
+            "description": "Indicator to add",
+            "required": true,
+            "type": "string"
+        },
+        "indicator_type": {
+            "description": "Indicator type",
+            "required": true,
+            "type": "string"
+        },
+        "ip_mapping": {
+            "description": "IP type for IP without explicit type",
+            "required": false,
+            "type": "string"
+        },
+        "md5_mapping": {
+            "description": "md5 type for md5 without explicit type",
+            "required": false,
+            "type": "string"
+        },
+        "notes": {
+            "description": "Notes",
+            "required": false,
+            "type": "string"
+        },
+        "severity": {
+            "description": "Indicator to query for",
+            "enum": [
+                "low",
+                "medium",
+                "high",
+                "very-high"
+            ],
+            "required": false,
+            "type": "string"
+        },
+        "tags": {
+            "description": "Tags",
+            "required": false,
+            "type": "string"
+        },
+        "trustedcircles": {
+            "description": "Comma-space separated list of trusted circles",
+            "required": false,
+            "type": "string"
+        },
+        "url_mapping": {
+            "description": "Url type for url without explicit type",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

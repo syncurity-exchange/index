@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567117919,
-        "hash": "e6985c57f667254c7c141a85d37162da"
+        "generated_ts": 1567119036,
+        "hash": "435310da7f596238ff9f89b51dcb616a"
     },
     "packs": {
         "alienvault": {
@@ -67,6 +67,53 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-alienvault_otx",
             "stackstorm_version": ">=2.9.0",
             "version": "0.9.2"
+        },
+        "anomali": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 4,
+                    "resources": [
+                        "add_indicator_to_incident",
+                        "create_incident",
+                        "import_indicator_with_approval",
+                        "query"
+                    ]
+                },
+                "rules": {
+                    "count": 2,
+                    "resources": [
+                        "Create Anomali Alert in IR-Flow",
+                        "send_alerts_N_destinations"
+                    ]
+                },
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "ThreatstreamGetIntelligence"
+                    ]
+                }
+            },
+            "contributors": [
+                "Brian Tackett <btackett@syncurity.net>"
+            ],
+            "description": "Anomali API Integration",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Anomali",
+                "Threatstream",
+                "security",
+                "Syncurity",
+                "TIP"
+            ],
+            "name": "Anomali",
+            "python_versions": [
+                "2"
+            ],
+            "ref": "anomali",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-anomali",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.1"
         },
         "carbonblack_defense": {
             "author": "Syncurity",

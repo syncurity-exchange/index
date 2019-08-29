@@ -1,0 +1,90 @@
+{
+    "description": "Anomali Create Incident",
+    "enabled": true,
+    "entry_point": "create_incident.py",
+    "name": "create_incident",
+    "parameters": {
+        "actors_list": {
+            "description": "A comma-space separated list of actor ids.",
+            "required": false,
+            "type": "string"
+        },
+        "circles_list": {
+            "description": "A comma-space separated list of circle ids.",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "indicators_list": {
+            "description": "A comma-space separated list of indicator ids.",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of incident",
+            "required": true,
+            "type": "string"
+        },
+        "private": {
+            "description": "Whether the incident is private or not. Default is public.",
+            "required": false,
+            "type": "string"
+        },
+        "sandbox_list": {
+            "description": "A comma-space separated list of sandbox ids.",
+            "required": false,
+            "type": "string"
+        },
+        "signature_list": {
+            "description": "A comma-space separated list of signature ids.",
+            "required": false,
+            "type": "string"
+        },
+        "start_date": {
+            "description": "Start date. Example: 2014-10-02T20:44:35",
+            "required": false,
+            "type": "string"
+        },
+        "status": {
+            "description": "Status id.",
+            "required": false,
+            "type": "string"
+        },
+        "status_desc": {
+            "description": "Status Description.",
+            "required": false,
+            "type": "string"
+        },
+        "tags_list": {
+            "description": "A comma-space separated list of tags.",
+            "required": false,
+            "type": "string"
+        },
+        "tlp": {
+            "description": "Traffic Light Protocol - options are red, amber, green, and white",
+            "enum": [
+                "red",
+                "amber",
+                "green",
+                "white"
+            ],
+            "required": false,
+            "type": "string"
+        },
+        "ttp_list": {
+            "description": "A comma-space separated list of TTP (threat bulletin) ids.",
+            "required": false,
+            "type": "string"
+        },
+        "victim_list": {
+            "description": "A comma-space separated list of victim ids.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

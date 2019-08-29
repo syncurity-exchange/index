@@ -1,0 +1,53 @@
+{
+    "class_name": "ThreatstreamGetIntelligence",
+    "description": "Anomali Threatstream Get Threat Intelligence Service",
+    "entry_point": "threatstream_get_intelligence.py",
+    "poll_interval": 120,
+    "trigger_types": [
+        {
+            "description": "Anomali Threatstream Intelligence",
+            "name": "intelligence",
+            "payload_schema": {
+                "properties": {
+                    "confidence": {
+                        "type": "integer"
+                    },
+                    "detail": {
+                        "type": "string"
+                    },
+                    "indicator": {
+                        "type": "string"
+                    },
+                    "lastModified": {
+                        "type": "string"
+                    },
+                    "originalAlertURL": {
+                        "type": "string"
+                    },
+                    "publishedDate": {
+                        "type": "string"
+                    },
+                    "severityText": {
+                        "type": "string"
+                    },
+                    "shortDescription": {
+                        "type": "string"
+                    },
+                    "sophisticationType": {
+                        "type": "string"
+                    },
+                    "tagsList": {
+                        "type": "string"
+                    },
+                    "threatScore": {
+                        "type": "integer"
+                    },
+                    "type": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

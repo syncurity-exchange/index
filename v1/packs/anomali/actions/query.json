@@ -1,0 +1,22 @@
+{
+    "description": "Anomali Query",
+    "enabled": true,
+    "entry_point": "query.py",
+    "name": "query",
+    "parameters": {
+        "classification": {
+            "description": "Whether to search for private or public indicators",
+            "enum": [
+                "private",
+                "public"
+            ],
+            "type": "string"
+        },
+        "indicator": {
+            "description": "Indicator to query for",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
