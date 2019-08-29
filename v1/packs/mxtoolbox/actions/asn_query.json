@@ -1,0 +1,20 @@
+{
+    "description": "MxToolbox Whois Query - ASN Lookup",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "asn_query",
+    "parameters": {
+        "lookup": {
+            "default": "asn",
+            "description": "Lookup Type",
+            "required": true,
+            "type": "string"
+        },
+        "lookup_value": {
+            "description": "Lookup value ",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

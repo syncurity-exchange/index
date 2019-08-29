@@ -1,0 +1,36 @@
+name: MXToolbox
+ref: mxtoolbox
+description: MxToolbox API Integration
+keywords:
+- MXToolbox
+stackstorm_version: '>=3.0.0'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+contributors:
+- JP Bourget <jp@syncurity.net>
+- Ryan Markle <rmarkle@syncurity.net>
+- Grace Lombardi <glombardi@syncurity.net>
+- Brian Tackett <btackett@syncurity.net>
+- Max Meinhold <mmeinhold@syncurity.net>
+- Alex Schieppati <alex@syncurity.net>
+content:
+  actions:
+    count: 13
+    resources:
+    - a_query
+    - aaaa_query
+    - arin_query
+    - asn_query
+    - blacklist_query
+    - cname_query
+    - dns_query
+    - loc_query
+    - mx_query
+    - spf_query
+    - srv_query
+    - txt_query
+    - whois_query

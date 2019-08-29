@@ -1,0 +1,20 @@
+{
+    "description": "MxToolbox SRV Query - DNS Lookup Service Record",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "srv_query",
+    "parameters": {
+        "lookup": {
+            "default": "srv",
+            "description": "Lookup Type",
+            "required": true,
+            "type": "string"
+        },
+        "lookup_value": {
+            "description": "Lookup value ",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

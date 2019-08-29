@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567116581,
-        "hash": "55355ae49c0ab8b88beee09763e94ba5"
+        "generated_ts": 1567117363,
+        "hash": "513e37a388034fde242169b0c84b7d54"
     },
     "packs": {
         "alienvault": {
@@ -66,6 +66,48 @@
             "ref": "alienvault_otx",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-alienvault_otx",
             "stackstorm_version": ">=2.9.0",
+            "version": "0.9.2"
+        },
+        "cb_defense": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 4,
+                    "resources": [
+                        "change_device_policy",
+                        "get_all_devices_status",
+                        "get_device_status_by_device_id",
+                        "get_device_status_by_name"
+                    ]
+                },
+                "rules": {
+                    "count": 1,
+                    "resources": [
+                        "notification"
+                    ]
+                },
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "CBDefenseNotificationSensor"
+                    ]
+                }
+            },
+            "description": "Carbon Black Defense API Integrations",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "security",
+                "Syncurity",
+                "secops",
+                "Carbon Black",
+                "Carbon Black Defense"
+            ],
+            "name": "Carbon Black Defense",
+            "python version": [
+                "2"
+            ],
+            "ref": "cb_defense",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-cb_defense",
             "version": "0.9.2"
         },
         "crowdstrike_intel": {
@@ -216,6 +258,51 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-joesandbox",
             "stackstorm_version": ">=3.0.0",
             "version": "0.9.2"
+        },
+        "mxtoolbox": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 13,
+                    "resources": [
+                        "a_query",
+                        "aaaa_query",
+                        "arin_query",
+                        "asn_query",
+                        "blacklist_query",
+                        "cname_query",
+                        "dns_query",
+                        "loc_query",
+                        "mx_query",
+                        "spf_query",
+                        "srv_query",
+                        "txt_query",
+                        "whois_query"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>",
+                "Grace Lombardi <glombardi@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>",
+                "Max Meinhold <mmeinhold@syncurity.net>",
+                "Alex Schieppati <alex@syncurity.net>"
+            ],
+            "description": "MxToolbox API Integration",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "MXToolbox"
+            ],
+            "name": "MXToolbox",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "mxtoolbox",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-mxtoolbox",
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.9.1"
         },
         "opswat": {
             "author": "Syncurity",

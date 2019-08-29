@@ -1,0 +1,20 @@
+{
+    "description": "MxToolbox A Query - DNS Lookup for IP address",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "a_query",
+    "parameters": {
+        "lookup": {
+            "default": "a",
+            "description": "Lookup Type",
+            "required": true,
+            "type": "string"
+        },
+        "lookup_value": {
+            "description": "Lookup value ",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,9 @@
+{
+    "api_key": {
+        "default": "{{ st2kv.system.mxtoolbox_api_key }}",
+        "description": "MXToolbox API Key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    }
+}
