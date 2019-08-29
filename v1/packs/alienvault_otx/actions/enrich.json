@@ -1,0 +1,29 @@
+{
+    "description": "Use AlienVault to enrich an IPv4 address, hostname, url, file hash (MD5 or SHA256), or domain",
+    "enabled": true,
+    "entry_point": "enrich.py",
+    "name": "enrich",
+    "parameters": {
+        "indicator": {
+            "description": "The resource indicator being enriched with AlienVault",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "indicator_type": {
+            "description": "The type of resource to enrich with AlienVault - either ip, hostname, url, MD5 hash, or domain - defaults to ip",
+            "enum": [
+                "md5",
+                "sha256",
+                "ip",
+                "domain",
+                "hostname",
+                "url"
+            ],
+            "position": 1,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

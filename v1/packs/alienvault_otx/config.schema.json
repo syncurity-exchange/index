@@ -1,0 +1,14 @@
+{
+    "no_verify": {
+        "default": "False",
+        "description": "Skip SSL verification for HTTP requests",
+        "required": false,
+        "type": "string"
+    },
+    "otx_key": {
+        "default": "{{ st2kv.system.otx_key | decrypt_kv}}",
+        "description": "AlienVault OTX API key",
+        "required": true,
+        "type": "string"
+    }
+}
