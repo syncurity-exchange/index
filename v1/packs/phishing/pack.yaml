@@ -1,0 +1,25 @@
+name: Phishing
+ref: phishing
+description: Actions to permform phishing email analysis
+stackstorm_version: '>=3.0.0'
+version: 0.3.0
+author: Syncurity
+email: support@syncurity.net
+python_versions:
+- '2'
+- '3'
+contributors:
+- Brian Tackett <btackett@syncurity.net>
+keywords:
+- phishing
+- email
+- security
+- Syncurity
+content:
+  actions:
+    count: 4
+    resources:
+    - determine_email_type
+    - extract_indicators
+    - phishing_analysis
+    - user-submitted-phishing-analysis

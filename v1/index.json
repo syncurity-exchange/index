@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567107622,
-        "hash": "29b4110227115c8a9877079db5eada03"
+        "generated_ts": 1567116581,
+        "hash": "55355ae49c0ab8b88beee09763e94ba5"
     },
     "packs": {
         "alienvault": {
@@ -359,6 +359,40 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-opswat",
             "stackstorm_version": ">=3.0.1",
             "version": "0.9.3"
+        },
+        "phishing": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 4,
+                    "resources": [
+                        "determine_email_type",
+                        "extract_indicators",
+                        "phishing_analysis",
+                        "user-submitted-phishing-analysis"
+                    ]
+                }
+            },
+            "contributors": [
+                "Brian Tackett <btackett@syncurity.net>"
+            ],
+            "description": "Actions to permform phishing email analysis",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "phishing",
+                "email",
+                "security",
+                "Syncurity"
+            ],
+            "name": "Phishing",
+            "python_versions": [
+                "2",
+                "3"
+            ],
+            "ref": "phishing",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-phishing",
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.3.0"
         },
         "sentinelone": {
             "author": "JP Bourget",

@@ -1,0 +1,26 @@
+{
+    "description": "Extract Indicators",
+    "enabled": true,
+    "entry_point": "extract_indicators.py",
+    "name": "extract_indicators",
+    "parameters": {
+        "content": {
+            "description": "Text to extract from",
+            "required": true,
+            "type": "string"
+        },
+        "refang": {
+            "default": false,
+            "description": "Whether to make urls, ips, etc. live again",
+            "required": false,
+            "type": "boolean"
+        },
+        "strip": {
+            "default": false,
+            "description": "",
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

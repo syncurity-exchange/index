@@ -1,0 +1,49 @@
+{
+    "description": "Phishing Analysis",
+    "enabled": true,
+    "entry_point": "phishing_analysis.py",
+    "name": "phishing_analysis",
+    "parameters": {
+        "alert_num": {
+            "description": "IR-Flow Alert Number which contains phishing attachment",
+            "required": true,
+            "type": "string"
+        },
+        "exclude_image_extensions": {
+            "default": "true",
+            "description": "Excludes images from analysis",
+            "required": false,
+            "type": "boolean"
+        },
+        "internal_domains": {
+            "description": "A comma and space separated list of internal domains",
+            "required": false,
+            "type": "array"
+        },
+        "irflow_api_key": {
+            "default": "{{ st2kv.system.irflow_api_key | decrypt_kv }}",
+            "description": "IR-Flow API Key",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "irflow_api_user": {
+            "default": "{{ st2kv.system.irflow_api_user}}",
+            "description": "IR-Flow API User",
+            "required": true,
+            "type": "string"
+        },
+        "irflow_server": {
+            "default": "{{ st2kv.system.irflow_server}}",
+            "description": "IR-Flow Server Address",
+            "required": true,
+            "type": "string"
+        },
+        "whitelist": {
+            "description": "A comma and space separated list of domains to whitelist",
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}
