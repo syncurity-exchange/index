@@ -1,0 +1,42 @@
+{
+    "description": "Returns all vulnerable host data from VI feed for the given query. This is the API call you want to use to download the entire feed of vulnerable hosts that matches the query.",
+    "enabled": true,
+    "entry_point": "services.py",
+    "name": "get_hosts",
+    "parameters": {
+        "action": {
+            "default": "infected_query",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "days_ago": {
+            "default": 30,
+            "description": "Limit to number of responses",
+            "required": false,
+            "type": "integer"
+        },
+        "limit": {
+            "default": 1000,
+            "description": "Limit to number of responses",
+            "required": false,
+            "type": "integer"
+        },
+        "misc": {
+            "description": "Specifies the search query; may be a lucene query (optional)",
+            "required": false,
+            "type": "string"
+        },
+        "q_address": {
+            "description": "Query parameter specifying the alphanumeric version of the IPv4 address that will be used to query the database.",
+            "required": false,
+            "type": "string"
+        },
+        "vuln_type": {
+            "description": "The vuln_type is type of vulnerability one wishes to search.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

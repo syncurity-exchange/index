@@ -1,0 +1,21 @@
+{
+    "key": {
+        "default": "{{ st2kv.system.info_armour_key }}",
+        "description": "Info Armour Key",
+        "required": true,
+        "type": "string"
+    },
+    "secret": {
+        "default": "{{ st2kv.system.info_armour_secret }}",
+        "description": "Info Armour Secret",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "server": {
+        "default": "https://vigilanteati.infoarmor.com",
+        "description": "Info Armour Server",
+        "required": true,
+        "type": "string"
+    }
+}

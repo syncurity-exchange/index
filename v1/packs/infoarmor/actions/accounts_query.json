@@ -1,0 +1,32 @@
+{
+    "description": "Get compromised credentials matching the given account identifiers.",
+    "enabled": true,
+    "entry_point": "services.py",
+    "name": "accounts_query",
+    "parameters": {
+        "account_identifiers": {
+            "description": "The string (or comma delimited list of strings) that uniquely identifies the account we are trying to match.",
+            "required": false,
+            "type": "array"
+        },
+        "action": {
+            "default": "accounts_query",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "days_ago": {
+            "default": 30,
+            "description": "Days to look back",
+            "required": false,
+            "type": "integer"
+        },
+        "limit": {
+            "default": 1000,
+            "description": "Maximum number of results to return, between 1 and 10,000",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

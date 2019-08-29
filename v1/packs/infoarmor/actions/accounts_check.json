@@ -1,0 +1,20 @@
+{
+    "description": "A summary of how many times the account identifier was found in our database and the last time it was found.",
+    "enabled": true,
+    "entry_point": "services.py",
+    "name": "accounts_check",
+    "parameters": {
+        "account_identifier": {
+            "description": "The string (or comma delimited list of strings) that uniquely identifies the account we are trying to match.",
+            "required": false,
+            "type": "array"
+        },
+        "action": {
+            "default": "accounts_check",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

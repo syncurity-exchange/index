@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567052618,
-        "hash": "c060aaf7591a8194bfdd1121c0e9d83a"
+        "generated_ts": 1567053963,
+        "hash": "98e8ae4ca42e1535db5f6cd3b6045ba1"
     },
     "packs": {
         "alienvault": {
@@ -160,6 +160,50 @@
             "ref": "crowdstrike_intel",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-crowdstrike_intel",
             "stackstorm_version": ">=3.0.0",
+            "version": "0.9.0"
+        },
+        "infoarmor": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 6,
+                    "resources": [
+                        "accounts_check",
+                        "accounts_query",
+                        "get_hosts",
+                        "get_leaks",
+                        "get_leaks_info",
+                        "infected_query"
+                    ]
+                },
+                "tests": {
+                    "count": 1,
+                    "resources": [
+                        "__init__.py"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>",
+                "Grace Lombardi <glombardi@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>",
+                "Max Meinhold <mmeinhold@syncurity.net>",
+                "Alex Schieppati <alex@syncurity.net>"
+            ],
+            "description": "Info Armor Vigilante ATI pack",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "InfoArmour"
+            ],
+            "name": "Info Armor",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "infoarmor",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-infoarmor",
+            "stackstorm_version": ">=3.1.0",
             "version": "0.9.0"
         },
         "irflow": {
