@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567105710,
-        "hash": "02662755d06816edd13bb6099086e989"
+        "generated_ts": 1567106763,
+        "hash": "c5d457cd16837adb15c848f74355418d"
     },
     "packs": {
         "alienvault": {
@@ -108,7 +108,7 @@
             ],
             "ref": "carbonblack_defense",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-carbonblack_defense",
-            "version": "0.9.2"
+            "version": "0.9.3"
         },
         "cb_defense": {
             "author": "Syncurity",
