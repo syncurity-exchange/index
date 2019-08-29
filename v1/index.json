@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567024390,
-        "hash": "99e6b39d8917dcd6d3ccd0c185577464"
+        "generated_ts": 1567052618,
+        "hash": "c060aaf7591a8194bfdd1121c0e9d83a"
     },
     "packs": {
         "alienvault": {
@@ -353,6 +353,57 @@
             "ref": "virustotal",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-virustotal",
             "version": "0.9.3"
+        },
+        "vmray": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 8,
+                    "resources": [
+                        "check_status",
+                        "get_results",
+                        "get_submission_type",
+                        "search_sample_type",
+                        "submit_file",
+                        "submit_file_workflow",
+                        "submit_url",
+                        "submit_url_workflow"
+                    ]
+                },
+                "rules": {
+                    "count": 2,
+                    "resources": [
+                        "send_alerts",
+                        "send_alerts_N_destinations"
+                    ]
+                },
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "VMRayEmailSubmissionSensor"
+                    ]
+                }
+            },
+            "contributors": [
+                "Brian Tackett <btackett@syncurity.net>"
+            ],
+            "description": "VMRay API Integration",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "VMRay",
+                "Sandbox",
+                "Malware Analysis",
+                "security",
+                "Syncurity"
+            ],
+            "name": "VMRay",
+            "python_versions": [
+                "2"
+            ],
+            "ref": "vmray",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-vmray",
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.9.2"
         }
     }
 }

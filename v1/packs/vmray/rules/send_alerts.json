@@ -1,0 +1,32 @@
+{
+    "action": {
+        "parameters": {
+            "credential_name": "integrations_team",
+            "description": "VMRay Email Result",
+            "incoming_field_group_name": "VMRay Email Result",
+            "log_level": "DEBUG",
+            "payload": "{{ trigger }}",
+            "suppress_missing_field_warning": true
+        },
+        "ref": "irflow.create_alert"
+    },
+    "context": {
+        "user": "st2admin"
+    },
+    "criteria": {},
+    "description": "Create IR-Flow Alert From AV Central Alert",
+    "enabled": true,
+    "metadata_file": "",
+    "name": "send_alerts",
+    "pack": "vmray",
+    "ref": "vmray.send_alerts",
+    "trigger": {
+        "description": "Result from VMRay email submission",
+        "parameters": {},
+        "type": "vmray.email_submission"
+    },
+    "type": {
+        "parameters": {},
+        "ref": "standard"
+    }
+}

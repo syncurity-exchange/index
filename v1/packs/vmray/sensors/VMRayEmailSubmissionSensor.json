@@ -1,0 +1,20 @@
+{
+    "class_name": "VMRayEmailSubmissionSensor",
+    "description": "Get Email Submission Service",
+    "entry_point": "get_email_submissions.py",
+    "poll_interval": 300,
+    "trigger_types": [
+        {
+            "description": "Result of VMRay analysis from email submission",
+            "name": "email_submission",
+            "payload_schema": {
+                "properties": {
+                    "response": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "action": {
+        "description": "Fires off create_alert to one or more (N) IR-Flow destinations",
+        "parameters": {
+            "credential_name": "integrations_team",
+            "description": "VMRay Email Result",
+            "incoming_field_group_name": "VMRay Email Result",
+            "payload": "{{ trigger }}",
+            "suppress_missing_field_warning": true
+        },
+        "ref": "irflow.n_create_alert_destinations"
+    },
+    "context": {
+        "user": "st2admin"
+    },
+    "criteria": {},
+    "description": "Sends alerts to two or more IR-Flow servers",
+    "enabled": false,
+    "metadata_file": "",
+    "name": "send_alerts_N_destinations",
+    "pack": "vmray",
+    "ref": "vmray.send_alerts_N_destinations",
+    "trigger": {
+        "description": "Result from VMRay email submission",
+        "parameters": {},
+        "type": "vmray.email_submission"
+    },
+    "type": {
+        "parameters": {},
+        "ref": "standard"
+    }
+}

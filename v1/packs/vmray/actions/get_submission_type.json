@@ -1,0 +1,41 @@
+{
+    "description": "Get submissions of a certain type",
+    "enabled": true,
+    "entry_point": "get_submission_type.py",
+    "name": "get_submission_type",
+    "parameters": {
+        "end_time": {
+            "description": "End time",
+            "required": false,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/rest/submission/type/",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "start_time": {
+            "description": "Start time",
+            "required": false,
+            "type": "string"
+        },
+        "submission_type": {
+            "description": "Submission type",
+            "enum": [
+                "api",
+                "webif",
+                "ir_mailbox"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

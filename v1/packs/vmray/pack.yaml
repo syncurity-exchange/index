@@ -1,0 +1,38 @@
+name: VMRay
+ref: vmray
+description: VMRay API Integration
+version: 0.9.2
+stackstorm_version: '>=3.0.0'
+author: Syncurity
+email: support@syncurity.net
+python_versions:
+- '2'
+keywords:
+- VMRay
+- Sandbox
+- Malware Analysis
+- security
+- Syncurity
+contributors:
+- Brian Tackett <btackett@syncurity.net>
+content:
+  actions:
+    count: 8
+    resources:
+    - check_status
+    - get_results
+    - get_submission_type
+    - search_sample_type
+    - submit_file
+    - submit_file_workflow
+    - submit_url
+    - submit_url_workflow
+  rules:
+    count: 2
+    resources:
+    - send_alerts
+    - send_alerts_N_destinations
+  sensors:
+    count: 1
+    resources:
+    - VMRayEmailSubmissionSensor

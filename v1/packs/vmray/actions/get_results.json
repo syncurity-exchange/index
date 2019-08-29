@@ -1,0 +1,26 @@
+{
+    "description": "Get results of VMRay sandbox analysis",
+    "enabled": true,
+    "entry_point": "get_results.py",
+    "name": "get_results",
+    "parameters": {
+        "endpoint": {
+            "default": "/rest/sample/{}",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "submission_sample_id": {
+            "description": "File id to get results about",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

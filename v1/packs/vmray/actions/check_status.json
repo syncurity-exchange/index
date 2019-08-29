@@ -1,0 +1,26 @@
+{
+    "description": "Check the progress of a VMRay submission",
+    "enabled": true,
+    "entry_point": "check_status.py",
+    "name": "check_status",
+    "parameters": {
+        "endpoint": {
+            "default": "/rest/submission/{}",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "submission_id": {
+            "description": "Submission to get status of",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

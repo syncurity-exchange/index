@@ -1,0 +1,27 @@
+{
+    "api_key": {
+        "description": "VMRay api key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "hours_back": {
+        "default": 1,
+        "description": "How many hours back to look when first running; Defaults to 1 hour",
+        "required": false,
+        "secret": false,
+        "type": "integer"
+    },
+    "poll_interval": {
+        "default": 600,
+        "description": "Frequency with which to run the polling service, in seconds",
+        "required": false,
+        "type": "integer"
+    },
+    "server": {
+        "default": "https://cloud.vmray.com",
+        "description": "VMRay url",
+        "required": false,
+        "type": "string"
+    }
+}

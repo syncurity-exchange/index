@@ -1,0 +1,24 @@
+{
+    "description": "Search for samples by hash",
+    "enabled": true,
+    "entry_point": "search_sample_type.py",
+    "name": "search_sample_type",
+    "parameters": {
+        "file_hash": {
+            "description": "File hash",
+            "required": true,
+            "type": "string"
+        },
+        "hash_type": {
+            "description": "hash type",
+            "enum": [
+                "md5",
+                "sha1",
+                "sha256"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

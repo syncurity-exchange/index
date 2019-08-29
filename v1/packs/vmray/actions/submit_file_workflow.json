@@ -1,0 +1,16 @@
+{
+    "description": "Submit a file to VMRay sandbox",
+    "enabled": true,
+    "entry_point": "workflows/submit_file_workflow.yaml",
+    "name": "submit_file_workflow",
+    "pack": "vmray",
+    "parameters": {
+        "alert_num": {
+            "type": "integer"
+        },
+        "filename": {
+            "type": "string"
+        }
+    },
+    "runner_type": "orquesta"
+}
