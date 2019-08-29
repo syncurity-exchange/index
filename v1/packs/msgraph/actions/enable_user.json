@@ -1,0 +1,20 @@
+{
+    "description": "Enable a user in MSGraph",
+    "enabled": true,
+    "entry_point": "update_user.py",
+    "name": "enable_user",
+    "parameters": {
+        "action": {
+            "default": "enable",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "user_guid": {
+            "description": "A UPN or uid for the user to enable",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

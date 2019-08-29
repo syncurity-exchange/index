@@ -1,0 +1,19 @@
+{
+    "description": "Remove a User from a Group via MSGraph API",
+    "enabled": true,
+    "entry_point": "remove_user_from_group.py",
+    "name": "remove_user_from_group",
+    "parameters": {
+        "group_id": {
+            "description": "Group ID",
+            "required": true,
+            "type": "string"
+        },
+        "user_id": {
+            "description": "User ID",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

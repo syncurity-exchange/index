@@ -1,0 +1,14 @@
+{
+    "description": "Get Groups a Group is a member of via MSGraph API",
+    "enabled": true,
+    "entry_point": "get_member_groups.py",
+    "name": "get_member_groups",
+    "parameters": {
+        "group_id": {
+            "description": "Group ID",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

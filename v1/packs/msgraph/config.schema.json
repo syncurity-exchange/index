@@ -1,0 +1,49 @@
+{
+    "auth_type": {
+        "description": "Auth type - legacy or client creds",
+        "enum": [
+            "legacy",
+            "client_creds"
+        ],
+        "required": true,
+        "type": "string"
+    },
+    "client_id": {
+        "default": "{{ st2kv.system.msgraph_client_id }}",
+        "description": "",
+        "required": true,
+        "type": "string"
+    },
+    "client_secret": {
+        "default": "{{ st2kv.system.msgraph_key }}",
+        "description": "",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "password": {
+        "default": "{{ st2kv.system.msgraph_key }}",
+        "description": "",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "tenant_id": {
+        "default": "{{ st2kv.system.msgraph_tenant_id }}",
+        "description": "",
+        "required": true,
+        "type": "string"
+    },
+    "user_guid": {
+        "default": "{{ st2kv.system.msgraph_user_guid }}",
+        "description": "",
+        "required": false,
+        "type": "string"
+    },
+    "username": {
+        "default": "{{ st2kv.system.msgraph_username }}",
+        "description": "",
+        "required": false,
+        "type": "string"
+    }
+}

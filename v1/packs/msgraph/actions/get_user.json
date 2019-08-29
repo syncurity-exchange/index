@@ -1,0 +1,14 @@
+{
+    "description": "Get User Info Action for MS Azure via MSGraph API",
+    "enabled": true,
+    "entry_point": "get_user.py",
+    "name": "get_user",
+    "parameters": {
+        "user_guid": {
+            "description": "A UPN or uid for the user to query",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

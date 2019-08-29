@@ -1,0 +1,29 @@
+name: Microsoft Graph API
+ref: msgraph
+description: MS Graph API Integration
+version: 0.9.2
+stackstorm_version: '>=3.0.1'
+author: Syncurity
+email: support@syncurity.net
+python_versions:
+- '2'
+- '3'
+keywords:
+- Microsoft Graph
+- security
+- Syncurity
+- Office 365
+contributors:
+- Brian Tackett <btackett@syncurity.net>
+content:
+  actions:
+    count: 8
+    resources:
+    - add_user_to_group
+    - disable_user
+    - enable_user
+    - get_groups
+    - get_member_groups
+    - get_user
+    - remove_user_from_group
+    - reset_password_at_login
