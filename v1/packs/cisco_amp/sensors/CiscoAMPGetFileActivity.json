@@ -1,0 +1,20 @@
+{
+    "class_name": "CiscoAMPGetFileActivity",
+    "description": "Get File Activity Service",
+    "entry_point": "get_file_activity.py",
+    "poll_interval": 30,
+    "trigger_types": [
+        {
+            "description": "File Activity from Cisco AMP",
+            "name": "file_activity",
+            "payload_schema": {
+                "properties": {
+                    "response": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+name: Cisco AMP
+ref: cisco_amp
+description: Cisco AMP API Integration
+version: 0.9.1
+stackstorm_version: '>=3.0.1'
+author: Syncurity
+email: support@syncurity.net
+python_versions:
+- '2'
+- '3'
+keywords:
+- Cisco
+- Cisco AMP
+- security
+- Syncurity
+- Endpoint
+contributors:
+- Brian Tackett <btackett@syncurity.net>
+- JP Bourget <jp@syncurity.net>
+content:
+  actions:
+    count: 5
+    resources:
+    - get_file_activity
+    - get_recent_host_events
+    - insert_into_blacklist
+    - move_host_group
+    - remove_from_blacklist
+  rules:
+    count: 2
+    resources:
+    - send_alerts
+    - send_alerts_N_destinations
+  sensors:
+    count: 1
+    resources:
+    - CiscoAMPGetFileActivity

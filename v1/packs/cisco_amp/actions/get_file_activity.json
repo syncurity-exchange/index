@@ -1,0 +1,14 @@
+{
+    "description": "Cisco AMP get_file_activity",
+    "enabled": true,
+    "entry_point": "get_file_activity.py",
+    "name": "get_file_activity",
+    "parameters": {
+        "file_hash": {
+            "description": "sha256 indicator to query for",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

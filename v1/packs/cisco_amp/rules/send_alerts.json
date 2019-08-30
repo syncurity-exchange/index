@@ -1,0 +1,32 @@
+{
+    "action": {
+        "parameters": {
+            "credential_name": "integrations_team",
+            "description": "Cisco AMP File Activity",
+            "incoming_field_group_name": "AMP File Activity",
+            "log_level": "DEBUG",
+            "payload": "{{ trigger }}",
+            "suppress_missing_field_warning": true
+        },
+        "ref": "irflow.create_alert"
+    },
+    "context": {
+        "user": "st2admin"
+    },
+    "criteria": {},
+    "description": "Create IR-Flow Alert From AV Central Alert",
+    "enabled": false,
+    "metadata_file": "",
+    "name": "send_alerts",
+    "pack": "cisco_amp",
+    "ref": "cisco_amp.send_alerts",
+    "trigger": {
+        "description": "File activity from Cisco AMP",
+        "parameters": {},
+        "type": "cisco_amp.file_activity"
+    },
+    "type": {
+        "parameters": {},
+        "ref": "standard"
+    }
+}

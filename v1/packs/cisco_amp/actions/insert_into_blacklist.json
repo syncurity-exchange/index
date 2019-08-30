@@ -1,0 +1,19 @@
+{
+    "description": "Cisco AMP Insert Into Blacklist",
+    "enabled": true,
+    "entry_point": "insert_into_blacklist.py",
+    "name": "insert_into_blacklist",
+    "parameters": {
+        "blacklist": {
+            "description": "Blacklist to add to",
+            "required": true,
+            "type": "string"
+        },
+        "file_hash": {
+            "description": "Indicator to blacklist",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

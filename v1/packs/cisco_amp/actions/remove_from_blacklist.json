@@ -1,0 +1,19 @@
+{
+    "description": "Cisco AMP Remove From Blacklist",
+    "enabled": true,
+    "entry_point": "remove_from_blacklist.py",
+    "name": "remove_from_blacklist",
+    "parameters": {
+        "blacklist": {
+            "description": "Blacklist to remove from",
+            "required": true,
+            "type": "string"
+        },
+        "file_hash": {
+            "description": "Indicator to remove",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

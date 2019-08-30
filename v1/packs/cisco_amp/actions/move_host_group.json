@@ -1,0 +1,19 @@
+{
+    "description": "Cisco AMP Move Host Group",
+    "enabled": true,
+    "entry_point": "move_host_group.py",
+    "name": "move_host_group",
+    "parameters": {
+        "connector_hostname": {
+            "description": "Comma separated list of the hostnames to move",
+            "required": true,
+            "type": "string"
+        },
+        "group_name": {
+            "description": "Name of the group to move the computer to",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

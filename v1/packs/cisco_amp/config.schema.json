@@ -1,0 +1,40 @@
+{
+    "days_back": {
+        "default": "1",
+        "description": "How many days back to look when first running; Defaults to 1 day",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "file_dispositions": {
+        "default": "Malicious",
+        "description": "Comma separated list of file disposition values for which to generate alerts - Unknown and Clean are not recommended; Valid values: Malicious,Unknown,Clean",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "plugin_pass": {
+        "description": "AMP Key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "plugin_user": {
+        "description": "AMP User",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "poll_interval": {
+        "default": 60,
+        "description": "Frequency with which to run the polling service, in seconds",
+        "required": false,
+        "type": "integer"
+    },
+    "target_host": {
+        "description": "AMP Instance",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

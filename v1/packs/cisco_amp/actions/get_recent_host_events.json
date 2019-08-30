@@ -1,0 +1,19 @@
+{
+    "description": "Cisco AMP Get Recent Host Events",
+    "enabled": true,
+    "entry_point": "get_recent_host_events.py",
+    "name": "get_recent_host_events",
+    "parameters": {
+        "connector_hostname": {
+            "description": "Computer name",
+            "required": true,
+            "type": "string"
+        },
+        "domain_name": {
+            "description": "DNS Suffix to build FQDN from, supports searching 1 or more domain names. e.g. --domain_name=\"us.google.com\" \"emea.google.com\" \"lat.google.com\"",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

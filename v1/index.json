@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567127390,
-        "hash": "7222df5391767a4ef070cd63a7cd5b7c"
+        "generated_ts": 1567128645,
+        "hash": "e16f14b012cc5f84afe6e8b15d12006b"
     },
     "packs": {
         "alienvault": {
@@ -156,6 +156,56 @@
             "ref": "carbonblack_defense",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-carbonblack_defense",
             "version": "0.9.4"
+        },
+        "cisco_amp": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 5,
+                    "resources": [
+                        "get_file_activity",
+                        "get_recent_host_events",
+                        "insert_into_blacklist",
+                        "move_host_group",
+                        "remove_from_blacklist"
+                    ]
+                },
+                "rules": {
+                    "count": 2,
+                    "resources": [
+                        "send_alerts",
+                        "send_alerts_N_destinations"
+                    ]
+                },
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "CiscoAMPGetFileActivity"
+                    ]
+                }
+            },
+            "contributors": [
+                "Brian Tackett <btackett@syncurity.net>",
+                "JP Bourget <jp@syncurity.net>"
+            ],
+            "description": "Cisco AMP API Integration",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Cisco",
+                "Cisco AMP",
+                "security",
+                "Syncurity",
+                "Endpoint"
+            ],
+            "name": "Cisco AMP",
+            "python_versions": [
+                "2",
+                "3"
+            ],
+            "ref": "cisco_amp",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-cisco_amp",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.1"
         },
         "cisco_umbrella": {
             "author": "Syncurity",
