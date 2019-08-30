@@ -1,0 +1,24 @@
+{
+    "customer_key": {
+        "default": "{{ st2kv.system.cisco_umbrella_key }}",
+        "description": "CISCO Umbrella customer key for API authentication",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "device_id": {
+        "default": "DEV-ID",
+        "required": false,
+        "type": "string"
+    },
+    "device_version": {
+        "default": "DEV-VER",
+        "required": false,
+        "type": "string"
+    },
+    "provider_name": {
+        "default": "PROV-NAME",
+        "required": false,
+        "type": "string"
+    }
+}

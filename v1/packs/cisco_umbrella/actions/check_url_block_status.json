@@ -1,0 +1,27 @@
+{
+    "description": "Cisco Umbrella",
+    "enabled": true,
+    "entry_point": "umbrella_url.py",
+    "name": "check_url_block_status",
+    "parameters": {
+        "action": {
+            "default": "check",
+            "description": "Action to perform",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "comment": {
+            "default": "",
+            "description": "Description attached to the created event, alternative to eventDescription in JSON",
+            "required": false,
+            "type": "string"
+        },
+        "url": {
+            "description": "The URL to check, e.g.: https://www.baddomain.com",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

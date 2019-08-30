@@ -1,0 +1,26 @@
+name: Cisco Umbrella
+ref: cisco_umbrella
+description: Cisco Umbrella API Integration
+version: 0.9.2
+stackstorm_version: '>=3.0.1'
+author: Syncurity
+email: support@syncurity.net
+python_versions:
+- '3'
+keywords:
+- Cisco
+- Cisco Umbrella
+- malware protection
+- DNS
+- security
+- Syncurity
+contributors:
+- Brian Tackett <btackett@syncurity.net>
+content:
+  actions:
+    count: 4
+    resources:
+    - add_url_to_block_list
+    - check_url_block_status
+    - delete_from_block_list
+    - update_url_in_block_list

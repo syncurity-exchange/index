@@ -1,0 +1,33 @@
+{
+    "description": "Cisco Umbrella",
+    "enabled": true,
+    "entry_point": "umbrella_url.py",
+    "name": "add_url_to_block_list",
+    "parameters": {
+        "action": {
+            "default": "create",
+            "description": "Action to perform",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "comment": {
+            "default": "",
+            "description": "Description attached to the created event, alternative to eventDescription in JSON",
+            "required": false,
+            "type": "string"
+        },
+        "event_time": {
+            "default": "2018-01-01T00:00:00.0Z",
+            "description": "Format 2018-01-01T00:00:00.0Z",
+            "required": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "The URL to add, e.g.: https://www.baddomain.com",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

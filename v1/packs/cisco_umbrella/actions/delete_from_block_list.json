@@ -1,0 +1,27 @@
+{
+    "description": "Cisco Umbrella",
+    "enabled": true,
+    "entry_point": "umbrella_url.py",
+    "name": "delete_from_block_list",
+    "parameters": {
+        "action": {
+            "default": "delete",
+            "description": "Action to perform",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "comment": {
+            "default": "",
+            "description": "Description attached to the created event, alternative to eventDescription in JSON",
+            "required": false,
+            "type": "string"
+        },
+        "url": {
+            "description": "The URL to delete from the block list, e.g.: https://www.baddomain.com",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
