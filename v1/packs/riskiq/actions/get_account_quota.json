@@ -1,0 +1,33 @@
+{
+    "description": "Read current account and organization quotas.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_account_quota",
+    "parameters": {
+        "body_args": {
+            "default": [],
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "endpoint": {
+            "default": "/account/quota",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "query_args": {
+            "default": [],
+            "description": "the query argument names",
+            "immutable": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

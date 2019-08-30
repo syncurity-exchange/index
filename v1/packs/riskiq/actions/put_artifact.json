@@ -1,0 +1,58 @@
+{
+    "description": "Create an artifact.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "put_artifact",
+    "parameters": {
+        "body_args": {
+            "default": [],
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "endpoint": {
+            "default": "/artifact",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "PUT",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "project": {
+            "description": "the project id the artifact will live on",
+            "required": true,
+            "type": "string"
+        },
+        "query": {
+            "description": "the actual artifact query (passivetotal.org, 8.8.8.8, etc).",
+            "required": true,
+            "type": "string"
+        },
+        "query_args": {
+            "default": [
+                "project",
+                "query",
+                "type",
+                "tags"
+            ],
+            "description": "the query argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "tags": {
+            "description": "the tags the new artifact will have",
+            "required": false,
+            "type": "array"
+        },
+        "type": {
+            "description": "the type of the artifact (domain, ip, etc), or inferred by query string if domain or ip (optional).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

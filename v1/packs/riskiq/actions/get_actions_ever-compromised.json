@@ -1,0 +1,40 @@
+{
+    "description": "Indicates whether or not a given domain has ever been compromised.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_actions_ever-compromised",
+    "parameters": {
+        "body_args": {
+            "default": [],
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "endpoint": {
+            "default": "/actions/ever-compromised",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "query": {
+            "description": "domain to check for compromised status",
+            "required": true,
+            "type": "string"
+        },
+        "query_args": {
+            "default": [
+                "query"
+            ],
+            "description": "the query argument names",
+            "immutable": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

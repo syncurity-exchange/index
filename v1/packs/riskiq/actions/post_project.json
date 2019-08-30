@@ -1,0 +1,70 @@
+{
+    "description": "Updates a project denoted by project ID",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post_project",
+    "parameters": {
+        "body_args": {
+            "default": [],
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "description": {
+            "description": "the new description",
+            "required": false,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/project",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "featured": {
+            "description": "whether to feature the project",
+            "required": false,
+            "type": "boolean"
+        },
+        "method": {
+            "default": "POST",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "the new name",
+            "required": false,
+            "type": "string"
+        },
+        "project": {
+            "description": "the project id to update",
+            "required": true,
+            "type": "string"
+        },
+        "query_args": {
+            "default": [
+                "project",
+                "name",
+                "description",
+                "visibility",
+                "featured",
+                "tags"
+            ],
+            "description": "the query argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "tags": {
+            "description": "sets the project's tags to this list",
+            "required": false,
+            "type": "array"
+        },
+        "visibility": {
+            "description": "he new visibility Default value public, private, or analyst",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

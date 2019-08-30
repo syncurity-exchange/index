@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567119763,
-        "hash": "97bc0db2c4355bfc1749e05ab32b47ce"
+        "generated_ts": 1567124778,
+        "hash": "ba4af39e54f5c783d849f4721e29a2e6"
     },
     "packs": {
         "alienvault": {
@@ -481,6 +481,84 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-phishing",
             "stackstorm_version": ">=3.0.0",
             "version": "0.3.0"
+        },
+        "riskiq": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 48,
+                    "resources": [
+                        "delete_actions_tags",
+                        "delete_artifact",
+                        "delete_artifact_bulk",
+                        "delete_project",
+                        "delete_project_tag",
+                        "get_account",
+                        "get_account_classifications",
+                        "get_account_history",
+                        "get_account_monitors",
+                        "get_account_organization",
+                        "get_account_organization_teamstream",
+                        "get_account_quota",
+                        "get_account_sources",
+                        "get_actions_bulk_classification",
+                        "get_actions_classification",
+                        "get_actions_dynamic-dns",
+                        "get_actions_ever-compromised",
+                        "get_actions_monitor",
+                        "get_actions_sinkhole",
+                        "get_actions_tags",
+                        "get_actions_tags_search",
+                        "get_artifact",
+                        "get_enrichment",
+                        "get_enrichment_bulk",
+                        "get_enrichment_malware",
+                        "get_enrichment_osint",
+                        "get_enrichment_subdomains",
+                        "get_monitor",
+                        "get_project",
+                        "get_trackers_search",
+                        "get_whois",
+                        "get_whois_search",
+                        "get_whois_search_keyword",
+                        "post_actions_bulk_classification",
+                        "post_actions_classification",
+                        "post_actions_dynamic-dns",
+                        "post_actions_ever-compromised",
+                        "post_actions_sinkhole",
+                        "post_actions_tags",
+                        "post_artifact",
+                        "post_artifact_bulk",
+                        "post_project",
+                        "post_project_tag",
+                        "put_actions_tags",
+                        "put_artifact",
+                        "put_artifact_bulk",
+                        "put_project",
+                        "put_project_tag"
+                    ]
+                }
+            },
+            "contributors": [
+                "Max Meinhold <mmeinhold@syncurity.net>"
+            ],
+            "description": "RiskIQ Community API Integrations",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "security",
+                "syncurity",
+                "riskiq",
+                "threat intel"
+            ],
+            "name": "RiskIQ",
+            "python_versions": [
+                "2",
+                "3"
+            ],
+            "ref": "riskiq",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-riskiq",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.1"
         },
         "sentinelone": {
             "author": "JP Bourget",

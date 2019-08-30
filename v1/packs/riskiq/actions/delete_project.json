@@ -1,0 +1,40 @@
+{
+    "description": "Delete project",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "delete_project",
+    "parameters": {
+        "body_args": {
+            "default": [],
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "endpoint": {
+            "default": "/project",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "DELETE",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "project": {
+            "description": "the project id to delete",
+            "required": true,
+            "type": "string"
+        },
+        "query_args": {
+            "default": [
+                "project"
+            ],
+            "description": "the query argument names",
+            "immutable": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

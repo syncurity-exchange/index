@@ -1,0 +1,40 @@
+{
+    "description": "Retrieves tags for a given artifact.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_actions_tags",
+    "parameters": {
+        "body_args": {
+            "default": [],
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "endpoint": {
+            "default": "/actions/tags",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "query": {
+            "description": "artifact for which to retrieve tags",
+            "required": true,
+            "type": "string"
+        },
+        "query_args": {
+            "default": [
+                "query"
+            ],
+            "description": "the query argument names",
+            "immutable": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,46 @@
+{
+    "description": "Removes tags from an artifact.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "delete_actions_tags",
+    "parameters": {
+        "body_args": {
+            "default": [],
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "endpoint": {
+            "default": "/actions/tags",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "DELETE",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "query": {
+            "description": "artifact from which to remove tags",
+            "required": true,
+            "type": "string"
+        },
+        "query_args": {
+            "default": [
+                "query",
+                "tags"
+            ],
+            "description": "the query argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "tags": {
+            "description": "tags to remove from artifact",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

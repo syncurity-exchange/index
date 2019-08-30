@@ -1,0 +1,46 @@
+{
+    "description": "Sets a domain's status to indicate whether or not its DNS records are updated via dynamic DNS.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post_actions_dynamic-dns",
+    "parameters": {
+        "body_args": {
+            "default": [],
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "endpoint": {
+            "default": "/actions/dynamic-dns",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "POST",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "query": {
+            "description": "domain for which to set dynamic DNS status",
+            "required": true,
+            "type": "string"
+        },
+        "query_args": {
+            "default": [
+                "query",
+                "status"
+            ],
+            "description": "the query argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "status": {
+            "description": "if the domain's DNS records are updated via dynamic DNS",
+            "required": true,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,46 @@
+{
+    "description": "Sets the classification status for a given domain.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post_actions_classification",
+    "parameters": {
+        "body_args": {
+            "default": [],
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "classification": {
+            "description": "classification status to set for domain. Allowed values malicious suspicious non-malicious or unknown",
+            "required": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/actions/classification",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "POST",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "query": {
+            "description": "domain for which to set classification status",
+            "required": true,
+            "type": "string"
+        },
+        "query_args": {
+            "default": [
+                "query",
+                "classification"
+            ],
+            "description": "the query argument names",
+            "immutable": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

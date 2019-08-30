@@ -1,0 +1,40 @@
+{
+    "description": "Search WHOIS data for a keyword.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_whois_search_keyword",
+    "parameters": {
+        "body_args": {
+            "default": [],
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "endpoint": {
+            "default": "/whois/search/keyword",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "keyword": {
+            "description": "being queried",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "query_args": {
+            "default": [
+                "keyword"
+            ],
+            "description": "the query argument names",
+            "immutable": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

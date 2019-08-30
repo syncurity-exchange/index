@@ -1,0 +1,39 @@
+{
+    "host": {
+        "default": "api.passivetotal.org",
+        "description": "the api host",
+        "required": true,
+        "type": "string"
+    },
+    "key": {
+        "default": "{{ st2kv.system.riskiq_key }}",
+        "description": "the api key",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "protocol": {
+        "default": "https",
+        "description": "the protocol by which to access the api",
+        "enum": [
+            "https",
+            "http"
+        ],
+        "required": true,
+        "type": "string"
+    },
+    "token": {
+        "default": "{{ st2kv.system.riskiq_token }}",
+        "description": "the token to use to access the api",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "version": {
+        "default": "v2",
+        "description": "the api version",
+        "immutable": true,
+        "required": true,
+        "type": "string"
+    }
+}

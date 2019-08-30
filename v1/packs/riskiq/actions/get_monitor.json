@@ -1,0 +1,58 @@
+{
+    "description": "Retrieve all alerts associated with an artifact or project.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_monitor",
+    "parameters": {
+        "artifact": {
+            "description": "the artifact to filter on",
+            "required": false,
+            "type": "string"
+        },
+        "body_args": {
+            "default": [],
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "end": {
+            "description": "filter results to before this datetime",
+            "required": false,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/monitor",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "project": {
+            "description": "the project to filter on",
+            "required": false,
+            "type": "string"
+        },
+        "query_args": {
+            "default": [
+                "project",
+                "artifact",
+                "start",
+                "end"
+            ],
+            "description": "the query argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "start": {
+            "description": "filter results to after this datetime",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,76 @@
+{
+    "description": "Read existing artifacts. If no filters are passed, this returns all your personal artifacts created by you or your organization.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_artifact",
+    "parameters": {
+        "artifact": {
+            "description": "the artifact id",
+            "required": false,
+            "type": "string"
+        },
+        "body_args": {
+            "default": [],
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "creator": {
+            "description": "filter by creator",
+            "required": false,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/artifact",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization": {
+            "description": "filter by organization",
+            "required": false,
+            "type": "string"
+        },
+        "owner": {
+            "description": "filter by owner (an email or organization id)",
+            "required": false,
+            "type": "string"
+        },
+        "project": {
+            "description": "filter by project id",
+            "required": false,
+            "type": "string"
+        },
+        "query": {
+            "description": "filter by query (passivetotal.org, etc)",
+            "required": false,
+            "type": "string"
+        },
+        "query_args": {
+            "default": [
+                "artifact",
+                "project",
+                "owner",
+                "creator",
+                "organization",
+                "query",
+                "type"
+            ],
+            "description": "the query argument names",
+            "immutable": true,
+            "type": "array"
+        },
+        "type": {
+            "description": "filter by artifact type (domain, ip, etc)",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
