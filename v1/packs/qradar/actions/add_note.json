@@ -1,0 +1,19 @@
+{
+    "description": "Add a note to a qradar offense",
+    "enabled": true,
+    "entry_point": "add_note.py",
+    "name": "add_note",
+    "parameters": {
+        "note": {
+            "description": "the note to add to the offense",
+            "required": true,
+            "type": "string"
+        },
+        "offense_id": {
+            "description": "the id of the offense to add a note to",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

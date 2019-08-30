@@ -1,0 +1,38 @@
+{
+    "api_version": {
+        "default": "9.0",
+        "description": "Specify a desired QRadar API version - defaults to 9.0",
+        "enum": [
+            "9.0",
+            "8.1",
+            "8.0"
+        ],
+        "required": false,
+        "type": "string"
+    },
+    "auth_token": {
+        "description": "A QRadar Authentication token.",
+        "required": false,
+        "type": "string"
+    },
+    "cert": {
+        "description": "The absolute filepath to a valid certificate/chain",
+        "required": true,
+        "type": "string"
+    },
+    "password": {
+        "description": "The password for the QRadar User.",
+        "required": false,
+        "type": "string"
+    },
+    "qradar_address": {
+        "description": "The address or hostname of the QRadar instance",
+        "required": true,
+        "type": "string"
+    },
+    "username": {
+        "description": "A QRadar User with appropriate permissions.",
+        "required": false,
+        "type": "string"
+    }
+}

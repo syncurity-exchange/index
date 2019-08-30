@@ -1,0 +1,7 @@
+{
+    "description": "Get a list of offense close reasons",
+    "enabled": true,
+    "entry_point": "get_close_reasons.py",
+    "name": "get_close_reasons",
+    "runner_type": "python-script"
+}

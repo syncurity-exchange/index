@@ -1,0 +1,27 @@
+{
+    "class_name": "QRadarOffensesPollingSensor",
+    "description": "Get offenses from QRadar",
+    "enabled": false,
+    "entry_point": "poll_offenses.py",
+    "poll_interval": 300,
+    "trigger_types": [
+        {
+            "description": "An Offense from the QRadar API",
+            "name": "offense",
+            "payload_schema": {
+                "properties": {
+                    "description": {
+                        "type": "string"
+                    },
+                    "payload": {
+                        "type": "object"
+                    },
+                    "tenant": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

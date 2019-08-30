@@ -1,0 +1,33 @@
+name: QRadar
+ref: qradar
+description: QRadar SIEM
+stackstorm_version: '>=3.0.1'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+keywords:
+- security
+- syncurity
+- qradar
+- SIEM
+python_versions:
+- '2'
+contributors:
+- Max Meinhold <mmeinhold@syncurity.net>
+content:
+  actions:
+    count: 5
+    resources:
+    - add_note
+    - close_offense
+    - create_close_reason
+    - get_close_reasons
+    - get_offenses
+  rules:
+    count: 1
+    resources:
+    - create_irflow_alert
+  sensors:
+    count: 1
+    resources:
+    - QRadarOffensesPollingSensor

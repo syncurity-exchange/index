@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567124778,
-        "hash": "ba4af39e54f5c783d849f4721e29a2e6"
+        "generated_ts": 1567126846,
+        "hash": "6b378fba4048c5531339d4f7fa80e1ca"
     },
     "packs": {
         "alienvault": {
@@ -481,6 +481,52 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-phishing",
             "stackstorm_version": ">=3.0.0",
             "version": "0.3.0"
+        },
+        "qradar": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 5,
+                    "resources": [
+                        "add_note",
+                        "close_offense",
+                        "create_close_reason",
+                        "get_close_reasons",
+                        "get_offenses"
+                    ]
+                },
+                "rules": {
+                    "count": 1,
+                    "resources": [
+                        "create_irflow_alert"
+                    ]
+                },
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "QRadarOffensesPollingSensor"
+                    ]
+                }
+            },
+            "contributors": [
+                "Max Meinhold <mmeinhold@syncurity.net>"
+            ],
+            "description": "QRadar SIEM",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "security",
+                "syncurity",
+                "qradar",
+                "SIEM"
+            ],
+            "name": "QRadar",
+            "python_versions": [
+                "2"
+            ],
+            "ref": "qradar",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-qradar",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.1"
         },
         "riskiq": {
             "author": "Syncurity",

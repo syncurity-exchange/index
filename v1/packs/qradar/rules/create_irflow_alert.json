@@ -1,0 +1,32 @@
+{
+    "action": {
+        "parameters": {
+            "credential_name": "integrations_team",
+            "description": "{{ trigger.description }}",
+            "incoming_field_group_name": "QRadar - {{ trigger.tenant }}",
+            "log_level": "DEBUG",
+            "payload": "{{ trigger.payload }}",
+            "suppress_missing_field_warning": true
+        },
+        "ref": "irflow.create_alert"
+    },
+    "context": {
+        "user": "st2admin"
+    },
+    "criteria": {},
+    "description": "Create IR-Flow Alert From AV Central Alert",
+    "enabled": false,
+    "metadata_file": "",
+    "name": "create_irflow_alert",
+    "pack": "qradar",
+    "ref": "qradar.offense",
+    "trigger": {
+        "description": "An Offense from IBM QRadar",
+        "parameters": {},
+        "type": "qradar.offense"
+    },
+    "type": {
+        "parameters": {},
+        "ref": "standard"
+    }
+}

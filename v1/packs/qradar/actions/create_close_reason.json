@@ -1,0 +1,14 @@
+{
+    "description": "Add a close reason.",
+    "enabled": true,
+    "entry_point": "create_close_reason.py",
+    "name": "create_close_reason",
+    "parameters": {
+        "reason": {
+            "description": "The new close reason. Must be between 5-60 characters in length.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

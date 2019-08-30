@@ -1,0 +1,24 @@
+{
+    "description": "Close a qradar offense",
+    "enabled": true,
+    "entry_point": "close_offense.py",
+    "name": "close_offense",
+    "parameters": {
+        "close_reason_id": {
+            "description": "the id of the closing reason",
+            "required": true,
+            "type": "string"
+        },
+        "offense_id": {
+            "description": "the id of the offense to add a note to",
+            "required": true,
+            "type": "string"
+        },
+        "reason": {
+            "description": "the note to add to the offense as the reason for closing",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

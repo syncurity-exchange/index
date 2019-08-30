@@ -1,0 +1,52 @@
+{
+    "description": "Retrieve offenses from qradar",
+    "enabled": true,
+    "entry_point": "get_offenses.py",
+    "name": "get_offenses",
+    "parameters": {
+        "assigned_to": {
+            "description": "Used for filtering by Offenses that are assigned to people",
+            "required": false,
+            "type": "array"
+        },
+        "less_than": {
+            "default": false,
+            "description": "Search for Offenses less than or equal to the last_offense_id when ``True``",
+            "required": false,
+            "type": "boolean"
+        },
+        "magnitude": {
+            "description": "The minimum Offense magnitude to be searched for",
+            "required": false,
+            "type": "integer"
+        },
+        "magnitude_comparison": {
+            "description": "The type of comparison to be used for the provided magnitude number",
+            "required": false,
+            "type": "string"
+        },
+        "offense_id": {
+            "description": "The id of the offense to begin begin pulling from",
+            "required": true,
+            "type": "integer"
+        },
+        "only_open": {
+            "default": true,
+            "description": "If set to ``True``, only Offenses with status OPEN will be retrieved. If set to ``False``, all Offenses regardless of status will be retrieved",
+            "required": false,
+            "type": "boolean"
+        },
+        "start_time": {
+            "description": "The earliest start time for an Offense, in epoch time",
+            "required": false,
+            "type": "integer"
+        },
+        "total_only": {
+            "default": false,
+            "description": "Whether just the number of Offenses since the ``last_offense_id`` is wanted. Retrieving only the total number is a significantly quicker API request than getting a list of Offenses",
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}
