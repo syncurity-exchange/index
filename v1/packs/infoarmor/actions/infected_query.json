@@ -7,28 +7,33 @@
         "action": {
             "default": "infected_query",
             "immutable": true,
+            "position": 0,
             "required": true,
             "type": "string"
         },
         "days_ago": {
             "default": 30,
             "description": "Limit to number of responses",
+            "position": 4,
             "required": false,
             "type": "integer"
         },
         "limit": {
             "default": 1000,
             "description": "Limit to number of responses",
+            "position": 3,
             "required": false,
             "type": "integer"
         },
         "q_address": {
             "description": "Query parameter specifying the alphanumeric version of the IPv4 address that will be used to query the database.",
+            "position": 2,
             "required": false,
             "type": "string"
         },
         "q_mask": {
             "description": "Query parameter specifying a decimal number (between 8 and 32) that represents the network mask portion of the query.",
+            "position": 1,
             "required": false,
             "type": "string"
         }

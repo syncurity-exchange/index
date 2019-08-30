@@ -7,22 +7,26 @@
         "action": {
             "default": "get_leaks",
             "immutable": true,
+            "position": 0,
             "required": true,
             "type": "string"
         },
         "domains": {
             "description": "A comma delimited list of domains to use as a filter for returning the harvested credentials.",
+            "position": 3,
             "required": false,
             "type": "string"
         },
         "leak_id": {
             "description": "Individual leak to get info about",
+            "position": 1,
             "required": true,
             "type": "string"
         },
         "limit": {
             "default": 1000,
             "description": "Maximum number of results to return, between 1 and 10,000",
+            "position": 2,
             "required": false,
             "type": "integer"
         }

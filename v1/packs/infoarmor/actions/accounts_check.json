@@ -6,12 +6,14 @@
     "parameters": {
         "account_identifier": {
             "description": "The string (or comma delimited list of strings) that uniquely identifies the account we are trying to match.",
+            "position": 1,
             "required": false,
             "type": "array"
         },
         "action": {
             "default": "accounts_check",
             "immutable": true,
+            "position": 0,
             "required": true,
             "type": "string"
         }

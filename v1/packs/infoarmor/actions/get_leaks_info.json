@@ -7,28 +7,33 @@
         "action": {
             "default": "get_leaks_info",
             "immutable": true,
+            "position": 0,
             "required": true,
             "type": "string"
         },
         "days_ago": {
             "default": 30,
             "description": "Number of days to look back in query",
+            "position": 2,
             "required": false,
             "type": "integer"
         },
         "keyword": {
             "description": "Keyword",
+            "position": 4,
             "required": false,
             "type": "string"
         },
         "leak_id": {
             "description": "Individual leak to get info about",
+            "position": 1,
             "required": false,
             "type": "string"
         },
         "limit": {
             "default": 1000,
             "description": "Maximum number of results to return, between 1 and 10,000",
+            "position": 3,
             "required": false,
             "type": "integer"
         }

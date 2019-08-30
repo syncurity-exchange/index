@@ -6,24 +6,28 @@
     "parameters": {
         "account_identifiers": {
             "description": "The string (or comma delimited list of strings) that uniquely identifies the account we are trying to match.",
+            "position": 1,
             "required": false,
             "type": "array"
         },
         "action": {
             "default": "accounts_query",
             "immutable": true,
+            "position": 0,
             "required": true,
             "type": "string"
         },
         "days_ago": {
             "default": 30,
             "description": "Days to look back",
+            "position": 3,
             "required": false,
             "type": "integer"
         },
         "limit": {
             "default": 1000,
             "description": "Maximum number of results to return, between 1 and 10,000",
+            "position": 2,
             "required": false,
             "type": "integer"
         }

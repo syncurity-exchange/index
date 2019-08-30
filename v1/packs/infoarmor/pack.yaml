@@ -3,8 +3,8 @@ ref: infoarmor
 description: Info Armor Vigilante ATI pack
 keywords:
 - InfoArmour
-stackstorm_version: '>=3.1.0'
-version: 0.9.1
+stackstorm_version: '>=3.0.1'
+version: 0.9.2
 author: Syncurity
 email: support@syncurity.net
 python version:

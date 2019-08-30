@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567180582,
-        "hash": "c0007a26ba986e505f91885284043b4f"
+        "generated_ts": 1567181604,
+        "hash": "c0ebb68746ea9a5a3f8f490f86bc7273"
     },
     "packs": {
         "alienvault": {
@@ -319,8 +319,8 @@
             ],
             "ref": "infoarmor",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-infoarmor",
-            "stackstorm_version": ">=3.1.0",
-            "version": "0.9.1"
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.2"
         },
         "irflow": {
             "author": "Syncurity",
