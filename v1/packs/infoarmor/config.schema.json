@@ -1,12 +1,12 @@
 {
     "key": {
-        "default": "{{ st2kv.system.info_armour_key }}",
+        "default": "{{ st2kv.system.info_armourkey }}",
         "description": "Info Armour Key",
         "required": true,
         "type": "string"
     },
     "secret": {
-        "default": "{{ st2kv.system.info_armour_secret }}",
+        "default": "{{ st2kv.system.info_armoursecret }}",
         "description": "Info Armour Secret",
         "required": true,
         "secret": true,
