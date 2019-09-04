@@ -720,44 +720,6 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-sentinelone",
             "version": "0.9.5"
         },
-        "sophos": {
-            "author": "Syncurity",
-            "content": {
-                "rules": {
-                    "count": 4,
-                    "resources": [
-                        "Create Sophos Alert in IR-Flow",
-                        "Create Sophos Event in IR-Flow",
-                        "send_N_alerts_to_irflow",
-                        "send_N_events_to_irflow"
-                    ]
-                },
-                "sensors": {
-                    "count": 2,
-                    "resources": [
-                        "SophosAlertSensor",
-                        "SophosEventSensor"
-                    ]
-                }
-            },
-            "contributors": [
-                "Grace Lombardi <glombardi@syncurity.net>"
-            ],
-            "description": "Sophos Sensor",
-            "email": "support@syncurity.net",
-            "keywords": [
-                "Sophos"
-            ],
-            "name": "Sophos",
-            "python version": [
-                "2",
-                "3"
-            ],
-            "ref": "sophos",
-            "repo_url": "https://github.com/syncurity-exchange/syncurity-sophos",
-            "stackstorm_version": ">=2.9.0",
-            "version": "0.9.0"
-        },
         "virustotal": {
             "author": "JP Bourget",
             "content": {
