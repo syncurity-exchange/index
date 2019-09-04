@@ -1,0 +1,31 @@
+{
+    "action": {
+        "parameters": {
+            "description": "Sophos EDR Alert",
+            "incoming_field_group_name": "Sophos EDR",
+            "log_level": "DEBUG",
+            "payload": "{{ trigger }}",
+            "suppress_missing_field_warning": true
+        },
+        "ref": "irflow.create_alert"
+    },
+    "context": {
+        "user": "st2admin"
+    },
+    "criteria": {},
+    "description": "Create IR-Flow Alert From Sophos Central Alert",
+    "enabled": false,
+    "metadata_file": "",
+    "name": "Create Sophos Central Alert in IR-Flow",
+    "pack": "sophos_central",
+    "ref": "sophos_central.alert",
+    "trigger": {
+        "description": "An Alert from Sophos Central",
+        "parameters": {},
+        "type": "sophos_central.alert"
+    },
+    "type": {
+        "parameters": {},
+        "ref": "standard"
+    }
+}

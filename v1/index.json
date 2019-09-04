@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567620992,
-        "hash": "0f8cb42ee10e36d4e06fffb4bb2a0e8f"
+        "generated_ts": 1567634872,
+        "hash": "a617f50d17dd1fe697cfcd8b19621fab"
     },
     "packs": {
         "alienvault": {
@@ -719,6 +719,43 @@
             "ref": "sentinelone",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-sentinelone",
             "version": "0.9.5"
+        },
+        "sophos_central": {
+            "author": "Syncurity",
+            "content": {
+                "rules": {
+                    "count": 4,
+                    "resources": [
+                        "Create Sophos Central Alert in IR-Flow",
+                        "Create Sophos Central Event in IR-Flow",
+                        "send_N_alerts_to_irflow",
+                        "send_N_events_to_irflow"
+                    ]
+                },
+                "sensors": {
+                    "count": 2,
+                    "resources": [
+                        "SophosAlertSensor",
+                        "SophosEventSensor"
+                    ]
+                }
+            },
+            "contributors": [
+                "Grace Lombardi <glombardi@syncurity.net>"
+            ],
+            "description": "Sophos Central Sensor",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Sophos"
+            ],
+            "name": "Sophos Central",
+            "python version": [
+                "2"
+            ],
+            "ref": "sophos_central",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-sophos_central",
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.9.1"
         },
         "virustotal": {
             "author": "JP Bourget",

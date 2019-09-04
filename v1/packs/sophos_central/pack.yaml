@@ -1,0 +1,26 @@
+name: Sophos Central
+ref: sophos_central
+description: Sophos Central Sensor
+stackstorm_version: '>=3.0.0'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+keywords:
+- Sophos
+contributors:
+- Grace Lombardi <glombardi@syncurity.net>
+content:
+  rules:
+    count: 4
+    resources:
+    - Create Sophos Central Alert in IR-Flow
+    - Create Sophos Central Event in IR-Flow
+    - send_N_alerts_to_irflow
+    - send_N_events_to_irflow
+  sensors:
+    count: 2
+    resources:
+    - SophosAlertSensor
+    - SophosEventSensor

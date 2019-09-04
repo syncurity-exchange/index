@@ -1,0 +1,14 @@
+{
+    "api_key": {
+        "description": "Sophos SIEM API Key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "auth": {
+        "description": "The authorization key to use when connecting to Sophos Central SIEM",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

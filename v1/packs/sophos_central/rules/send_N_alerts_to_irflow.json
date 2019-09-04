@@ -1,0 +1,31 @@
+{
+    "action": {
+        "description": "Fires off create_alert to one or more (N) IR-Flow destinations",
+        "parameters": {
+            "description": "Sophos EDR Alert",
+            "incoming_field_group_name": "Sophos EDR",
+            "payload": "{{ trigger }}",
+            "suppress_missing_field_warning": true
+        },
+        "ref": "irflow.n_create_alert_destinations"
+    },
+    "context": {
+        "user": "st2admin"
+    },
+    "criteria": {},
+    "description": "Sends alerts to two or more IR-Flow servers",
+    "enabled": false,
+    "metadata_file": "",
+    "name": "send_N_alerts_to_irflow",
+    "pack": "sophos_central",
+    "ref": "sophos_central.send_N_alerts_to_irflow",
+    "trigger": {
+        "description": "An Alert from Sophos Central",
+        "parameters": {},
+        "type": "sophos_central.alert"
+    },
+    "type": {
+        "parameters": {},
+        "ref": "standard"
+    }
+}
