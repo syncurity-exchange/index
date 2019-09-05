@@ -1,0 +1,35 @@
+{
+    "action": {
+        "description": "Fires off create_alert to one or more (N) IR-Flow destinations",
+        "parameters": {
+            "credential_names": [
+                "integrations_team",
+                "dev_system"
+            ],
+            "description": "Proofpoint Messages Delivered",
+            "incoming_field_group_name": "Proofpoint Messages Delivered - {{ trigger.tenant }}",
+            "payload": "{{ trigger.response }}",
+            "suppress_missing_field_warning": true
+        },
+        "ref": "irflow.n_create_alert_destinations"
+    },
+    "context": {
+        "user": "st2admin"
+    },
+    "criteria": {},
+    "description": "Sends message alerts to two or more IR-Flow servers",
+    "enabled": false,
+    "metadata_file": "",
+    "name": "send_messages_N_destinations",
+    "pack": "proofpoint_tap",
+    "ref": "proofpoint_tap.send_messages_N_destinations",
+    "trigger": {
+        "description": "Message alert from Proofpoint",
+        "parameters": {},
+        "type": "proofpoint_tap.message"
+    },
+    "type": {
+        "parameters": {},
+        "ref": "standard"
+    }
+}

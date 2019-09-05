@@ -1,0 +1,30 @@
+{
+    "credentials": {
+        "additionalProperties": false,
+        "properties": {
+            "principal": {
+                "required": true,
+                "type": "string"
+            },
+            "secret": {
+                "required": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "poll_interval": {
+        "description": "Poll inteval in seconds",
+        "type": "integer"
+    },
+    "proofpoint_tap": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
+    }
+}

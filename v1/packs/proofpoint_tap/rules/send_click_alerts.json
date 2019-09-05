@@ -1,0 +1,32 @@
+{
+    "action": {
+        "parameters": {
+            "credential_name": "integrations_team",
+            "description": "Proofpoint Clicks Allowed",
+            "incoming_field_group_name": "Proofpoint Clicks Allowed - {{ trigger.tenant }}",
+            "log_level": "DEBUG",
+            "payload": "{{ trigger.response }}",
+            "suppress_missing_field_warning": true
+        },
+        "ref": "irflow.create_alert"
+    },
+    "context": {
+        "user": "st2admin"
+    },
+    "criteria": {},
+    "description": "Create IR-Flow Message Alert From Proofpoint Tap",
+    "enabled": true,
+    "metadata_file": "",
+    "name": "send_click_alerts",
+    "pack": "proofpoint_tap",
+    "ref": "proofpoint_tap.send_click_alerts",
+    "trigger": {
+        "description": "Click alert from Proofpoint",
+        "parameters": {},
+        "type": "proofpoint_tap.click"
+    },
+    "type": {
+        "parameters": {},
+        "ref": "standard"
+    }
+}

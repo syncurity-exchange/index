@@ -1,0 +1,41 @@
+name: Proofpoint TAP
+ref: proofpoint_tap
+description: The Proofpoint integrations provided in this module allow data from the
+  _Clicks Permitted_ and _Messages Delivered_
+keywords:
+- Proofpoint TAP
+- Phishing
+- Syncurity
+- security
+stackstorm_version: '>=3.0.0'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+contributors:
+- JP Bourget <jp@syncurity.net>
+- Ryan Markle <rmarkle@syncurity.net>
+- Grace Lombardi <glombardi@syncurity.net>
+- Brian Tackett <btackett@syncurity.net>
+content:
+  actions:
+    count: 1
+    resources:
+    - decode_url
+  rules:
+    count: 4
+    resources:
+    - send_click_alerts
+    - send_clicks_N_destinations
+    - send_message_alerts
+    - send_messages_N_destinations
+  sensors:
+    count: 2
+    resources:
+    - ClickAlerts
+    - MessageAlerts
+  tests:
+    count: 1
+    resources:
+    - __init__.py

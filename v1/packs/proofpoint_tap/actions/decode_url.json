@@ -1,0 +1,14 @@
+{
+    "description": "Decode a ProofPoint URL",
+    "enabled": true,
+    "entry_point": "decode_url.py",
+    "name": "decode_url",
+    "parameters": {
+        "url": {
+            "description": "A proofpoint-encoded URL to decode",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

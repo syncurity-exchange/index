@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567727753,
-        "hash": "fe05c9339fba9da4edfb233d7a838a1e"
+        "generated_ts": 1567727980,
+        "hash": "d162cef2ebfc48d6941f2fb6176ee154"
     },
     "packs": {
         "alienvault": {
@@ -802,6 +802,61 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-phishing",
             "stackstorm_version": ">=3.0.0",
             "version": "0.3.0"
+        },
+        "proofpoint_tap": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 1,
+                    "resources": [
+                        "decode_url"
+                    ]
+                },
+                "rules": {
+                    "count": 4,
+                    "resources": [
+                        "send_click_alerts",
+                        "send_clicks_N_destinations",
+                        "send_message_alerts",
+                        "send_messages_N_destinations"
+                    ]
+                },
+                "sensors": {
+                    "count": 2,
+                    "resources": [
+                        "ClickAlerts",
+                        "MessageAlerts"
+                    ]
+                },
+                "tests": {
+                    "count": 1,
+                    "resources": [
+                        "__init__.py"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>",
+                "Grace Lombardi <glombardi@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>"
+            ],
+            "description": "The Proofpoint integrations provided in this module allow data from the _Clicks Permitted_ and _Messages Delivered_",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Proofpoint TAP",
+                "Phishing",
+                "Syncurity",
+                "security"
+            ],
+            "name": "Proofpoint TAP",
+            "python version": [
+                "2"
+            ],
+            "ref": "proofpoint_tap",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-proofpoint_tap",
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.9.1"
         },
         "qradar": {
             "author": "Syncurity",

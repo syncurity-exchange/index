@@ -1,0 +1,20 @@
+{
+    "class_name": "MessageAlerts",
+    "description": "Get message alerts from ProofPoint",
+    "entry_point": "message_alerts.py",
+    "poll_interval": 30,
+    "trigger_types": [
+        {
+            "description": "Message Alert from ProofPoint",
+            "name": "message",
+            "payload_schema": {
+                "properties": {
+                    "response": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}
