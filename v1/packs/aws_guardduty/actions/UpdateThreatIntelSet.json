@@ -1,0 +1,45 @@
+{
+    "description": "Updates the ThreatIntelSet specified by ThreatIntelSet ID.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "UpdateThreatIntelSet",
+    "parameters": {
+        "Activate": {
+            "description": "The updated boolean value that specifies whether the ThreateIntelSet is active or not.",
+            "required": false,
+            "type": "boolean"
+        },
+        "DetectorId": {
+            "description": "The detectorID that specifies the GuardDuty service whose ThreatIntelSet you want to update.",
+            "required": true,
+            "type": "string"
+        },
+        "Location": {
+            "description": "The updated URI of the file that contains the ThreateIntelSet. For example (https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key)",
+            "required": false,
+            "type": "string"
+        },
+        "Name": {
+            "description": "The unique ID that specifies the ThreatIntelSet that you want to update.",
+            "required": false,
+            "type": "string"
+        },
+        "ThreatIntelSetId": {
+            "description": "The unique ID that specifies the ThreatIntelSet that you want to update.",
+            "required": true,
+            "type": "string"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "update_threat_intel_set",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

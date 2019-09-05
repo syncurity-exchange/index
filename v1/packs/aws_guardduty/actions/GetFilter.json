@@ -1,0 +1,30 @@
+{
+    "description": "Returns the details of the filter specified by the filter name.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "GetFilter",
+    "parameters": {
+        "DetectorId": {
+            "description": "The unique ID of the detector the filter is associated with.",
+            "required": true,
+            "type": "string"
+        },
+        "FilterName": {
+            "description": "The name of the filter you want to get.",
+            "required": true,
+            "type": "string"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "get_filter",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

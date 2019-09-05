@@ -1,0 +1,30 @@
+{
+    "description": "Generates example findings of types specified by the list of finding types. If 'NULL' is specified for findingTypes, the API generates example findings of all supported finding types.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "CreateSampleFindings",
+    "parameters": {
+        "DetectorId": {
+            "description": "The ID of the detector to create sample findings for.",
+            "required": true,
+            "type": "string"
+        },
+        "FindingTypes": {
+            "description": "Types of sample findings that you want to generate.",
+            "required": false,
+            "type": "array"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create_sample_findings",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,30 @@
+{
+    "description": "Retrieves the ThreatIntelSet that is specified by the ThreatIntelSet ID.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "GetThreatIntelSet",
+    "parameters": {
+        "DetectorId": {
+            "description": "The unique ID of the detector the threatIntelSet is associated with.",
+            "required": true,
+            "type": "string"
+        },
+        "ThreatIntelSetId": {
+            "description": "The unique ID of the threatIntelSet you want to get.",
+            "required": true,
+            "type": "string"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "get_threat_intel_set",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,25 @@
+{
+    "description": "Deletes a Amazon GuardDuty detector specified by the detector ID.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "DeleteDetector",
+    "parameters": {
+        "DetectorId": {
+            "description": "The unique ID of the detector that you want to delete.",
+            "required": true,
+            "type": "string"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "delete_detector",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

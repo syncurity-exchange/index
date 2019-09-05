@@ -1,0 +1,24 @@
+{
+    "class_name": "PollFindingsSensor",
+    "description": "Get findings from GuardDuty",
+    "enabled": false,
+    "entry_point": "poll_findings.py",
+    "poll_interval": 300,
+    "trigger_types": [
+        {
+            "description": "A finding from GuardDuty",
+            "name": "finding",
+            "payload_schema": {
+                "parameters": {
+                    "finding": {
+                        "type": "object"
+                    },
+                    "instance": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

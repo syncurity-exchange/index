@@ -1,0 +1,30 @@
+{
+    "description": "Retrieves the IPSet specified by the IPSet ID.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "GetIPSet",
+    "parameters": {
+        "DetectorId": {
+            "description": "The unique ID of the detector the ipSet is associated with.",
+            "required": true,
+            "type": "string"
+        },
+        "IpSetId": {
+            "description": "The unique ID of the ipSet you want to get.",
+            "required": true,
+            "type": "string"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "get_ip_set",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

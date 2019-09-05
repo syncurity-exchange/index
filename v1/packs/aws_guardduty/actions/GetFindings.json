@@ -1,0 +1,35 @@
+{
+    "description": "Describes Amazon GuardDuty findings specified by finding IDs.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "GetFindings",
+    "parameters": {
+        "DetectorId": {
+            "description": "The ID of the detector that specifies the GuardDuty service whose findings you want to retrieve.",
+            "required": true,
+            "type": "string"
+        },
+        "FindingIds": {
+            "description": "IDs of the findings that you want to retrieve.",
+            "required": true,
+            "type": "array"
+        },
+        "SortCriteria": {
+            "description": "Represents the criteria used for sorting findings.",
+            "required": false,
+            "type": "object"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "get_findings",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

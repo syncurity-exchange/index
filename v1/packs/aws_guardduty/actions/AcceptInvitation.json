@@ -1,0 +1,35 @@
+{
+    "description": "Accepts the invitation to be monitored by a master GuardDuty account.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "AcceptInvitation",
+    "parameters": {
+        "DetectorId": {
+            "description": "The unique ID of the detector of the GuardDuty member account.",
+            "required": true,
+            "type": "string"
+        },
+        "InvitationId": {
+            "description": "This value is used to validate the master account to the member account.",
+            "required": true,
+            "type": "string"
+        },
+        "MasterId": {
+            "description": "The account ID of the master GuardDuty account whose invitation you're accepting.",
+            "required": true,
+            "type": "string"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "accept_invitation",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

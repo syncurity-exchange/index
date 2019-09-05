@@ -1,0 +1,45 @@
+{
+    "description": "Updates the IPSet specified by the IPSet ID.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "UpdateIPSet",
+    "parameters": {
+        "Activate": {
+            "description": "The updated boolean value that specifies whether the IPSet is active or not.",
+            "required": false,
+            "type": "boolean"
+        },
+        "DetectorId": {
+            "description": "The detectorID that specifies the GuardDuty service whose IPSet you want to update.",
+            "required": true,
+            "type": "string"
+        },
+        "IpSetId": {
+            "description": "The unique ID that specifies the IPSet that you want to update.",
+            "required": true,
+            "type": "string"
+        },
+        "Location": {
+            "description": "The updated URI of the file that contains the IPSet. For example (https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key).",
+            "required": false,
+            "type": "string"
+        },
+        "Name": {
+            "description": "The unique ID that specifies the IPSet that you want to update.",
+            "required": false,
+            "type": "string"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "update_ip_set",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

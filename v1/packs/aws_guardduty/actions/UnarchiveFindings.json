@@ -1,0 +1,30 @@
+{
+    "description": "Unarchives Amazon GuardDuty findings specified by the list of finding IDs.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "UnarchiveFindings",
+    "parameters": {
+        "DetectorId": {
+            "description": "The ID of the detector that specifies the GuardDuty service whose findings you want to unarchive.",
+            "required": true,
+            "type": "string"
+        },
+        "FindingIds": {
+            "description": "IDs of the findings that you want to unarchive.",
+            "required": true,
+            "type": "array"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "unarchive_findings",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

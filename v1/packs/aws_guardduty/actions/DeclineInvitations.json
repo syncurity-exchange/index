@@ -1,0 +1,25 @@
+{
+    "description": "Declines invitations sent to the current member account by AWS account specified by their account IDs.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "DeclineInvitations",
+    "parameters": {
+        "AccountIds": {
+            "description": "A list of account IDs of the AWS accounts that sent invitations to the current member account that you want to decline invitations from.",
+            "required": true,
+            "type": "array"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "decline_invitations",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,40 @@
+{
+    "description": "Invites other AWS accounts (created as members of the current AWS account by CreateMembers) to enable GuardDuty and allow the current AWS account to view and manage these accounts' GuardDuty findings on their behalf as the master account.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "InviteMembers",
+    "parameters": {
+        "AccountIds": {
+            "description": "A list of account IDs of the accounts that you want to invite to GuardDuty as members.",
+            "required": true,
+            "type": "array"
+        },
+        "DetectorId": {
+            "description": "The unique ID of the detector of the GuardDuty account with which you want to invite members.",
+            "required": true,
+            "type": "string"
+        },
+        "DisableEmailNotification": {
+            "description": "A boolean value that specifies whether you want to disable email notification to the accounts that you\u2019re inviting to GuardDuty as members.",
+            "required": false,
+            "type": "boolean"
+        },
+        "Message": {
+            "description": "The invitation message that you want to send to the accounts that you\u2019re inviting to GuardDuty as members.",
+            "required": false,
+            "type": "string"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "invite_members",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

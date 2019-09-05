@@ -1,0 +1,57 @@
+{
+    "instances": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "properties": {
+                    "credentials": {
+                        "properties": {
+                            "aws_access_key_id": {
+                                "default": "{{ st2kv.system.aws_access_key_id }}",
+                                "required": true,
+                                "secret": true,
+                                "type": "string"
+                            },
+                            "aws_secret_access_key": {
+                                "default": "{{ st2kv.system.aws_access_key_secret }}",
+                                "required": true,
+                                "secret": true,
+                                "type": "string"
+                            },
+                            "region_name": {
+                                "defualt": "{{ st2kv.system.aws_region }}",
+                                "required": true,
+                                "type": "string"
+                            }
+                        },
+                        "required": true,
+                        "type": "object"
+                    },
+                    "poll_findings_config": {
+                        "properties": {
+                            "DetectorId": {
+                                "required": true,
+                                "type": "string"
+                            },
+                            "FindingCriteria": {
+                                "required": false,
+                                "type": "object"
+                            }
+                        },
+                        "required": true,
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "service_name": {
+        "default": "guardduty",
+        "immutable": true,
+        "required": true,
+        "type": "string"
+    }
+}

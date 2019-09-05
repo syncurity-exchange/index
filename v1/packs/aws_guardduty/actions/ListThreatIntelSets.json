@@ -1,0 +1,35 @@
+{
+    "description": "Lists the ThreatIntelSets of the GuardDuty service specified by the detector ID.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ListThreatIntelSets",
+    "parameters": {
+        "DetectorId": {
+            "description": "The unique ID of the detector the threatIntelSet is associated with.",
+            "required": true,
+            "type": "string"
+        },
+        "MaxResults": {
+            "description": "You can use this parameter to indicate the maximum number of items you want in the response. The default value is 50. The maximum value is 50.",
+            "required": false,
+            "type": "integer"
+        },
+        "NextToken": {
+            "description": "You can use this parameter when paginating results. Set the value of this parameter to null on your first call to the list action. For subsequent calls to the action fill nextToken in the request with the value of NextToken from the previous response to continue listing data.",
+            "required": false,
+            "type": "string"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "list_threat_intel_sets",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

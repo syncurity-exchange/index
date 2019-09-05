@@ -1,0 +1,30 @@
+{
+    "description": "Creates member accounts of the current AWS account by specifying a list of AWS account IDs. The current AWS account can then invite these members to manage GuardDuty in their accounts.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "CreateMembers",
+    "parameters": {
+        "AccountDetails": {
+            "description": "A list of account ID and email address pairs of the accounts that you want to associate with the master GuardDuty account.",
+            "required": true,
+            "type": "array"
+        },
+        "DetectorId": {
+            "description": "The unique ID of the detector of the GuardDuty account with which you want to associate member accounts.",
+            "required": true,
+            "type": "string"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create_members",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

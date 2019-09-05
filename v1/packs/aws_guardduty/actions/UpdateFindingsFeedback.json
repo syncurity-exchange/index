@@ -1,0 +1,40 @@
+{
+    "description": "Marks specified Amazon GuardDuty findings as useful or not useful.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "UpdateFindingsFeedback",
+    "parameters": {
+        "Comments": {
+            "description": "Additional feedback about the GuardDuty findings.",
+            "required": false,
+            "type": "string"
+        },
+        "DetectorId": {
+            "description": "The ID of the detector that specifies the GuardDuty service whose findings you want to mark as useful or not useful.",
+            "required": true,
+            "type": "string"
+        },
+        "Feedback": {
+            "description": "Valid values: USEFUL | NOT_USEFUL",
+            "required": true,
+            "type": "string"
+        },
+        "FindingIds": {
+            "description": "IDs of the findings that you want to mark as useful or not useful.",
+            "required": true,
+            "type": "array"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "update_findings_feedback",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

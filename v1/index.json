@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567634872,
-        "hash": "a617f50d17dd1fe697cfcd8b19621fab"
+        "generated_ts": 1567650741,
+        "hash": "5c2138c158be7f2218239ffeffd67aaa"
     },
     "packs": {
         "alienvault": {
@@ -113,6 +113,80 @@
             "ref": "anomali",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-anomali",
             "stackstorm_version": ">=3.0.1",
+            "version": "0.9.1"
+        },
+        "aws_guardduty": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 45,
+                    "resources": [
+                        "AcceptInvitation",
+                        "ArchiveFindings",
+                        "CreateDetector",
+                        "CreateFilter",
+                        "CreateIPSet",
+                        "CreateMembers",
+                        "CreateSampleFindings",
+                        "CreateThreatIntelSet",
+                        "DeclineInvitations",
+                        "DeleteDetector",
+                        "DeleteFilter",
+                        "DeleteIPSet",
+                        "DeleteInvitations",
+                        "DeleteMembers",
+                        "DeleteThreatIntelSet",
+                        "DisassociateFromMasterAccount",
+                        "DisassociateMembers",
+                        "GetDetector",
+                        "GetFilter",
+                        "GetFindings",
+                        "GetFindingsStatistics",
+                        "GetIPSet",
+                        "GetInvitationsCount",
+                        "GetMasterAccount",
+                        "GetMembers",
+                        "GetThreatIntelSet",
+                        "InviteMembers",
+                        "ListDetectors",
+                        "ListFilters",
+                        "ListFindings",
+                        "ListIPSets",
+                        "ListInvitations",
+                        "ListMembers",
+                        "ListTagsForResource",
+                        "ListThreatIntelSets",
+                        "StartMonitoringMembers",
+                        "StopMonitoringMembers",
+                        "TagResource",
+                        "UnarchiveFindings",
+                        "UntagResource",
+                        "UpdateDetector",
+                        "UpdateFilter",
+                        "UpdateFindingsFeedback",
+                        "UpdateIPSet",
+                        "UpdateThreatIntelSet"
+                    ]
+                },
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "PollFindingsSensor"
+                    ]
+                }
+            },
+            "contributors": [
+                "Max Meinhold <mmeinhold@syncurity.net>"
+            ],
+            "description": "AWS GuardDuty Integration",
+            "email": "support@syncurity.net",
+            "name": "AWS GuardDuty",
+            "python version": [
+                "2"
+            ],
+            "ref": "aws_guardduty",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-aws_guardduty",
+            "stackstorm_version": ">=3.0.0",
             "version": "0.9.1"
         },
         "carbonblack_defense": {

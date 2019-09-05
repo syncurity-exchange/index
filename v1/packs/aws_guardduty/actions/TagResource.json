@@ -1,0 +1,30 @@
+{
+    "description": "Adds tags to a resource.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "TagResource",
+    "parameters": {
+        "ResourceArn": {
+            "description": "The Amazon Resource Name (ARN) for the given GuardDuty resource",
+            "required": true,
+            "type": "string"
+        },
+        "Tags": {
+            "description": "The tags to be added to a resource.",
+            "required": true,
+            "type": "object"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "tag_resource",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,30 @@
+{
+    "description": "Disassociates GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "DisassociateMembers",
+    "parameters": {
+        "AccountIds": {
+            "description": "A list of account IDs of the GuardDuty member accounts that you want to disassociate from master.",
+            "required": true,
+            "type": "array"
+        },
+        "DetectorId": {
+            "description": "The unique ID of the detector of the GuardDuty account whose members you want to disassociate from master.",
+            "required": true,
+            "type": "string"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "disassociate_members",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,20 @@
+{
+    "description": "Returns the count of all GuardDuty membership invitations that were sent to the current member account except the currently accepted invitation.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "GetInvitationsCount",
+    "parameters": {
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "get_invitations_count",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

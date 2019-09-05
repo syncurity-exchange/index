@@ -1,0 +1,30 @@
+{
+    "description": "Removes tags from a resource.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "UntagResource",
+    "parameters": {
+        "ResourceArn": {
+            "description": "The Amazon Resource Name (ARN) for the given GuardDuty resource",
+            "required": true,
+            "type": "string"
+        },
+        "TagKeys": {
+            "description": "The tag keys to remove from a resource.",
+            "required": true,
+            "type": "array"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "untag_resource",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

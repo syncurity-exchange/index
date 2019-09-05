@@ -1,0 +1,64 @@
+name: AWS GuardDuty
+ref: aws_guardduty
+description: AWS GuardDuty Integration
+stackstorm_version: '>=3.0.0'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+contributors:
+- Max Meinhold <mmeinhold@syncurity.net>
+content:
+  actions:
+    count: 45
+    resources:
+    - AcceptInvitation
+    - ArchiveFindings
+    - CreateDetector
+    - CreateFilter
+    - CreateIPSet
+    - CreateMembers
+    - CreateSampleFindings
+    - CreateThreatIntelSet
+    - DeclineInvitations
+    - DeleteDetector
+    - DeleteFilter
+    - DeleteIPSet
+    - DeleteInvitations
+    - DeleteMembers
+    - DeleteThreatIntelSet
+    - DisassociateFromMasterAccount
+    - DisassociateMembers
+    - GetDetector
+    - GetFilter
+    - GetFindings
+    - GetFindingsStatistics
+    - GetIPSet
+    - GetInvitationsCount
+    - GetMasterAccount
+    - GetMembers
+    - GetThreatIntelSet
+    - InviteMembers
+    - ListDetectors
+    - ListFilters
+    - ListFindings
+    - ListIPSets
+    - ListInvitations
+    - ListMembers
+    - ListTagsForResource
+    - ListThreatIntelSets
+    - StartMonitoringMembers
+    - StopMonitoringMembers
+    - TagResource
+    - UnarchiveFindings
+    - UntagResource
+    - UpdateDetector
+    - UpdateFilter
+    - UpdateFindingsFeedback
+    - UpdateIPSet
+    - UpdateThreatIntelSet
+  sensors:
+    count: 1
+    resources:
+    - PollFindingsSensor

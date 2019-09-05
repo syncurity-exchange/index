@@ -1,0 +1,40 @@
+{
+    "description": "Creates a single Amazon GuardDuty detector. A detector is an object that represents the GuardDuty service. A detector must be created in order for GuardDuty to become operational.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "CreateDetector",
+    "parameters": {
+        "ClientToken": {
+            "description": "The idempotency token for the create request.",
+            "required": false,
+            "type": "string"
+        },
+        "Enable": {
+            "description": "A boolean value that specifies whether the detector is to be enabled.",
+            "required": true,
+            "type": "boolean"
+        },
+        "FindingPublishingFrequency": {
+            "description": "A enum value that specifies how frequently customer got Finding updates published.",
+            "required": false,
+            "type": "string"
+        },
+        "Tags": {
+            "description": "The tags to be added to a new detector resource.",
+            "required": false,
+            "type": "object"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create_detector",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

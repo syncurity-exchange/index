@@ -1,0 +1,55 @@
+{
+    "description": "Creates a new IPSet - a list of trusted IP addresses that have been whitelisted for secure communication with AWS infrastructure and applications.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "CreateIPSet",
+    "parameters": {
+        "Activate": {
+            "description": "A boolean value that indicates whether GuardDuty is to start using the uploaded IPSet.",
+            "required": true,
+            "type": "boolean"
+        },
+        "ClientToken": {
+            "description": "The idempotency token for the create request.",
+            "required": false,
+            "type": "string"
+        },
+        "DetectorId": {
+            "description": "The unique ID of the detector of the GuardDuty account for which you want to create an IPSet.",
+            "required": true,
+            "type": "string"
+        },
+        "Format": {
+            "description": "The format of the file that contains the IPSet.",
+            "required": true,
+            "type": "string"
+        },
+        "Location": {
+            "description": "The URI of the file that contains the IPSet. For example (https://s3.us- west-2.amazonaws.com/my-bucket/my-object-key)",
+            "required": true,
+            "type": "string"
+        },
+        "Name": {
+            "description": "The user friendly name to identify the IPSet. This name is displayed in all findings that are triggered by activity that involves IP addresses included in this IPSet.",
+            "required": true,
+            "type": "string"
+        },
+        "Tags": {
+            "description": "The tags to be added to a new IP set resource.",
+            "required": false,
+            "type": "object"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create_ip_set",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

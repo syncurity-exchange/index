@@ -1,0 +1,60 @@
+{
+    "description": "Creates a filter using the specified finding criteria.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "CreateFilter",
+    "parameters": {
+        "Action": {
+            "description": "Specifies the action that is to be applied to the findings that match the filter.",
+            "required": false,
+            "type": "string"
+        },
+        "ClientToken": {
+            "description": "The idempotency token for the create request.",
+            "required": false,
+            "type": "string"
+        },
+        "Description": {
+            "description": "The description of the filter.",
+            "required": false,
+            "type": "string"
+        },
+        "DetectorId": {
+            "description": "The unique ID of the detector of the GuardDuty account for which you want to create a filter.",
+            "required": true,
+            "type": "string"
+        },
+        "FindingCriteria": {
+            "description": "Represents the criteria to be used in the filter for querying findings.",
+            "required": true,
+            "type": "object"
+        },
+        "Name": {
+            "description": "The name of the filter.",
+            "required": true,
+            "type": "string"
+        },
+        "Rank": {
+            "description": "Specifies the position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.",
+            "required": false,
+            "type": "integer"
+        },
+        "Tags": {
+            "description": "The tags to be added to a new filter resource.",
+            "required": false,
+            "type": "object"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create_filter",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

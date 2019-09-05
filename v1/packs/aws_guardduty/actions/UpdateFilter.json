@@ -1,0 +1,50 @@
+{
+    "description": "Updates the filter specified by the filter name.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "UpdateFilter",
+    "parameters": {
+        "Action": {
+            "description": "Specifies the action that is to be applied to the findings that match the filter.",
+            "required": false,
+            "type": "string"
+        },
+        "Description": {
+            "description": "The description of the filter.",
+            "required": false,
+            "type": "string"
+        },
+        "DetectorId": {
+            "description": "The unique ID of the detector that specifies the GuardDuty service where you want to update a filter.",
+            "required": true,
+            "type": "string"
+        },
+        "FilterName": {
+            "description": "The name of the filter.",
+            "required": true,
+            "type": "string"
+        },
+        "FindingCriteria": {
+            "description": "Represents the criteria to be used in the filter for querying findings.",
+            "required": false,
+            "type": "object"
+        },
+        "Rank": {
+            "description": "Specifies the position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.",
+            "required": false,
+            "type": "integer"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "update_filter",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

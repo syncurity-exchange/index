@@ -1,0 +1,30 @@
+{
+    "description": "Disables GuardDuty from monitoring findings of the member accounts specified by the account IDs. After running this command, a master GuardDuty account can run StartMonitoringMembers to re-enable GuardDuty to monitor these members\u2019 findings.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "StopMonitoringMembers",
+    "parameters": {
+        "AccountIds": {
+            "description": "A list of account IDs of the GuardDuty member accounts whose findings you want the master account to stop monitoring.",
+            "required": true,
+            "type": "array"
+        },
+        "DetectorId": {
+            "description": "The unique ID of the detector of the GuardDuty account that you want to stop from monitor members' findings.",
+            "required": true,
+            "type": "string"
+        },
+        "instance": {
+            "description": "the name of the instance to access",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "stop_monitoring_members",
+            "description": "the name of the method in boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
