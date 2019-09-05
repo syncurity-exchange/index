@@ -1,0 +1,26 @@
+name: Carbonblack LiveQuery API
+ref: carbonblack_livequery
+description: Carbon Black Live Query API
+keywords:
+- security
+- Syncurity
+- Carbon Black
+- Live Query
+- secops
+- EDR
+stackstorm_version: '>=3.1.0'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+contributors:
+- JP Bourget <jp@syncurity.net>
+content:
+  actions:
+    count: 3
+    resources:
+    - get_query_results
+    - get_query_status
+    - query

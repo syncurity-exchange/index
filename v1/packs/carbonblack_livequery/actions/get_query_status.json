@@ -1,0 +1,19 @@
+{
+    "description": "Get Query Status from Carbon Black Live Query",
+    "enabled": true,
+    "entry_point": "get_query_status.py",
+    "name": "get_query_status",
+    "parameters": {
+        "credential_name": {
+            "description": "Credential Name for Tenant",
+            "required": true,
+            "type": "string"
+        },
+        "search_id": {
+            "description": "The CB Live Response search id",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

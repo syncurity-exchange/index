@@ -1,0 +1,59 @@
+{
+    "description": "Lists LiveQuery results for a given run ID.",
+    "enabled": true,
+    "entry_point": "get_query_results.py",
+    "name": "get_query_results",
+    "parameters": {
+        "credential_name": {
+            "description": "Credential Name for Tenant",
+            "required": true,
+            "type": "string"
+        },
+        "criteria": {
+            "description": "A JSON object of the {\"key\": \"value\"} pairs to search for.",
+            "required": false,
+            "type": "object"
+        },
+        "device_id": {
+            "description": "A list of one or more device ids to filter on. If left blank defaults to all endpoints",
+            "required": false,
+            "type": "array"
+        },
+        "device_name": {
+            "description": "List of device names to filter on",
+            "required": false,
+            "type": "array"
+        },
+        "query": {
+            "description": "A query to perform as part of the results search. Supports Apache Lucene syntax",
+            "required": false,
+            "type": "string"
+        },
+        "rows": {
+            "description": "For pagination, how many results to return at the moment, we pagination is not supported, so we will just return the first N rows",
+            "required": false,
+            "type": "integer"
+        },
+        "search_id": {
+            "description": "The LiveQuery run ID",
+            "required": true,
+            "type": "string"
+        },
+        "sort": {
+            "description": "List of dicts. key:value pairs of field to sort on, and sort direction. eg. field: SQL Response Column, order: [ASC or DESC]. Example json:  \"[ \"{\"field\": \"SQL Response Column\", \"order\": \"[ASC or DESC]\"}\" ]\"",
+            "required": false,
+            "type": "object"
+        },
+        "start": {
+            "description": "For pagination, where to start retrieving results from",
+            "required": false,
+            "type": "integer"
+        },
+        "status": {
+            "description": "List of device statuses to filter on\u00a0Values: [ matched, error, not_matched, not_supported, cancelled, unrecognized ]",
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

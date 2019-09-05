@@ -1,0 +1,44 @@
+{
+    "description": "Carbon Black Live Query query. Queries kicked off by this action take at least 5 minutes, and usually 10-15 minutes to start returning results. If a host is offline this query can run for days or weeks. You can still get the results so far with the 'cb_livequery.get_results' action.",
+    "enabled": true,
+    "entry_point": "query.py",
+    "name": "query",
+    "parameters": {
+        "credential_name": {
+            "description": "Credential Name for Tenant",
+            "required": true,
+            "type": "string"
+        },
+        "device_id": {
+            "description": "A list of one or more device ids to filter on. If left blank defaults to all endpoints",
+            "required": false,
+            "type": "array"
+        },
+        "device_type": {
+            "description": "The type of device OS to filter on. If left blank, defaults to all device types. The valid types are: [ WINDOWS, ANDROID, MAC, IOS, LINUX, OTHER ] ",
+            "required": false,
+            "type": "array"
+        },
+        "name": {
+            "description": "The name of the query",
+            "required": false,
+            "type": "string"
+        },
+        "notify_on_finish": {
+            "description": "Sends an email when the query is finished if set to 'true",
+            "required": false,
+            "type": "boolean"
+        },
+        "policy_ids": {
+            "description": "A list of device policies to. If left blank defaults to all all policies",
+            "required": false,
+            "type": "array"
+        },
+        "query": {
+            "description": "The osquery query for CB LiveQuery",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

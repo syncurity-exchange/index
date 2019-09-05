@@ -1,0 +1,39 @@
+{
+    "carbonblack_livequery": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "credentials": {
+        "additionalProperties": false,
+        "properties": {
+            "api_host": {
+                "description": "Live Query Host",
+                "required": true,
+                "type": "string"
+            },
+            "api_id": {
+                "description": "API ID",
+                "required": true,
+                "type": "string"
+            },
+            "api_secret_key": {
+                "description": "API Secret Key",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "org": {
+                "description": "PSC Org Key",
+                "required": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    }
+}

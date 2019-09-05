@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567715310,
-        "hash": "7c34609dc6d79d93db8415b2b75351ca"
+        "generated_ts": 1567717131,
+        "hash": "5e15d64edd6ea1553efd116561040ea3"
     },
     "packs": {
         "alienvault": {
@@ -230,6 +230,41 @@
             "ref": "carbonblack_defense",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-carbonblack_defense",
             "version": "0.9.4"
+        },
+        "carbonblack_livequery": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 3,
+                    "resources": [
+                        "get_query_results",
+                        "get_query_status",
+                        "query"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>"
+            ],
+            "description": "Carbon Black Live Query API",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "security",
+                "Syncurity",
+                "Carbon Black",
+                "Live Query",
+                "secops",
+                "EDR"
+            ],
+            "name": "Carbonblack LiveQuery API",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "carbonblack_livequery",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-carbonblack_livequery",
+            "stackstorm_version": ">=3.1.0",
+            "version": "0.9.1"
         },
         "cisco_amp": {
             "author": "Syncurity",
