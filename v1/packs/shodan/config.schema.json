@@ -1,0 +1,9 @@
+{
+    "shodan_api_key": {
+        "default": "{{ st2kv.system.shodan_api_key }}",
+        "description": "Shodan API key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    }
+}

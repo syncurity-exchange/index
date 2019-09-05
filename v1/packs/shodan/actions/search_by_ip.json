@@ -1,0 +1,14 @@
+{
+    "description": "Returns all services that have been found on the given host IP.",
+    "enabled": true,
+    "entry_point": "search_by_ip.py",
+    "name": "search_by_ip",
+    "parameters": {
+        "host_ip": {
+            "description": "Host IP address",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

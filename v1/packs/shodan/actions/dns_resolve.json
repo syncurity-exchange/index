@@ -1,0 +1,14 @@
+{
+    "description": "DNS resolve a domain name into a IP address.",
+    "enabled": true,
+    "entry_point": "dns_resolve.py",
+    "name": "dns_resolve",
+    "parameters": {
+        "host_names": {
+            "description": "Comma separated list of domain names",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

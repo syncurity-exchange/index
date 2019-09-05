@@ -1,0 +1,26 @@
+name: Shodan
+ref: shodan
+description: Shodan.io API Pack
+stackstorm_version: '>=3.0.0'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+contributors:
+- JP Bourget <jp@syncurity.net>
+- Ryan Markle <rmarkle@syncurity.net>
+- Grace Lombardi <glombardi@syncurity.net>
+- Brian Tackett <btackett@syncurity.net>
+- Max Meinhold <mmeinhold@syncurity.net>
+- Alex Schieppati <alex@syncurity.net>
+content:
+  actions:
+    count: 5
+    resources:
+    - dns_resolve
+    - dns_reverse
+    - get_info
+    - get_profile
+    - search_by_ip

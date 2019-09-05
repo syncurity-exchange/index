@@ -1,0 +1,14 @@
+{
+    "description": "Returns Account Profile info.",
+    "enabled": true,
+    "entry_point": "get_profile.py",
+    "name": "get_profile",
+    "parameters": {
+        "profile": {
+            "description": "Account Profile",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

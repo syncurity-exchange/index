@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567658128,
-        "hash": "6a9862db2c3d6097e69e345dda6e03d2"
+        "generated_ts": 1567659908,
+        "hash": "bd118bbe5d05b24aa14c2c046d886858"
     },
     "packs": {
         "alienvault": {
@@ -831,6 +831,40 @@
             "ref": "sentinelone",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-sentinelone",
             "version": "0.9.5"
+        },
+        "shodan": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 5,
+                    "resources": [
+                        "dns_resolve",
+                        "dns_reverse",
+                        "get_info",
+                        "get_profile",
+                        "search_by_ip"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>",
+                "Grace Lombardi <glombardi@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>",
+                "Max Meinhold <mmeinhold@syncurity.net>",
+                "Alex Schieppati <alex@syncurity.net>"
+            ],
+            "description": "Shodan.io API Pack",
+            "email": "support@syncurity.net",
+            "name": "Shodan",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "shodan",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-shodan",
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.9.1"
         },
         "sophos_central": {
             "author": "Syncurity",

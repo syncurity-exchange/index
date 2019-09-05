@@ -1,0 +1,14 @@
+{
+    "description": "Returns API Info",
+    "enabled": true,
+    "entry_point": "get_info.py",
+    "name": "get_info",
+    "parameters": {
+        "info": {
+            "description": "Account Info",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

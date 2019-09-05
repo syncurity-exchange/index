@@ -1,0 +1,14 @@
+{
+    "description": "DNS reverse an IP address into a domain name.",
+    "enabled": true,
+    "entry_point": "dns_reverse.py",
+    "name": "dns_reverse",
+    "parameters": {
+        "host_ips": {
+            "description": "Comma separated list of ip addresses",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
