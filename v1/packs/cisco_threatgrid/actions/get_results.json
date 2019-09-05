@@ -1,0 +1,14 @@
+{
+    "description": "Query Threat Grid for results of a specific submission ID",
+    "enabled": true,
+    "entry_point": "get_results.py",
+    "name": "get_results",
+    "parameters": {
+        "sample_id": {
+            "description": "Threat Grid file sample ID to fetch analysis results for",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

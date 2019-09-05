@@ -1,0 +1,50 @@
+{
+    "api_key": {
+        "default": "{{ st2kv.system.irflow_api_key }}",
+        "description": "IR-Flow API Key",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "api_user": {
+        "default": "{{ st2kv.system.irflow_api_user }}",
+        "description": "IR-Flow API User",
+        "required": false,
+        "type": "string"
+    },
+    "host": {
+        "default": "panacea.threatgrid.com",
+        "description": "Threat Grid host to query against",
+        "required": false,
+        "type": "string"
+    },
+    "private": {
+        "default": "True",
+        "description": "Set to 'True' to mark submission private",
+        "required": false,
+        "type": "string"
+    },
+    "protocol": {
+        "default": "https",
+        "description": "Configure http or https - defaults to https",
+        "enum": [
+            "http",
+            "https"
+        ],
+        "required": false,
+        "type": "string"
+    },
+    "server": {
+        "default": "{{ st2kv.system.irflow_server}}",
+        "description": "IR-Flow server address",
+        "required": false,
+        "type": "string"
+    },
+    "threatgrid_key": {
+        "default": "{{ st2kv.system.threatgrid_key }}",
+        "description": "Threat Grid API key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    }
+}

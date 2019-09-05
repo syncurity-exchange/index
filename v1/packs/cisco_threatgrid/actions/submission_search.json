@@ -1,0 +1,14 @@
+{
+    "description": "Query Threat Grid for analysis of a specific url, domain, md5, sha1 or sha256 indicator",
+    "enabled": true,
+    "entry_point": "submission_search.py",
+    "name": "submission_search",
+    "parameters": {
+        "indicator": {
+            "description": "The url, domain, md5, sha1 or sha256 to query against Threat Grid",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,29 @@
+name: Cisco Threat Grid
+ref: cisco_threatgrid
+description: Cisco Threat Grid API Pack
+stackstorm_version: '>=3.0.0'
+version: 0.9.3
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+keywords:
+- Cisco Threat Grid
+- security
+- malware analysis
+- sandbox
+- syncurity
+contributors:
+- JP Bourget <jp@syncurity.net>
+- Ryan Markle <rmarkle@syncurity.net>
+- Grace Lombardi <glombardi@syncurity.net>
+content:
+  actions:
+    count: 5
+    resources:
+    - get_hash_threatscore
+    - get_results
+    - submission_search
+    - submit
+    - submit_file

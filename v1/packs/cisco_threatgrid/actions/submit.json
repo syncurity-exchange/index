@@ -1,0 +1,20 @@
+{
+    "description": "Submit a file to Threat Grid for sandbox analysis",
+    "enabled": true,
+    "entry_point": "submit.py",
+    "name": "submit",
+    "parameters": {
+        "alert_num": {
+            "description": "The Alert Number of the IR-Flow alert to run this enrichment on, and to pull file attachment from for submission",
+            "required": true,
+            "type": "string"
+        },
+        "vm": {
+            "default": "",
+            "description": "The vm to run analysis on",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

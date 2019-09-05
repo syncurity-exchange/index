@@ -1,0 +1,14 @@
+{
+    "description": "Query Threat Grid for analysis of a specific md5, sha1 or sha256 indicator to return threatscore",
+    "enabled": true,
+    "entry_point": "get_hash_threatscore.py",
+    "name": "get_hash_threatscore",
+    "parameters": {
+        "indicator": {
+            "description": "The md5, sha1 or sha256 to query against Threat Grid",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

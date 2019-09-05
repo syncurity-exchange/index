@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567650741,
-        "hash": "5c2138c158be7f2218239ffeffd67aaa"
+        "generated_ts": 1567658128,
+        "hash": "6a9862db2c3d6097e69e345dda6e03d2"
     },
     "packs": {
         "alienvault": {
@@ -280,6 +280,44 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-cisco_amp",
             "stackstorm_version": ">=3.0.1",
             "version": "0.9.1"
+        },
+        "cisco_threatgrid": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 5,
+                    "resources": [
+                        "get_hash_threatscore",
+                        "get_results",
+                        "submission_search",
+                        "submit",
+                        "submit_file"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>",
+                "Grace Lombardi <glombardi@syncurity.net>"
+            ],
+            "description": "Cisco Threat Grid API Pack",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Cisco Threat Grid",
+                "security",
+                "malware analysis",
+                "sandbox",
+                "syncurity"
+            ],
+            "name": "Cisco Threat Grid",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "cisco_threatgrid",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-cisco_threatgrid",
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.9.3"
         },
         "cisco_umbrella": {
             "author": "Syncurity",
