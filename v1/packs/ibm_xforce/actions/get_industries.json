@@ -1,0 +1,27 @@
+{
+    "description": "Return a list of Industry Analysis Reports",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_industries",
+    "parameters": {
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/industries",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,32 @@
+{
+    "description": "Revoke specific API Key",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "delete_auth_api_key_apikey",
+    "parameters": {
+        "apikey": {
+            "description": "API key which to be revoked",
+            "required": true,
+            "type": "string"
+        },
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/auth/api_key/{apikey}",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "DELETE",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

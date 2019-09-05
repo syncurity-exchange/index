@@ -1,0 +1,37 @@
+{
+    "description": "Adds a Collection link to a Collection.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "put_casefiles_casefileid_linkedcasefiles",
+    "parameters": {
+        "body_args": {
+            "default": "['linkTo']",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "casefileid": {
+            "description": "ID of the Collection to which the link will be added",
+            "required": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/casefiles/{casefileid}/linkedcasefiles",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "linkTo": {
+            "description": "ID of the Collection that will be linked",
+            "required": true,
+            "type": "object"
+        },
+        "method": {
+            "default": "PUT",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,37 @@
+{
+    "description": "Returns an object from a Collection by object id.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_taxii2_collections_collectionID_objects_objectID",
+    "parameters": {
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "collectionID": {
+            "description": "ID Of the Collection to get. ID must be in UUID format. For example: d4ff8286-b4ed-38f7-0520-4cbfcf8216fa, early_warning_hosts, early_warning_threats",
+            "required": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/taxii2/collections/{collectionID}/objects/{objectID}",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "objectID": {
+            "description": "ID Of the Object to get. ID must be STIX2 identifier format. For example: indicator--785e77ae-c9e5-7035-bfab-c5a633302fd7",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

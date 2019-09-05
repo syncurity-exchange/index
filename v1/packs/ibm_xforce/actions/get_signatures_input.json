@@ -1,0 +1,32 @@
+{
+    "description": "Returns the signature details associated with the entered pamID or pamName.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_signatures_input",
+    "parameters": {
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/signatures/{input}",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "input": {
+            "description": "can be a pamID, e.g. 2116305<br />or a pamName, e.g. HTTP_ManageEngine_StatusUpdate_DotDot",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,27 @@
+{
+    "description": "Returns general information about all accessiable collections.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_taxii2_collections",
+    "parameters": {
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/taxii2/collections",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

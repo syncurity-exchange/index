@@ -1,0 +1,27 @@
+{
+    "description": "Returns a list of tagged collections and reports. The tags will be parsed out from the query parameter.\nA tag has the structure '#example'.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_tags_search",
+    "parameters": {
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/tags/search",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

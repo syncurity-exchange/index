@@ -1,0 +1,27 @@
+{
+    "description": "Returns a list of public Collections that were found",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_casefiles_public_fulltext",
+    "parameters": {
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/casefiles/public/fulltext",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

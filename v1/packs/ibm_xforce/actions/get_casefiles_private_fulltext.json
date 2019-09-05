@@ -1,0 +1,27 @@
+{
+    "description": "Returns a list of private Collections that were found",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_casefiles_private_fulltext",
+    "parameters": {
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/casefiles/private/fulltext",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

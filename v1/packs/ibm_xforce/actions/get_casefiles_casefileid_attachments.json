@@ -1,0 +1,32 @@
+{
+    "description": "Get all attachments for a specified Collection.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_casefiles_casefileid_attachments",
+    "parameters": {
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "casefileid": {
+            "description": "ID of the Collection for which to get attachments",
+            "required": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/casefiles/{casefileid}/attachments",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

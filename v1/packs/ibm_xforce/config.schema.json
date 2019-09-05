@@ -1,0 +1,32 @@
+{
+    "host": {
+        "default": "api.xforce.ibmcloud.com",
+        "description": "IBM X-Force API host",
+        "required": true,
+        "type": "string"
+    },
+    "key": {
+        "default": "{{ st2kv.system.xforce_key }}",
+        "description": "IBM X-Force API key",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "password": {
+        "default": "{{ st2kv.system.xforce_pass }}",
+        "description": "IBM X-Force API password",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "protocol": {
+        "default": "https",
+        "description": "IBM X-Force API protocol",
+        "enum": [
+            "https",
+            "http"
+        ],
+        "required": true,
+        "type": "string"
+    }
+}

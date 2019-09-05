@@ -1,0 +1,32 @@
+{
+    "description": "Endpoint to initiate the upload of a file.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post_casefiles_casefileid_upload",
+    "parameters": {
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "casefileid": {
+            "description": "ID of the Collection to which the file will attached",
+            "required": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/casefiles/{casefileid}/upload",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "POST",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

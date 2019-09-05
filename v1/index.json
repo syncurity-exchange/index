@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567659908,
-        "hash": "bd118bbe5d05b24aa14c2c046d886858"
+        "generated_ts": 1567715310,
+        "hash": "7c34609dc6d79d93db8415b2b75351ca"
     },
     "packs": {
         "alienvault": {
@@ -389,6 +389,95 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-crowdstrike_intel",
             "stackstorm_version": ">=3.0.0",
             "version": "0.9.0"
+        },
+        "ibm_xforce": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 65,
+                    "resources": [
+                        "delete_auth_api_key_apikey",
+                        "delete_casefiles_casefileid_linkedcasefiles_linkedcasefileid",
+                        "get_app",
+                        "get_app_appname",
+                        "get_apps_fulltext",
+                        "get_casefiles",
+                        "get_casefiles_casefileid_attachments",
+                        "get_casefiles_casefileid_attachments_attachmentid",
+                        "get_casefiles_casefileid_attachments_attachmentid_filename",
+                        "get_casefiles_casefileid_linkedcasefiles",
+                        "get_casefiles_collectionID",
+                        "get_casefiles_collectionID_stix",
+                        "get_casefiles_group_groupID",
+                        "get_casefiles_private_fulltext",
+                        "get_casefiles_public",
+                        "get_casefiles_public_fulltext",
+                        "get_casefiles_shared",
+                        "get_hub_extensions",
+                        "get_hub_extensions_brand_brandnames",
+                        "get_industries",
+                        "get_industries_id",
+                        "get_ipr",
+                        "get_ipr_asn_asn",
+                        "get_ipr_history_ip",
+                        "get_ipr_ip",
+                        "get_ipr_malware_ip",
+                        "get_malware_analysis",
+                        "get_malware_analysis_id",
+                        "get_malware_family_family",
+                        "get_malware_familyext_family",
+                        "get_malware_filehash",
+                        "get_resolve_input",
+                        "get_signatures_fulltext",
+                        "get_signatures_input",
+                        "get_signatures_xpu_directory",
+                        "get_signatures_xpu_xpu",
+                        "get_stix_v2_botnets",
+                        "get_stix_v2_export_object_type_fullReport",
+                        "get_tags_search",
+                        "get_taxii",
+                        "get_taxii2",
+                        "get_taxii2_collections",
+                        "get_taxii2_collections_collectionID",
+                        "get_taxii2_collections_collectionID_manifest",
+                        "get_taxii2_collections_collectionID_objects",
+                        "get_taxii2_collections_collectionID_objects_objectID",
+                        "get_threat_groups",
+                        "get_threat_groups_id",
+                        "get_url",
+                        "get_url_host_early-warning",
+                        "get_url_malware_url",
+                        "get_url_url",
+                        "get_user_profile",
+                        "get_version",
+                        "get_vulnerabilities",
+                        "get_vulnerabilities_fulltext",
+                        "get_vulnerabilities_msid_msid",
+                        "get_vulnerabilities_search_stdcode",
+                        "get_vulnerabilities_xfid",
+                        "get_whois_host",
+                        "post_auth_api_key",
+                        "post_casefiles_casefileid_createreports",
+                        "post_casefiles_casefileid_upload",
+                        "post_taxii",
+                        "put_casefiles_casefileid_linkedcasefiles"
+                    ]
+                }
+            },
+            "contributors": [
+                "Max Meinhold <mmeinhold@syncurity.net>",
+                "Grace Lombardi <glombardi@syncurity.net>"
+            ],
+            "description": "IBM X-Force Integration",
+            "email": "support@syncurity.net",
+            "name": "IBM X-Force",
+            "python version": [
+                "3"
+            ],
+            "ref": "ibm_xforce",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-ibm_xforce",
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.9.1"
         },
         "infoarmor": {
             "author": "Syncurity",

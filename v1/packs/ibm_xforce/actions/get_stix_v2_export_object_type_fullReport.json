@@ -1,0 +1,42 @@
+{
+    "description": "Return an Object in STIX format.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_stix_v2_export_object_type_fullReport",
+    "parameters": {
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/stix/v2/export/{object}/{type}/{fullReport}",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "fullReport": {
+            "description": "If set to true the DNS details are added to the returned data.",
+            "required": true,
+            "type": "boolean"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "object": {
+            "description": "The object identifier.\nIt can be an IP address, a URL address, a malware hash, a botnet name etc.\nFor example: mirai.",
+            "required": true,
+            "type": "string"
+        },
+        "type": {
+            "description": "Type of object to export in the STIX format, For example,\n```\n- IP\n- URL\n- Botnet\n- Malware\n```",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

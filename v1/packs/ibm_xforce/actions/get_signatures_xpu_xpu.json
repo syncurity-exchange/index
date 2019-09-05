@@ -1,0 +1,32 @@
+{
+    "description": "Returns list of all signatures associated with the entered XPU.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_signatures_xpu_xpu",
+    "parameters": {
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/signatures/xpu/{xpu}",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "xpu": {
+            "description": "Search term, For example, : XPU 35.062",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

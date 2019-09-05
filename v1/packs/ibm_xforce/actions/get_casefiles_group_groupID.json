@@ -1,0 +1,32 @@
+{
+    "description": "Returns a list of Collections for a given Group ID.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_casefiles_group_groupID",
+    "parameters": {
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/casefiles/group/{groupID}",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "groupID": {
+            "description": "ID of the Group to get Collections for",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
