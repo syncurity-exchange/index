@@ -1,0 +1,9 @@
+{
+    "urlscan_api_key": {
+        "default": "{{ st2kv.system.urlscan_api_key }}",
+        "description": "The URLScan API Key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    }
+}

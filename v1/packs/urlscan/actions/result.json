@@ -1,0 +1,14 @@
+{
+    "description": "Run a URL Scan Results query",
+    "enabled": true,
+    "entry_point": "result.py",
+    "name": "result",
+    "parameters": {
+        "uuid": {
+            "description": "The Scan ID to get result for",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

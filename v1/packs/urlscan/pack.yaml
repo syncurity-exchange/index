@@ -1,0 +1,19 @@
+name: URLScan
+ref: urlscan
+description: URLScan Pack
+stackstorm_version: '>=2.9.0'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+contributors:
+- Grace Lombardi <glombardi@syncurity.net>
+content:
+  actions:
+    count: 3
+    resources:
+    - result
+    - scan
+    - search

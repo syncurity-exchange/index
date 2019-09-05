@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567717131,
-        "hash": "5e15d64edd6ea1553efd116561040ea3"
+        "generated_ts": 1567727753,
+        "hash": "fe05c9339fba9da4edfb233d7a838a1e"
     },
     "packs": {
         "alienvault": {
@@ -1025,6 +1025,33 @@
             "ref": "sophos_central",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-sophos_central",
             "stackstorm_version": ">=3.0.0",
+            "version": "0.9.1"
+        },
+        "urlscan": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 3,
+                    "resources": [
+                        "result",
+                        "scan",
+                        "search"
+                    ]
+                }
+            },
+            "contributors": [
+                "Grace Lombardi <glombardi@syncurity.net>"
+            ],
+            "description": "URLScan Pack",
+            "email": "support@syncurity.net",
+            "name": "URLScan",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "urlscan",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-urlscan",
+            "stackstorm_version": ">=2.9.0",
             "version": "0.9.1"
         },
         "virustotal": {

@@ -1,0 +1,14 @@
+{
+    "description": "Run a URLScan Search",
+    "enabled": true,
+    "entry_point": "search.py",
+    "name": "search",
+    "parameters": {
+        "domain": {
+            "description": "The domain to scan for submission",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

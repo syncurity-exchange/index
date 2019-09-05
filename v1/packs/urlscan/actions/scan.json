@@ -1,0 +1,14 @@
+{
+    "description": "Submit URL Scan request",
+    "enabled": true,
+    "entry_point": "scan.py",
+    "name": "scan",
+    "parameters": {
+        "domain": {
+            "description": "The domain to scan for submission",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
