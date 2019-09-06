@@ -1,0 +1,14 @@
+{
+    "description": "Fetch info about a Tenable.io managed asset",
+    "enabled": true,
+    "entry_point": "asset_info.py",
+    "name": "asset_info",
+    "parameters": {
+        "key": {
+            "description": "The ID, FQDN, IP, hostname, or MAC address of the asset",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

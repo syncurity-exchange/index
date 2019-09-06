@@ -1,0 +1,14 @@
+{
+    "description": "Fetch the results of a launched scan on a Tenable.io asset",
+    "enabled": true,
+    "entry_point": "scan_results.py",
+    "name": "scan_results",
+    "parameters": {
+        "key": {
+            "description": "Name of the scan, or ID, FQDN, IP, hostname, or MAC address of its host",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

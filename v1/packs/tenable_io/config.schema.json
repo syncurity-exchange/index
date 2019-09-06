@@ -1,0 +1,22 @@
+{
+    "access_key": {
+        "default": "{{ st2kv.system.tenable_io_access_key}}",
+        "description": "Tenable.io API access key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "host": {
+        "default": "cloud.tenable.com",
+        "description": "Tenable.io API base",
+        "required": false,
+        "type": "string"
+    },
+    "secret_key": {
+        "default": "{{ st2kv.system.tenable_io_secret_key }}",
+        "description": "Tenable.io API secret key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "description": "Launch a scan on a Tenable.io managed asset",
+    "enabled": true,
+    "entry_point": "launch_scan.py",
+    "name": "launch_scan",
+    "parameters": {
+        "key": {
+            "description": "Name of the scan to launch, or ID, FQDN, IP, hostname, or MAC address of its host",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

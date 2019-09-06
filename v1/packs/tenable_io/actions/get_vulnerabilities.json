@@ -1,0 +1,20 @@
+{
+    "description": "Launch a scan on a Tenable.io managed asset",
+    "enabled": true,
+    "entry_point": "get_vulnerabilities.py",
+    "name": "get_vulnerabilities",
+    "parameters": {
+        "days": {
+            "default": 7,
+            "description": "Age in days for the oldest vulnerability reports to fetch",
+            "required": true,
+            "type": "integer"
+        },
+        "key": {
+            "description": "The ID, FQDN, IP, hostname, or MAC address of the asset",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567727980,
-        "hash": "d162cef2ebfc48d6941f2fb6176ee154"
+        "generated_ts": 1567729380,
+        "hash": "9a597aeabcc257ef124070da9e0c1b37"
     },
     "packs": {
         "alienvault": {
@@ -1081,6 +1081,42 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-sophos_central",
             "stackstorm_version": ">=3.0.0",
             "version": "0.9.1"
+        },
+        "tenable_io": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 4,
+                    "resources": [
+                        "asset_info",
+                        "get_vulnerabilities",
+                        "launch_scan",
+                        "scan_results"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>",
+                "Grace Lombardi <glombardi@syncurity.net>"
+            ],
+            "description": "Tenable.io API Pack",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "tenable.io",
+                "vulnerability scanning",
+                "syncurity",
+                "security"
+            ],
+            "name": "Tenable.io",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "tenable_io",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-tenable_io",
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.9.0"
         },
         "urlscan": {
             "author": "Syncurity",

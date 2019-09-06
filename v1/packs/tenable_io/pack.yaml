@@ -1,0 +1,27 @@
+name: Tenable.io
+ref: tenable_io
+description: Tenable.io API Pack
+stackstorm_version: '>=3.0.0'
+version: 0.9.0
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+keywords:
+- tenable.io
+- vulnerability scanning
+- syncurity
+- security
+contributors:
+- JP Bourget <jp@syncurity.net>
+- Ryan Markle <rmarkle@syncurity.net>
+- Grace Lombardi <glombardi@syncurity.net>
+content:
+  actions:
+    count: 4
+    resources:
+    - asset_info
+    - get_vulnerabilities
+    - launch_scan
+    - scan_results
