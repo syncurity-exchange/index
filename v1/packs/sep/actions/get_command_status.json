@@ -1,0 +1,50 @@
+{
+    "description": "Status on Specific Previously Executed SEPM REST API Initiated Command",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_command_status",
+    "parameters": {
+        "args": {
+            "default": "['command_id']",
+            "description": "the argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "body": {
+            "default": "",
+            "description": "the request body to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "command_id": {
+            "description": "the id of the command to check status for",
+            "required": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/command-queue/{}",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "header": {
+            "default": "{'Content-Type': 'text/xml'}",
+            "description": "the header to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

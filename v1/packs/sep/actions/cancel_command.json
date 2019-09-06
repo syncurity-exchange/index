@@ -1,0 +1,50 @@
+{
+    "description": "Cancel previously sent command",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "cancel_command",
+    "parameters": {
+        "args": {
+            "default": "['command_id']",
+            "description": "the argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "body": {
+            "default": "",
+            "description": "the request body to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "command_id": {
+            "description": "the command id of the command to be cancelled",
+            "required": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/command-queue/{}/cancel",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "header": {
+            "default": "{'Content-Type': 'text/xml'}",
+            "description": "the header to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

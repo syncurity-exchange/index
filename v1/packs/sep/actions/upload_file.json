@@ -1,0 +1,60 @@
+{
+    "description": "Upload File of Interest to SEPM",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "upload_file",
+    "parameters": {
+        "args": {
+            "default": "['file_path', 'computer_ids', 'sha256']",
+            "description": "the argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "body": {
+            "default": "",
+            "description": "the request body to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "computer_ids": {
+            "description": "the ids of the computers being uploaded from",
+            "required": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/command-queue/files?file_path={}&computer_ids={}&sha256={}",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "file_path": {
+            "description": "the path of the file to be uploaded",
+            "required": true,
+            "type": "string"
+        },
+        "header": {
+            "default": "{'Content-Type': 'application/json'}",
+            "description": "the header to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "POST",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "sha256": {
+            "description": "the hash of the file being uploaded",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

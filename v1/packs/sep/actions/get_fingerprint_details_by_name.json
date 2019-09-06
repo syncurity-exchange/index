@@ -1,0 +1,50 @@
+{
+    "description": "Retrieve Fingerprint list information for a specific fingerprint",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_fingerprint_details_by_name",
+    "parameters": {
+        "args": {
+            "default": "['fingerprint_name']",
+            "description": "the argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "body": {
+            "default": "",
+            "description": "the request body to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/policy-objects/fingerprints?name={}",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "fingerprint_name": {
+            "description": "the fingerprint to get information about",
+            "required": true,
+            "type": "string"
+        },
+        "header": {
+            "default": "{'Content-Type': 'application/json'}",
+            "description": "the header to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

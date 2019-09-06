@@ -1,0 +1,46 @@
+{
+    "domain": {
+        "default": "",
+        "description": "the domain to connect to",
+        "required": false,
+        "type": "string"
+    },
+    "host": {
+        "description": "the SEP host to connect to",
+        "required": true,
+        "type": "string"
+    },
+    "password": {
+        "description": "password to use when connecting to SEP",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "port": {
+        "default": "8446",
+        "description": "the port to connect to SEP with",
+        "required": true,
+        "type": "string"
+    },
+    "protocol": {
+        "default": "https",
+        "description": "the protocol to use when connecting to SEP. defaults to https",
+        "enum": [
+            "https",
+            "http"
+        ],
+        "required": false,
+        "type": "string"
+    },
+    "ssl_verify": {
+        "default": true,
+        "description": "whether to verify ssl certificates. defaults to true if protocol is https",
+        "required": true,
+        "type": "boolean"
+    },
+    "username": {
+        "description": "username to use when connecting to SEP",
+        "required": true,
+        "type": "string"
+    }
+}

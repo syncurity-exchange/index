@@ -1,0 +1,74 @@
+{
+    "description": "Preform a scan across clients",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "client_scan",
+    "parameters": {
+        "args": {
+            "default": "['computer_ids']",
+            "description": "the argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "body": {
+            "default": "<EOC creator=\"Symantec\" version=\"1.0\" id=\"6BA1AED3-2201-407A-9051-8E8EFE7A345B\"> <DataSource name=\"Symc\" id=\"63689\" version=\"1.1\" /> <ScanType>{}</ScanType> <Threat category=\"Security Risk\" type=\"OS.OpenC2Command\" severity=\"{}\" time=\"2017-01-01 00:00:00 PM\"> <Description>{}</Description> <URL></URL> <SMTP-message id=\"\"> <Subject></Subject> <STMP-header></STMP-header> <Protocol></Protocol> <Date></Date> </SMTP-message> <User></User> <Attacker></Attacker> </Threat> <Activity> <OS id=\"0\" name=\"*\" version=\"*\" patch=\"*\"> <Process></Process> <Files></Files> <Registry> \t<Reg key=\"HKCU\\Fallout\\\" name=\"trace\" value = \"2\" action=\"set\" /> <Reg key=\"HKLM\\Fallout\\\" name=\"trace\" value = \"2\" action=\"set\" /> </Registry> <Network></Network> </OS> </Activity> </EOC>",
+            "description": "the body of the request",
+            "immutable": true,
+            "type": "string"
+        },
+        "body_args": {
+            "default": "[ 'scan_type', 'severity', 'description' ]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "computer_ids": {
+            "description": "the ids of the computers to scan",
+            "required": true,
+            "type": "string"
+        },
+        "description": {
+            "description": "the scan description",
+            "required": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/command-queue/eoc?computer_ids={}",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "header": {
+            "default": "{'Content-Type': 'text/xml'}",
+            "description": "the header to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "POST",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "scan_type": {
+            "description": "the type of scan to preform",
+            "enum": [
+                "QUICK_SCAN",
+                "FULL_SCAN"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "severity": {
+            "description": "the scan severity",
+            "enum": [
+                "Low",
+                "Medium",
+                "High"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

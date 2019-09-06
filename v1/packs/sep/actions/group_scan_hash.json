@@ -1,0 +1,79 @@
+{
+    "description": "Preform a scan across groups for a specific hash",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "group_scan_hash",
+    "parameters": {
+        "args": {
+            "default": "['group_ids']",
+            "description": "the argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "body": {
+            "default": "<EOC creator=\"Symantec\" version=\"1.0\" id=\"6BA1AED3-2201-407A-9051-8E8EFE7A345D\"> <DataSource name=\"Symc\" id=\"63689\" version=\"1.1\" /> <ScanType>{}</ScanType> <Threat category=\"\" type=\"\" severity=\"\" time=\"\"> <Description>{}</Description> <URL></URL> <SMTP-message id=\"\"> <Subject></Subject> <STMP-header></STMP-header> <Protocol></Protocol> <Date></Date> </SMTP-message> <User></User> <Attacker> <IP></IP> <Host></Host> </Attacker> <Victim> <IP></IP> <Port>0</Port> <Host></Host> <SMTP-to></SMTP-to> <SMTP-cc></SMTP-cc> </Victim> <proxy ip=\"\"/> <Application></Application> </Threat> <Activity> <OS id=\"0\" name=\"\" version=\"\" patch=\"\"> <Process></Process> <Files> <File name=\"*\" action=\"create\"> <Hash name=\"{}\" value=\"{}\"/> </File> </Files> <Registry> </Registry> <Network> </Network> </OS> </Activity> </EOC>",
+            "description": "the body of the request",
+            "immutable": true,
+            "type": "string"
+        },
+        "body_args": {
+            "default": "[ 'type', 'description', 'hash name', 'hash' ]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "description": {
+            "description": "the scan description",
+            "required": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/command-queue/eoc?group_ids={}",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "group_ids": {
+            "description": "the ids of the groups to scan",
+            "required": true,
+            "type": "string"
+        },
+        "hash": {
+            "description": "The hash to search for",
+            "required": true,
+            "type": "string"
+        },
+        "hash_type": {
+            "description": "the hash algorithm",
+            "enum": [
+                "SHA1",
+                "SHA256",
+                "MD5"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "header": {
+            "default": "{'Content-Type': 'text/xml'}",
+            "description": "the header to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "POST",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "scan_type": {
+            "description": "the type of scan to preform",
+            "enum": [
+                "QUICK_SCAN",
+                "FULL_SCAN"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,50 @@
+{
+    "description": "Perform Baseline Information Gathering on Specific Computers",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "do_baseline_by_client",
+    "parameters": {
+        "args": {
+            "default": "['computer_ids']",
+            "description": "the argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "body": {
+            "default": "",
+            "description": "the request body to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "computer_ids": {
+            "description": "the ids of the clients to preform information gathering on",
+            "required": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/command-queue/baseline?computer_ids={}",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "header": {
+            "default": "{'Content-Type': 'application/json'}",
+            "description": "the header to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "POST",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

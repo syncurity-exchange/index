@@ -1,0 +1,45 @@
+{
+    "description": "List of Servers Present on SEPM",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_servers",
+    "parameters": {
+        "args": {
+            "default": "[]",
+            "description": "the argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "body": {
+            "default": "",
+            "description": "the request body to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/admin/servers",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "header": {
+            "default": "{'Content-Type': 'application/json'}",
+            "description": "the header to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

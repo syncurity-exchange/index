@@ -1,0 +1,50 @@
+{
+    "description": "Get details on a specific LiveUpdate policy",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_lu_policy_details",
+    "parameters": {
+        "LiveUpdate_Policy_Id": {
+            "description": "the id of the policy to get details on",
+            "required": true,
+            "type": "string"
+        },
+        "args": {
+            "default": "['LiveUpdate_Policy_Id']",
+            "description": "the argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "body": {
+            "default": "",
+            "description": "the request body to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "body_args": {
+            "default": "[]",
+            "description": "the body argument names",
+            "immutable": true,
+            "type": "string"
+        },
+        "endpoint": {
+            "default": "/policies/lu/{}",
+            "description": "the endpoint to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "header": {
+            "default": "{'Content-Type': 'application/json'}",
+            "description": "the header to use",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "description": "the HTTP method to use",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

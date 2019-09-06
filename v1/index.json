@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567734235,
-        "hash": "0d7cd7ae5e92a4426a97bda1b5f5390b"
+        "generated_ts": 1567745592,
+        "hash": "8faf6baef30af063a039dc61631b8762"
     },
     "packs": {
         "alienvault": {
@@ -1082,6 +1082,80 @@
             "ref": "sentinelone",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-sentinelone",
             "version": "0.9.5"
+        },
+        "sep": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 43,
+                    "resources": [
+                        "assign_fingerprint_list",
+                        "authenticate",
+                        "cancel_command",
+                        "client_scan",
+                        "client_scan_hash",
+                        "client_scan_hash_quarantine",
+                        "count_clients_by_content_revision",
+                        "count_clients_by_download_sources",
+                        "count_infected_clients",
+                        "count_malware",
+                        "count_risk_by_technology",
+                        "count_sep_client_versions",
+                        "create_group",
+                        "delete_endpoint",
+                        "delete_group",
+                        "do_baseline_by_client",
+                        "do_baseline_by_group",
+                        "get_autoresolved_events",
+                        "get_avdef_version",
+                        "get_clients_by_content_sources",
+                        "get_command_status",
+                        "get_computers",
+                        "get_endpoint_details",
+                        "get_file_details",
+                        "get_fingerprint_details_by_name",
+                        "get_firewall_polices",
+                        "get_group_locations",
+                        "get_groups",
+                        "get_ips_policies",
+                        "get_lu_policies",
+                        "get_lu_policy_details",
+                        "get_policy_exception_details",
+                        "get_servers",
+                        "get_version",
+                        "group_scan",
+                        "group_scan_hash",
+                        "group_scan_hash_quarantine",
+                        "move_group",
+                        "quarantine_endpoint",
+                        "unquarantine_endpoint",
+                        "update_client_content",
+                        "update_group_content",
+                        "upload_file"
+                    ]
+                }
+            },
+            "contributors": [
+                "Max Meinhold <mmeinhold@syncurity.net>",
+                "JP Bourget <jp@syncurity.net>"
+            ],
+            "description": "Symantec Endpoint Protection",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "symantec",
+                "sepm",
+                "security",
+                "syncurity",
+                "endpoint"
+            ],
+            "name": "Symantec Endpoint Protection",
+            "python_versions": [
+                "3"
+            ],
+            "ref": "sep",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-sep",
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.9.1"
         },
         "shodan": {
             "author": "Syncurity",
