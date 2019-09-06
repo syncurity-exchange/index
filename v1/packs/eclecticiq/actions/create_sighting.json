@@ -1,0 +1,39 @@
+{
+    "description": "Create an EclecticIQ sighting",
+    "enabled": true,
+    "entry_point": "create_sighting.py",
+    "name": "create_sighting",
+    "parameters": {
+        "description": {
+            "description": "the sighting description",
+            "required": true,
+            "type": "string"
+        },
+        "extract_kind": {
+            "description": "the type of extract value",
+            "required": true,
+            "type": "string"
+        },
+        "extract_value": {
+            "description": "the value of th eextract",
+            "required": true,
+            "type": "string"
+        },
+        "group_name": {
+            "description": "the name of the source group",
+            "required": true,
+            "type": "string"
+        },
+        "tags": {
+            "description": "the list of tags to include",
+            "required": false,
+            "type": "array"
+        },
+        "title": {
+            "description": "the title of the sighting",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

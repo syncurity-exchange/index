@@ -1,0 +1,29 @@
+{
+    "description": "Get an EclecticIQ Observable",
+    "enabled": true,
+    "entry_point": "get_observable.py",
+    "name": "get_observable",
+    "parameters": {
+        "value": {
+            "description": "the value to filter by",
+            "required": false,
+            "type": "string"
+        },
+        "value_type": {
+            "description": "the type of filter",
+            "enum": [
+                "ipv4",
+                "domain",
+                "email",
+                "hash-md5",
+                "hash-sha1",
+                "hash-sha256",
+                "hash-sha512",
+                "uri"
+            ],
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
