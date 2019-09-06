@@ -1,0 +1,29 @@
+name: Forcepoint Web
+ref: forcepoint_web
+description: Forcepoint Web API Integration
+stackstorm_version: '>=3.0.0'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+keywords:
+- Forcepoint
+- Web Proxy
+- security
+- Syncurity
+python version:
+- '3'
+contributors:
+- JP Bourget <jp@syncurity.net>
+- Ryan Markle <rmarkle@syncurity.net>
+content:
+  actions:
+    count: 4
+    resources:
+    - add_api_managed_categories
+    - addremove_ipurl_blocklist
+    - check_urlip_blocklist
+    - list_api_managed_categories
+  tests:
+    count: 1
+    resources:
+    - __init__.py

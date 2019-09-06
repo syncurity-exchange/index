@@ -1,0 +1,24 @@
+{
+    "description": "Manage Categories - add",
+    "enabled": true,
+    "entry_point": "add_api_managed_categories.py",
+    "name": "add_api_managed_categories",
+    "parameters": {
+        "category": {
+            "description": "Category to be added",
+            "required": true,
+            "type": "string"
+        },
+        "description": {
+            "description": "Category description to be added",
+            "required": true,
+            "type": "string"
+        },
+        "parent_id": {
+            "description": "Parent ID of the category",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567733101,
-        "hash": "bd38de9ee3883e8747866b3b01a010d2"
+        "generated_ts": 1567734235,
+        "hash": "0d7cd7ae5e92a4426a97bda1b5f5390b"
     },
     "packs": {
         "alienvault": {
@@ -424,6 +424,46 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-crowdstrike_intel",
             "stackstorm_version": ">=3.0.0",
             "version": "0.9.0"
+        },
+        "forcepoint_web": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 4,
+                    "resources": [
+                        "add_api_managed_categories",
+                        "addremove_ipurl_blocklist",
+                        "check_urlip_blocklist",
+                        "list_api_managed_categories"
+                    ]
+                },
+                "tests": {
+                    "count": 1,
+                    "resources": [
+                        "__init__.py"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>"
+            ],
+            "description": "Forcepoint Web API Integration",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Forcepoint",
+                "Web Proxy",
+                "security",
+                "Syncurity"
+            ],
+            "name": "Forcepoint Web",
+            "python version": [
+                "3"
+            ],
+            "ref": "forcepoint_web",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-forcepoint_web",
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.9.1"
         },
         "hybrid_analysis": {
             "author": "Syncurity",

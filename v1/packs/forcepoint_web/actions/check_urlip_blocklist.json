@@ -1,0 +1,24 @@
+{
+    "description": "Check URL or IP in a category",
+    "enabled": true,
+    "entry_point": "check_urlip_blocklist.py",
+    "name": "check_urlip_blocklist",
+    "parameters": {
+        "category": {
+            "description": "Category to be checked",
+            "required": true,
+            "type": "string"
+        },
+        "ip": {
+            "description": "IP address to checked",
+            "required": false,
+            "type": "string"
+        },
+        "url": {
+            "description": "URL to be checked",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

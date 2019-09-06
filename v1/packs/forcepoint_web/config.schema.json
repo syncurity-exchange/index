@@ -1,0 +1,21 @@
+{
+    "host": {
+        "default": "{{ st2kv.system.forcepoint_web_host }}",
+        "description": "Forcepoint Host",
+        "required": true,
+        "type": "string"
+    },
+    "password": {
+        "default": "{{ st2kv.system.forcepoint_web_password }}",
+        "description": "Forcepoint password",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "username": {
+        "default": "{{ st2kv.system.forcepoint_web_username }}",
+        "description": "Forcepoint Username",
+        "required": true,
+        "type": "string"
+    }
+}

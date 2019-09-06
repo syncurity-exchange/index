@@ -1,0 +1,7 @@
+{
+    "description": "Manage Categories - List",
+    "enabled": true,
+    "entry_point": "list_api_managed_categories.py",
+    "name": "list_api_managed_categories",
+    "runner_type": "python-script"
+}
