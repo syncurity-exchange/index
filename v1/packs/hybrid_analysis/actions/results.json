@@ -1,0 +1,21 @@
+{
+    "description": "Get file analysis results from the Falcon/HA API",
+    "enabled": true,
+    "entry_point": "results.py",
+    "name": "results",
+    "parameters": {
+        "file_hash": {
+            "default": "",
+            "description": "MD5, SHA1, or SHA256 hash for the file to get results for",
+            "required": false,
+            "type": "string"
+        },
+        "job_id": {
+            "default": "",
+            "description": "Job ID for the file to get results for",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

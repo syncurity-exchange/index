@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567729380,
-        "hash": "9a597aeabcc257ef124070da9e0c1b37"
+        "generated_ts": 1567733101,
+        "hash": "bd38de9ee3883e8747866b3b01a010d2"
     },
     "packs": {
         "alienvault": {
@@ -424,6 +424,38 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-crowdstrike_intel",
             "stackstorm_version": ">=3.0.0",
             "version": "0.9.0"
+        },
+        "hybrid_analysis": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 3,
+                    "resources": [
+                        "results",
+                        "sandbox_malware",
+                        "submit"
+                    ]
+                }
+            },
+            "description": "Hybrid Analysis / Falcon Sandbox API Integration",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Crowdstrike",
+                "Hybrid Analysis",
+                "Falcon Sandbox",
+                "sandbox",
+                "security",
+                "Syncurity"
+            ],
+            "name": "Crowdstrike Falcon Sandbox / Hybrid Analysis",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "hybrid_analysis",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-hybrid_analysis",
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.9.1"
         },
         "ibm_xforce": {
             "author": "Syncurity",

@@ -1,0 +1,9 @@
+{
+    "ha_key": {
+        "default": "{{ st2kv.system.ha_key }}",
+        "description": "Hybrid Analysis Falcon API key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    }
+}

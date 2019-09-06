@@ -1,0 +1,24 @@
+name: Crowdstrike Falcon Sandbox / Hybrid Analysis
+ref: hybrid_analysis
+description: Hybrid Analysis / Falcon Sandbox API Integration
+stackstorm_version: '>=3.0.0'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+keywords:
+- Crowdstrike
+- Hybrid Analysis
+- Falcon Sandbox
+- sandbox
+- security
+- Syncurity
+python version:
+- '2'
+- '3'
+content:
+  actions:
+    count: 3
+    resources:
+    - results
+    - sandbox_malware
+    - submit

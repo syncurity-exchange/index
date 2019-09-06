@@ -1,0 +1,67 @@
+{
+    "description": "Submit a file to Falcon/HA Sandbox via the API",
+    "enabled": true,
+    "entry_point": "submit.py",
+    "name": "submit",
+    "parameters": {
+        "address": {
+            "default": "{{ st2kv.system.irflow_server}}",
+            "description": "IR-Flow server address",
+            "required": false,
+            "type": "string"
+        },
+        "alert_num": {
+            "default": "0",
+            "description": "The Alert Number of the IR-Flow alert to run this enrichment on, and to pull file attachment from for submission if not submitting via URL",
+            "required": false,
+            "type": "string"
+        },
+        "api_key": {
+            "default": "{{ st2kv.system.irflow_api_key | decrypt_kv }}",
+            "description": "IR-Flow API Key",
+            "required": false,
+            "type": "string"
+        },
+        "api_user": {
+            "default": "{{ st2kv.system.irflow_api_user}}",
+            "description": "IR-Flow API User",
+            "required": false,
+            "type": "string"
+        },
+        "env_id": {
+            "default": "120",
+            "description": "The integer environment_id representing the environment to perform analysis on. Defaults to 120 - Win7 64 bit. Available environments ID: 300: Linux (Ubuntu 16.04, 64 bit), 200: Android Static Analysis, 120: Windows 7 64 bit, 110: Windows 7 32 bit (HWP Support), 100: Windows 7 32 bit",
+            "enum": [
+                "300",
+                "200",
+                "120",
+                "110",
+                "100"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "filename": {
+            "default": "",
+            "description": "If a specific file attachment is desired, the appropriate filename",
+            "required": false,
+            "type": "string"
+        },
+        "protocol": {
+            "description": "Configure http or https - defaults to https",
+            "enum": [
+                "http",
+                "https"
+            ],
+            "required": false,
+            "type": "string"
+        },
+        "url": {
+            "default": "",
+            "description": "If submitting via URL, the URL to submit from",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
