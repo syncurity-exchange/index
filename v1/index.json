@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567832244,
-        "hash": "c290fded2906fde9a83bce8f09616c9d"
+        "generated_ts": 1567832756,
+        "hash": "811d28981aa17c7a82b56a2308d8a1f1"
     },
     "packs": {
         "alienvault": {
@@ -1032,7 +1032,7 @@
                 "Syncurity",
                 "Threat Intel"
             ],
-            "name": "recorded_future",
+            "name": "Recorded Future",
             "python_versions": [
                 "2",
                 "3"

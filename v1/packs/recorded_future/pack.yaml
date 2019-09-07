@@ -1,4 +1,4 @@
-name: recorded_future
+name: Recorded Future
 ref: recorded_future
 description: Recorded Future API Integration
 stackstorm_version: '>=3.0.1'
