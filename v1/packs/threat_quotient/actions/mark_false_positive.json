@@ -1,0 +1,30 @@
+{
+    "description": "Threat Quotient Mark False Positive",
+    "enabled": true,
+    "entry_point": "mark_false_positive.py",
+    "name": "mark_false_positive",
+    "parameters": {
+        "indicator": {
+            "description": "Indicator to add to watchlist",
+            "required": true,
+            "type": "string"
+        },
+        "sources": {
+            "default": "IR-Flow SoC",
+            "description": "List of sources associated with the indicator",
+            "required": false,
+            "type": "string"
+        },
+        "value": {
+            "default": "True",
+            "description": "True to mark as a false positive; False to mark as not a false positive",
+            "enum": [
+                "True",
+                "False"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

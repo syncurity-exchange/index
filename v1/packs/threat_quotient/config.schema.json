@@ -1,0 +1,21 @@
+{
+    "email": {
+        "default": "{{ st2kv.system.threatq_email }}",
+        "description": "Threat Quotient user email",
+        "required": true,
+        "type": "string"
+    },
+    "host": {
+        "default": "{{ st2kv.system.threatq_host }}",
+        "description": "Threat Quotient instance domain/URL to operate on",
+        "required": true,
+        "type": "string"
+    },
+    "password": {
+        "default": "{{ st2kv.system.threatq_password }}",
+        "description": "Threat Quotient user password",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "description": "Threat Quotient Create Indicator",
+    "enabled": true,
+    "entry_point": "create_indicator.py",
+    "name": "create_indicator",
+    "parameters": {
+        "alienvault_revision": {
+            "required": false,
+            "type": "string"
+        },
+        "alienvault_threat_level": {
+            "required": false,
+            "type": "string"
+        },
+        "attack_phase": {
+            "required": false,
+            "type": "string"
+        },
+        "city": {
+            "required": false,
+            "type": "string"
+        },
+        "confidence": {
+            "required": false,
+            "type": "string"
+        },
+        "crowdstrike_domain_type": {
+            "required": false,
+            "type": "string"
+        },
+        "crowdstrike_ip_type": {
+            "required": false,
+            "type": "string"
+        },
+        "crowdstrike_status": {
+            "required": false,
+            "type": "string"
+        },
+        "crowdstrike_threat_type": {
+            "required": false,
+            "type": "string"
+        },
+        "cve": {
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "required": false,
+            "type": "string"
+        },
+        "ind_status": {
+            "description": "Status to associate with the indicator",
+            "required": true,
+            "type": "string"
+        },
+        "ind_type": {
+            "description": "Type of indicator",
+            "required": true,
+            "type": "string"
+        },
+        "indicator": {
+            "description": "Indicator to add to watchlist",
+            "required": true,
+            "type": "string"
+        },
+        "malware_family": {
+            "required": false,
+            "type": "string"
+        },
+        "port": {
+            "required": false,
+            "type": "string"
+        },
+        "query_string": {
+            "required": false,
+            "type": "string"
+        },
+        "reference": {
+            "required": false,
+            "type": "string"
+        },
+        "scheme": {
+            "required": false,
+            "type": "string"
+        },
+        "sources": {
+            "default": "IR-Flow SoC",
+            "description": "List of sources associated with the indicator",
+            "required": false,
+            "type": "string"
+        },
+        "target": {
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

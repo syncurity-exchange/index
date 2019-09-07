@@ -1,0 +1,14 @@
+{
+    "description": "Query the Threat Quotient instance indicator records",
+    "enabled": true,
+    "entry_point": "search.py",
+    "name": "search",
+    "parameters": {
+        "query": {
+            "description": "Query to search by",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,26 @@
+name: Threat Quotient
+ref: threat_quotient
+description: Threat Quotient API Integration
+version: 0.9.0
+stackstorm_version: '>=2.9.0'
+author: Syncurity
+email: support@syncurity.net
+python_versions:
+- '2'
+- '3'
+keywords:
+- Threat Quotient
+- TIP
+- Threat Intel
+- security
+- Syncurity
+contributors:
+- Brian Tackett <btackett@syncurity.net>
+content:
+  actions:
+    count: 4
+    resources:
+    - add_to_watchlist
+    - create_indicator
+    - mark_false_positive
+    - search

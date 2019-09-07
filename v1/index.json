@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567832756,
-        "hash": "811d28981aa17c7a82b56a2308d8a1f1"
+        "generated_ts": 1567836111,
+        "hash": "b058a113bc5d855b4a9af244889aad0a"
     },
     "packs": {
         "alienvault": {
@@ -1328,6 +1328,41 @@
             "ref": "tenable_io",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-tenable_io",
             "stackstorm_version": ">=3.0.0",
+            "version": "0.9.0"
+        },
+        "threat_quotient": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 4,
+                    "resources": [
+                        "add_to_watchlist",
+                        "create_indicator",
+                        "mark_false_positive",
+                        "search"
+                    ]
+                }
+            },
+            "contributors": [
+                "Brian Tackett <btackett@syncurity.net>"
+            ],
+            "description": "Threat Quotient API Integration",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Threat Quotient",
+                "TIP",
+                "Threat Intel",
+                "security",
+                "Syncurity"
+            ],
+            "name": "Threat Quotient",
+            "python_versions": [
+                "2",
+                "3"
+            ],
+            "ref": "threat_quotient",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-threat_quotient",
+            "stackstorm_version": ">=2.9.0",
             "version": "0.9.0"
         },
         "urlscan": {

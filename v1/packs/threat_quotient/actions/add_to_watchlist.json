@@ -1,0 +1,20 @@
+{
+    "description": "Threat Quotient Add to Watchlist",
+    "enabled": true,
+    "entry_point": "add_to_watchlist.py",
+    "name": "add_to_watchlist",
+    "parameters": {
+        "indicator": {
+            "description": "Indicator to add to watchlist",
+            "required": true,
+            "type": "string"
+        },
+        "sources": {
+            "default": "IR-Flow SoC",
+            "description": "List of sources associated with the indicator",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
