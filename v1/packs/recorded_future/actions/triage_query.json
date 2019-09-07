@@ -1,0 +1,26 @@
+{
+    "description": "Query Recorded Future for a particular indicator and filter output",
+    "enabled": true,
+    "entry_point": "triage_query.py",
+    "name": "triage_query",
+    "parameters": {
+        "indicator": {
+            "description": "Indicator to lookup",
+            "required": true,
+            "type": "string"
+        },
+        "ioc_type": {
+            "description": "Type of indicator",
+            "enum": [
+                "ip",
+                "hash",
+                "malware",
+                "url",
+                "domain"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

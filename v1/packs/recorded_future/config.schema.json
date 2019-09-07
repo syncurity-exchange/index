@@ -1,0 +1,9 @@
+{
+    "key": {
+        "default": "{{ st2kv.system.recorded_future_key }}",
+        "description": "Recorded Future API key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    }
+}

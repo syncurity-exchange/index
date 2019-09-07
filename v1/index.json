@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567793952,
-        "hash": "47eed33c0ac4a6df58d3276d3756c299"
+        "generated_ts": 1567832244,
+        "hash": "c290fded2906fde9a83bce8f09616c9d"
     },
     "packs": {
         "alienvault": {
@@ -1006,6 +1006,39 @@
             ],
             "ref": "qradar",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-qradar",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.1"
+        },
+        "recorded_future": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 2,
+                    "resources": [
+                        "query_services",
+                        "triage_query"
+                    ]
+                }
+            },
+            "contributors": [
+                "Brian Tackett <btackett@syncurity.net>",
+                "JP Bourget <jp@syncurity.net>"
+            ],
+            "description": "Recorded Future API Integration",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Recorded Future",
+                "security",
+                "Syncurity",
+                "Threat Intel"
+            ],
+            "name": "recorded_future",
+            "python_versions": [
+                "2",
+                "3"
+            ],
+            "ref": "recorded_future",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-recorded_future",
             "stackstorm_version": ">=3.0.1",
             "version": "0.9.1"
         },
