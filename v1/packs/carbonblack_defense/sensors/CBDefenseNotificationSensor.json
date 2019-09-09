@@ -1,12 +1,34 @@
 {
     "class_name": "CBDefenseNotificationSensor",
     "description": "Get Carbon Black Defense Notifications",
+    "enabled": false,
     "entry_point": "cbdefense_notification_sensor.py",
-    "poll_interval": 60,
+    "poll_interval": 120,
     "trigger_types": [
         {
             "description": "A notification from CB Defense",
-            "name": "notification",
+            "name": "threat_info_notification",
+            "payload_schema": {
+                "properties": {
+                    "deviceName": {
+                        "type": "string"
+                    },
+                    "originalAlertUrl": {
+                        "type": "string"
+                    },
+                    "response": {
+                        "type": "object"
+                    },
+                    "summary": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "description": "A notification from CB Defense",
+            "name": "threat_hunter_info_notification",
             "payload_schema": {
                 "properties": {
                     "deviceName": {

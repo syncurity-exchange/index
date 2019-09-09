@@ -1,0 +1,32 @@
+{
+    "action": {
+        "parameters": {
+            "credential_name": "staging",
+            "description": "{{ trigger.response.threatHunterInfo.summary }}",
+            "incoming_field_group_name": "CBDefense Notification",
+            "log_level": "DEBUG",
+            "payload": "{{ trigger.response }}",
+            "suppress_missing_field_warning": true
+        },
+        "ref": "irflow.create_alert"
+    },
+    "context": {
+        "user": "st2admin"
+    },
+    "criteria": {},
+    "description": "Create IR-Flow Alert From Carbon Black Defense Notification",
+    "enabled": true,
+    "metadata_file": "",
+    "name": "Carbon Black Threat Hunter Notification",
+    "pack": "carbonblack_defense",
+    "ref": "carbonblack_defense.threat_hunter_info_notification",
+    "trigger": {
+        "description": "A notification from Carbon Black Defense",
+        "parameters": {},
+        "type": "carbonblack_defense.threat_hunter_info_notification"
+    },
+    "type": {
+        "parameters": {},
+        "ref": "standard"
+    }
+}

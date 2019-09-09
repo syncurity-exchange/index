@@ -7,9 +7,10 @@ keywords:
 - secops
 - Carbon Black
 - Carbon Black Defense
+- Carbon Black Threat Hunter
 python version:
 - '2'
-version: 0.9.4
+version: 0.9.5
 author: Syncurity
 email: support@syncurity.net
 content:
@@ -21,9 +22,10 @@ content:
     - get_device_status_by_device_id
     - get_device_status_by_name
   rules:
-    count: 1
+    count: 2
     resources:
-    - notification
+    - Carbon Black Defense Notification
+    - Carbon Black Threat Hunter Notification
   sensors:
     count: 1
     resources:

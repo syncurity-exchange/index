@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1568058967,
-        "hash": "b058a113bc5d855b4a9af244889aad0a"
+        "generated_ts": 1568065011,
+        "hash": "ce09aae4f43b0db0d3cd2ac7be5262dd"
     },
     "packs": {
         "alienvault": {
@@ -202,9 +202,10 @@
                     ]
                 },
                 "rules": {
-                    "count": 1,
+                    "count": 2,
                     "resources": [
-                        "notification"
+                        "Carbon Black Defense Notification",
+                        "Carbon Black Threat Hunter Notification"
                     ]
                 },
                 "sensors": {
@@ -221,7 +222,8 @@
                 "Syncurity",
                 "secops",
                 "Carbon Black",
-                "Carbon Black Defense"
+                "Carbon Black Defense",
+                "Carbon Black Threat Hunter"
             ],
             "name": "Carbon Black Defense",
             "python version": [
@@ -229,7 +231,7 @@
             ],
             "ref": "carbonblack_defense",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-carbonblack_defense",
-            "version": "0.9.4"
+            "version": "0.9.5"
         },
         "carbonblack_livequery": {
             "author": "Syncurity",
