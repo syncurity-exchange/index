@@ -1,8 +1,9 @@
 {
     "action": {
         "parameters": {
-            "description": "{{ trigger.response.threatInfo.summary }}",
-            "incoming_field_group_name": "CBDefense Notification",
+            "credential_name": "staging",
+            "description": "{{ trigger.summary }}",
+            "incoming_field_group_name": "Carbon Black Defense - {{ trigger.tenant }}",
             "log_level": "DEBUG",
             "payload": "{{ trigger.response }}",
             "suppress_missing_field_warning": true

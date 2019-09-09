@@ -2,7 +2,7 @@
     "class_name": "CBDefenseNotificationSensor",
     "description": "Get Carbon Black Defense Notifications",
     "entry_point": "cbdefense_notification_sensor.py",
-    "poll_interval": 30,
+    "poll_interval": 60,
     "trigger_types": [
         {
             "description": "A notification from CB Defense",
@@ -19,6 +19,9 @@
                         "type": "object"
                     },
                     "summary": {
+                        "type": "string"
+                    },
+                    "tenant": {
                         "type": "string"
                     }
                 },
