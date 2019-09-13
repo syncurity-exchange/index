@@ -1,0 +1,20 @@
+{
+    "description": "Get the Security Information for the given domain. For details, see https://investigate.umbrella.com/docs/api#securityInfo",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "security",
+    "parameters": {
+        "domain": {
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "security",
+            "description": "the name of the method in pyinvestigate",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

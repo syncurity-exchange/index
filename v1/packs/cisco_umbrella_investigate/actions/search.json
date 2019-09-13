@@ -1,0 +1,40 @@
+{
+    "description": "Searches for domains that match a given pattern",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "search",
+    "parameters": {
+        "_type": {
+            "position": 4,
+            "required": false,
+            "type": "string"
+        },
+        "include_category": {
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "limit": {
+            "position": 2,
+            "required": false,
+            "type": "string"
+        },
+        "method": {
+            "default": "search",
+            "description": "the name of the method in pyinvestigate",
+            "immutable": true,
+            "type": "string"
+        },
+        "pattern": {
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "start": {
+            "position": 1,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

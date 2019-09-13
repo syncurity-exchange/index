@@ -1,0 +1,20 @@
+{
+    "description": "Gives a risk score based on Umbrella analysis for given domain",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "risk_score",
+    "parameters": {
+        "domain_name": {
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "risk_score",
+            "description": "the name of the method in pyinvestigate",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

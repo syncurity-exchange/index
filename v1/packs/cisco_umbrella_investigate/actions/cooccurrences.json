@@ -1,0 +1,20 @@
+{
+    "description": "Get the cooccurrences of the given domain. For details, see https://investigate.umbrella.com/docs/api#co-occurrences",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "cooccurrences",
+    "parameters": {
+        "domain": {
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "cooccurrences",
+            "description": "the name of the method in pyinvestigate",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

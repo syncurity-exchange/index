@@ -1,0 +1,49 @@
+name: cisco_umbrella_investigate
+ref: cisco_umbrella_investigate
+description: Cisco Umbrella Investigate API Integration
+version: 0.9.0
+stackstorm_version: '>=3.0.1'
+author: Syncurity
+email: support@syncurity.net
+python_versions:
+- '2'
+- '3'
+keywords:
+- Cisco
+- Cisco Umbrella Investigate
+- DNS
+- security
+- Syncurity
+- Intel
+contributors:
+- Max Meinhold <mmeinhold@syncurity.net>
+content:
+  actions:
+    count: 26
+    resources:
+    - as_for_ip
+    - categorization
+    - cooccurrences
+    - domain_volume
+    - domain_whois
+    - domain_whois_history
+    - email_whois
+    - latest_domains
+    - ns_whois
+    - pdns_domain
+    - pdns_ip
+    - pdns_name
+    - pdns_raw
+    - pdns_timeline
+    - prefixes_for_asn
+    - related
+    - risk_score
+    - rr_history
+    - sample
+    - sample_artifacts
+    - sample_connections
+    - sample_samples
+    - samples
+    - search
+    - security
+    - timeline

@@ -1,0 +1,30 @@
+{
+    "description": "Return an object representing the sample identified by the input hash, or an empty object if that sample is not found",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "sample",
+    "parameters": {
+        "hash": {
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "limit": {
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "method": {
+            "default": "sample",
+            "description": "the name of the method in pyinvestigate",
+            "immutable": true,
+            "type": "string"
+        },
+        "offset": {
+            "position": 2,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,8 @@
+{
+    "api_key": {
+        "description": "The api key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    }
+}

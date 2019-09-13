@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1568406545,
-        "hash": "c1ee38fcbe1a1450ea113c76ab068313"
+        "generated_ts": 1568406766,
+        "hash": "c2eed8b30fa81b0031f101cafd4b77f3"
     },
     "packs": {
         "alienvault": {
@@ -434,6 +434,64 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-cisco_umbrella",
             "stackstorm_version": ">=3.0.1",
             "version": "0.9.2"
+        },
+        "cisco_umbrella_investigate": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 26,
+                    "resources": [
+                        "as_for_ip",
+                        "categorization",
+                        "cooccurrences",
+                        "domain_volume",
+                        "domain_whois",
+                        "domain_whois_history",
+                        "email_whois",
+                        "latest_domains",
+                        "ns_whois",
+                        "pdns_domain",
+                        "pdns_ip",
+                        "pdns_name",
+                        "pdns_raw",
+                        "pdns_timeline",
+                        "prefixes_for_asn",
+                        "related",
+                        "risk_score",
+                        "rr_history",
+                        "sample",
+                        "sample_artifacts",
+                        "sample_connections",
+                        "sample_samples",
+                        "samples",
+                        "search",
+                        "security",
+                        "timeline"
+                    ]
+                }
+            },
+            "contributors": [
+                "Max Meinhold <mmeinhold@syncurity.net>"
+            ],
+            "description": "Cisco Umbrella Investigate API Integration",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Cisco",
+                "Cisco Umbrella Investigate",
+                "DNS",
+                "security",
+                "Syncurity",
+                "Intel"
+            ],
+            "name": "cisco_umbrella_investigate",
+            "python_versions": [
+                "2",
+                "3"
+            ],
+            "ref": "cisco_umbrella_investigate",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-cisco_umbrella_investigate",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.0"
         },
         "crowdstrike_intel": {
             "author": "Syncurity",

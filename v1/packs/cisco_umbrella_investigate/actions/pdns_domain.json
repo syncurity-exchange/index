@@ -1,0 +1,47 @@
+{
+    "description": "Returns the Resource Record(RR) data for DNS responses, and categorization data, where the answer ( or rdata) is the domain(s).",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "pdns_domain",
+    "parameters": {
+        "domain": {
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "limit": {
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "method": {
+            "default": "pdns_domain",
+            "description": "the name of the method in pyinvestigate",
+            "immutable": true,
+            "type": "string"
+        },
+        "offset": {
+            "default": 0,
+            "position": 2,
+            "required": false,
+            "type": "integer"
+        },
+        "recordType": {
+            "position": 5,
+            "required": false,
+            "type": "string"
+        },
+        "sortby": {
+            "position": 4,
+            "required": false,
+            "type": "string"
+        },
+        "sortorder": {
+            "default": "desc",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

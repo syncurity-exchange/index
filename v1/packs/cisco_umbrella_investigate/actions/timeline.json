@@ -1,0 +1,20 @@
+{
+    "description": "Get the domain tagging timeline for a given uri. Could be a domain, ip, or url. For details, see https://docs.umbrella.com/investigate-api/docs/timeline",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "timeline",
+    "parameters": {
+        "method": {
+            "default": "timeline",
+            "description": "the name of the method in pyinvestigate",
+            "immutable": true,
+            "type": "string"
+        },
+        "uri": {
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
