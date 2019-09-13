@@ -6,16 +6,19 @@
     "parameters": {
         "category": {
             "description": "Category to be checked",
+            "position": 0,
             "required": true,
             "type": "string"
         },
         "ip": {
             "description": "IP address to checked",
+            "position": 2,
             "required": false,
             "type": "string"
         },
         "url": {
             "description": "URL to be checked",
+            "position": 1,
             "required": false,
             "type": "string"
         }

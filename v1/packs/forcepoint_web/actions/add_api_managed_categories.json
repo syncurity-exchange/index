@@ -6,16 +6,19 @@
     "parameters": {
         "category": {
             "description": "Category to be added",
+            "position": 0,
             "required": true,
             "type": "string"
         },
         "description": {
             "description": "Category description to be added",
+            "position": 1,
             "required": true,
             "type": "string"
         },
         "parent_id": {
             "description": "Parent ID of the category",
+            "position": 2,
             "required": true,
             "type": "string"
         }

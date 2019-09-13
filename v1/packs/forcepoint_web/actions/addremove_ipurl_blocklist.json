@@ -6,21 +6,25 @@
     "parameters": {
         "category": {
             "description": "Category to be updated",
+            "position": 0,
             "required": true,
             "type": "string"
         },
         "ip": {
             "description": "IP address to added/removed",
+            "position": 3,
             "required": false,
             "type": "string"
         },
         "remove": {
             "description": "Remove URL or IP from list if True",
+            "position": 1,
             "required": false,
             "type": "string"
         },
         "url": {
             "description": "URL to be added/removed",
+            "position": 2,
             "required": false,
             "type": "string"
         }

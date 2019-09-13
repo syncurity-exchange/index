@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1568406496,
-        "hash": "0463ebaa1a0165d26a50640e41113757"
+        "generated_ts": 1568406545,
+        "hash": "c1ee38fcbe1a1450ea113c76ab068313"
     },
     "packs": {
         "alienvault": {
@@ -541,7 +541,7 @@
             ],
             "ref": "forcepoint_web",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-forcepoint_web",
-            "stackstorm_version": ">=3.0.0",
+            "stackstorm_version": ">=3.0.1",
             "version": "0.9.1"
         },
         "hybrid_analysis": {
