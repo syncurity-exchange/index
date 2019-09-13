@@ -1,0 +1,20 @@
+{
+    "description": "Get\u00a0Carbon Black Response agent details",
+    "entry_point": "get_agent.py",
+    "name": "get_agent",
+    "parameters": {
+        "agent_id": {
+            "description": "Id of sensor",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Name of tenant whose credentials will be used",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

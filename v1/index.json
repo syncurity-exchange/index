@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1568159591,
-        "hash": "5b0ed1d9832ed671c9e6f7929883042a"
+        "generated_ts": 1568406496,
+        "hash": "0463ebaa1a0165d26a50640e41113757"
     },
     "packs": {
         "alienvault": {
@@ -266,6 +266,50 @@
             "ref": "carbonblack_livequery",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-carbonblack_livequery",
             "stackstorm_version": ">=3.1.0",
+            "version": "0.9.1"
+        },
+        "cb_response": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 2,
+                    "resources": [
+                        "get_agent",
+                        "isolate_agent"
+                    ]
+                },
+                "rules": {
+                    "count": 2,
+                    "resources": [
+                        "Create Carbon Black Response Alert in IR-Flow",
+                        "send_N_alerts_to_irflow"
+                    ]
+                },
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "CarbonBlackResponseAlertSensor"
+                    ]
+                }
+            },
+            "contributors": [
+                "Ryan Markle <rmarkle@syncurity.net>"
+            ],
+            "description": "Carbon Black Response API Pack",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Carbon Black Response",
+                "security",
+                "Syncurity",
+                "EDR"
+            ],
+            "name": "Carbon Black Response",
+            "python version": [
+                "2"
+            ],
+            "ref": "cb_response",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-cb_response",
+            "stackstorm_version": ">=3.0.1",
             "version": "0.9.1"
         },
         "cisco_amp": {

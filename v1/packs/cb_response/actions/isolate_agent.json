@@ -1,0 +1,26 @@
+{
+    "description": "Isolate or De-isolate Carbon Black Response sensor/agent",
+    "entry_point": "isolate_agent.py",
+    "name": "isolate_agent",
+    "parameters": {
+        "agent_id": {
+            "description": "Agent ID to be de/isolated",
+            "position": 0,
+            "required": true,
+            "type": "integer"
+        },
+        "isolate": {
+            "description": "True to Isolate, False De-isolate.  Default is true",
+            "position": 1,
+            "required": false,
+            "type": "boolean"
+        },
+        "tenant": {
+            "description": "Name of tenant whose credentials will be used",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

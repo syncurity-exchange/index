@@ -1,0 +1,43 @@
+{
+    "carbonblack_response": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "credentials": {
+        "properties": {
+            "api_key": {
+                "description": "Carbon Black Defense API Key",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "disable_alert_polling": {
+                "description": "Disable alert polling for a tenant.  Default is False",
+                "required": false,
+                "type": "boolean"
+            },
+            "feednames": {
+                "description": "Feeds to filter by",
+                "required": false,
+                "type": "array"
+            },
+            "host": {
+                "description": "CB Defense Hostname",
+                "required": true,
+                "type": "string"
+            },
+            "severity": {
+                "description": "Minimum CB Defense alert severity to return",
+                "required": false,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    }
+}

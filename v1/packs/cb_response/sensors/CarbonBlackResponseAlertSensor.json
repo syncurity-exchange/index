@@ -1,0 +1,35 @@
+{
+    "class_name": "CarbonBlackResponseAlertSensor",
+    "description": "Get CB Response Alerts",
+    "enabled": true,
+    "entry_point": "get_alerts.py",
+    "trigger_types": [
+        {
+            "description": "An Alert from Response",
+            "name": "alert",
+            "payload_schema": {
+                "properties": {
+                    "alertId": {
+                        "type": "string"
+                    },
+                    "alertType": {
+                        "type": "string"
+                    },
+                    "creationDate": {
+                        "type": "string"
+                    },
+                    "device": {
+                        "type": "string"
+                    },
+                    "severity": {
+                        "type": "string"
+                    },
+                    "summary": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}
