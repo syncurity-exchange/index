@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1568406766,
-        "hash": "c2eed8b30fa81b0031f101cafd4b77f3"
+        "generated_ts": 1568408490,
+        "hash": "090a3064b8d97c3eb6968d653b887d2f"
     },
     "packs": {
         "alienvault": {
@@ -483,7 +483,7 @@
                 "Syncurity",
                 "Intel"
             ],
-            "name": "cisco_umbrella_investigate",
+            "name": "Cisco Umbrella Investigate API",
             "python_versions": [
                 "2",
                 "3"
@@ -491,7 +491,7 @@
             "ref": "cisco_umbrella_investigate",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-cisco_umbrella_investigate",
             "stackstorm_version": ">=3.0.1",
-            "version": "0.9.0"
+            "version": "0.9.1"
         },
         "crowdstrike_intel": {
             "author": "Syncurity",
