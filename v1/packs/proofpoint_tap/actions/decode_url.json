@@ -6,6 +6,7 @@
     "parameters": {
         "url": {
             "description": "A proofpoint-encoded URL to decode",
+            "position": 0,
             "required": true,
             "type": "string"
         }

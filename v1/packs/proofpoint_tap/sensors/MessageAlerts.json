@@ -1,6 +1,7 @@
 {
     "class_name": "MessageAlerts",
     "description": "Get message alerts from ProofPoint",
+    "enabled": false,
     "entry_point": "message_alerts.py",
     "poll_interval": 30,
     "trigger_types": [

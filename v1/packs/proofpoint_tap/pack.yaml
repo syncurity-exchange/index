@@ -35,7 +35,3 @@ content:
     resources:
     - ClickAlerts
     - MessageAlerts
-  tests:
-    count: 1
-    resources:
-    - __init__.py

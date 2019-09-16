@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1568408490,
-        "hash": "090a3064b8d97c3eb6968d653b887d2f"
+        "generated_ts": 1568654576,
+        "hash": "f38708d53ce41c83097751022835d197"
     },
     "packs": {
         "alienvault": {
@@ -1035,12 +1035,6 @@
                     "resources": [
                         "ClickAlerts",
                         "MessageAlerts"
-                    ]
-                },
-                "tests": {
-                    "count": 1,
-                    "resources": [
-                        "__init__.py"
                     ]
                 }
             },

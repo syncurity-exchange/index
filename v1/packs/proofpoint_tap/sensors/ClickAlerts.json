@@ -1,6 +1,7 @@
 {
     "class_name": "ClickAlerts",
     "description": "Get clicks from ProofPoint",
+    "enabled": false,
     "entry_point": "click_alerts.py",
     "poll_interval": 30,
     "trigger_types": [
