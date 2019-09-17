@@ -10,7 +10,7 @@ keywords:
 - Carbon Black Threat Hunter
 python version:
 - '2'
-version: 0.9.6
+version: 0.9.7
 author: Syncurity
 email: support@syncurity.net
 content:
