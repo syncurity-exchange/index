@@ -1,0 +1,50 @@
+{
+    "class_name": "ADAdminSensor",
+    "description": "Get alerts for Active Directory",
+    "entry_point": "get_alerts.py",
+    "poll_interval": 120,
+    "trigger_types": [
+        {
+            "description": "Member Added to Group Alert in Active Directory",
+            "name": "watched_group_member_added",
+            "payload_schema": {
+                "properties": {
+                    "accountAdded": {
+                        "type": "string"
+                    },
+                    "groupName": {
+                        "type": "string"
+                    },
+                    "samAccountName": {
+                        "type": "string"
+                    },
+                    "tenant": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "description": "Member Removed from Group Alert in Active Directory",
+            "name": "watched_group_member_removed",
+            "payload_schema": {
+                "properties": {
+                    "accountRemoved": {
+                        "type": "string"
+                    },
+                    "groupName": {
+                        "type": "string"
+                    },
+                    "samAccountName": {
+                        "type": "string"
+                    },
+                    "tenant": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

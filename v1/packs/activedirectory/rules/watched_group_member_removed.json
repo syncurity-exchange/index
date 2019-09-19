@@ -1,0 +1,31 @@
+{
+    "action": {
+        "parameters": {
+            "credential_name": "integrations_team",
+            "description": "Monitored AD Group - User Removed",
+            "incoming_field_group_name": "Monitored AD Group - User Removed",
+            "log_level": "DEBUG",
+            "payload": "{{ trigger }}",
+            "suppress_missing_field_warning": true
+        },
+        "ref": "irflow.create_alert"
+    },
+    "context": {
+        "user": "st2admin"
+    },
+    "criteria": {},
+    "description": "AD watched group memebership has a deletion",
+    "enabled": true,
+    "metadata_file": "",
+    "name": "watched_group_member_removed",
+    "pack": "activedirectory",
+    "trigger": {
+        "description": "Trigger for AD Group Membership Deletion",
+        "parameters": {},
+        "type": "activedirectory.watched_group_member_removed"
+    },
+    "type": {
+        "parameters": {},
+        "ref": "standard"
+    }
+}
