@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1569255696,
-        "hash": "ce2e6f598136861afef24467d3e7bfb9"
+        "generated_ts": 1569258257,
+        "hash": "bf941f029c2e9358d40596aba64248ae"
     },
     "packs": {
         "activedirectory": {
@@ -274,7 +274,7 @@
             "ref": "automox",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-automox",
             "stackstorm_version": ">=3.0.1",
-            "version": "0.9.0"
+            "version": "0.9.1"
         },
         "aws_guardduty": {
             "author": "Syncurity",
