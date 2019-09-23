@@ -1,0 +1,30 @@
+{
+    "automox": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "credentials": {
+        "properties": {
+            "api_key": {
+                "description": "Automox API Key",
+                "position": 0,
+                "required": true,
+                "type": "string"
+            },
+            "host": {
+                "default": "https://console.automox.com/",
+                "description": "Automox Host",
+                "position": 1,
+                "required": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    }
+}

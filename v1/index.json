@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1568912203,
-        "hash": "6cd9efea0cc5f52dadc3874b6a85165d"
+        "generated_ts": 1569255696,
+        "hash": "ce2e6f598136861afef24467d3e7bfb9"
     },
     "packs": {
         "activedirectory": {
@@ -244,6 +244,37 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-anomali",
             "stackstorm_version": ">=3.0.1",
             "version": "0.9.1"
+        },
+        "automox": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 1,
+                    "resources": [
+                        "device_details"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>",
+                "Alex Schieppati <alex@syncurity.net>"
+            ],
+            "description": "automox",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "automox"
+            ],
+            "name": "Automox",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "automox",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-automox",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.0"
         },
         "aws_guardduty": {
             "author": "Syncurity",
