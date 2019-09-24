@@ -1,0 +1,56 @@
+{
+    "credentials": {
+        "additionalProperties": false,
+        "properties": {
+            "password": {
+                "description": "Password",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "skip": {
+                "default": false,
+                "description": "Set to true if you want to skip this tenant",
+                "required": true,
+                "type": "boolean"
+            },
+            "url": {
+                "description": "URL to query",
+                "required": true,
+                "type": "string"
+            },
+            "username": {
+                "description": "Username",
+                "required": true,
+                "type": "string"
+            },
+            "verify_ssl": {
+                "default": true,
+                "description": "Set to false if you want to ignore ssl verification",
+                "required": true,
+                "type": "boolean"
+            }
+        },
+        "type": "object"
+    },
+    "min_fidelity": {
+        "description": "Minimum fidelity to retrieve",
+        "required": false,
+        "type": "integer"
+    },
+    "min_severity": {
+        "description": "Minimum severity to retrieve",
+        "required": false,
+        "type": "integer"
+    },
+    "stellarcyber": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
+    }
+}

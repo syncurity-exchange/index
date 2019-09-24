@@ -1,0 +1,33 @@
+{
+    "class_name": "StellarCyberAlerts",
+    "description": "Get alerts from Stellar Cyber",
+    "enabled": false,
+    "entry_point": "stellarcybersensor.py",
+    "poll_interval": 120,
+    "trigger_types": [
+        {
+            "description": "Alert from Stellar Cyber",
+            "name": "alert",
+            "payload_schema": {
+                "properties": {
+                    "response": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "description": "Api Error from Stellar Cyber",
+            "name": "api_error",
+            "payload_schema": {
+                "properties": {
+                    "response": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

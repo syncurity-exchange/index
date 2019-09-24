@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1569334812,
-        "hash": "d5d096b07b46c04008b7aa2930c0cf80"
+        "generated_ts": 1569337032,
+        "hash": "6645db0c8648839a1dbacdead4567d6a"
     },
     "packs": {
         "activedirectory": {
@@ -1552,6 +1552,38 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-sophos_central",
             "stackstorm_version": ">=3.0.0",
             "version": "0.9.1"
+        },
+        "stellarcyber": {
+            "author": "Syncurity",
+            "content": {
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "StellarCyberAlerts"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>"
+            ],
+            "description": "Stellar Cyber Starlight SIEM",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "SIEM",
+                "Stellar Cyber",
+                "security",
+                "Syncurity"
+            ],
+            "name": "syncurity-stellarcyber",
+            "python version": [
+                "2"
+            ],
+            "ref": "stellarcyber",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-stellarcyber",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.0"
         },
         "tenable_io": {
             "author": "Syncurity",
