@@ -1,0 +1,27 @@
+{
+    "description": "McAfee Web Gateway Integration - Find URL Action",
+    "enabled": true,
+    "entry_point": "find_url.py",
+    "name": "find_url",
+    "parameters": {
+        "tenant": {
+            "description": "Name of tenant whose credentials will be used",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "The URL to insert",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "url_list": {
+            "description": "The URL list to insert the URL into",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

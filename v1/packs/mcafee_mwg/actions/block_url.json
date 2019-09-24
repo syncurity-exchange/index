@@ -1,0 +1,53 @@
+{
+    "description": "Block a URL in a McAfee Web Gateway list",
+    "enabled": true,
+    "entry_point": "block_url.py",
+    "name": "block_url",
+    "parameters": {
+        "block_type": {
+            "default": "url",
+            "description": "Type of indicator to block",
+            "enum": [
+                "freeform",
+                "url",
+                "domain"
+            ],
+            "position": 5,
+            "required": false,
+            "type": "string"
+        },
+        "comment": {
+            "default": "Block URL",
+            "description": "Optional comment to attach to the provided URL upon insertion",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Name of tenant whose credentials will be used",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "The URL to insert",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "url_list_name": {
+            "description": "The URL list to insert the URL into",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "wildcard": {
+            "default": "false",
+            "description": "Whether to turn the provided indicator into a wildcard to block related",
+            "position": 4,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

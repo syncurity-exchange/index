@@ -1,0 +1,23 @@
+name: McAfee Web Gateway
+ref: mcafee_mwg
+description: McAfee Web Gateway Actions
+keywords:
+- McAfee Web Gateway
+- proxy
+- security
+- Syncurity
+stackstorm_version: '>=3.0.1'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+contributors:
+- Brian Tackett <btackett@syncurity.net>
+content:
+  actions:
+    count: 2
+    resources:
+    - block_url
+    - find_url

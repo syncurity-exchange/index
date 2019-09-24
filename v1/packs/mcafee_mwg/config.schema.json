@@ -1,0 +1,40 @@
+{
+    "credentials": {
+        "properties": {
+            "mwg_host": {
+                "description": "MWG instance host address",
+                "required": true,
+                "type": "string"
+            },
+            "mwg_pass": {
+                "default": "{{ st2kv.system.mwg_user | decrypt_kv }}",
+                "description": "MWG instance password",
+                "required": true,
+                "type": "string"
+            },
+            "mwg_port": {
+                "default": 4712,
+                "description": "MWG instance port - defaults to 4712",
+                "required": false,
+                "type": "integer"
+            },
+            "mwg_user": {
+                "default": "{{ st2kv.system.mwg_user }}",
+                "description": "MWG instance user username",
+                "required": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "mwg": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
+    }
+}
