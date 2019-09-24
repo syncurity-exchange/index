@@ -1,7 +1,7 @@
 name: Virustotal
 ref: virustotal
 description: Virus Total Integration
-version: 0.9.3
+version: 0.9.4
 author: JP Bourget
 email: jp@syncurity.net
 python_versions:
