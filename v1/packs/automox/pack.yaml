@@ -4,7 +4,7 @@ description: automox
 keywords:
 - automox
 stackstorm_version: '>=3.0.1'
-version: 0.9.1
+version: 0.9.2
 author: Syncurity
 email: support@syncurity.net
 python version:
@@ -17,6 +17,10 @@ contributors:
 - Alex Schieppati <alex@syncurity.net>
 content:
   actions:
-    count: 1
+    count: 5
     resources:
     - device_details
+    - get_policy_details
+    - list_software_packages
+    - update_server_group
+    - update_tags

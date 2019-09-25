@@ -1,20 +1,20 @@
 {
-    "description": "Device Details",
+    "description": "Get Policy Details",
     "enabled": true,
-    "entry_point": "device_details.py",
-    "name": "device_details",
+    "entry_point": "get_policy_details.py",
+    "name": "get_policy_details",
     "parameters": {
-        "device_id": {
-            "description": "Device ID to get details about",
-            "position": 2,
-            "required": true,
-            "type": "integer"
-        },
         "organization_id": {
             "description": "Organization ID of the device",
             "position": 1,
             "required": true,
             "type": "string"
+        },
+        "policy_id": {
+            "description": "Policy ID",
+            "position": 2,
+            "required": true,
+            "type": "integer"
         },
         "tenant": {
             "description": "Tenant",

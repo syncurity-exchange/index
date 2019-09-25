@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1569339120,
-        "hash": "dd560335d4bab29e2076ca68714690cd"
+        "generated_ts": 1569379475,
+        "hash": "4818fb27d6ac7882c373dd9f56a50d82"
     },
     "packs": {
         "activedirectory": {
@@ -249,9 +249,13 @@
             "author": "Syncurity",
             "content": {
                 "actions": {
-                    "count": 1,
+                    "count": 5,
                     "resources": [
-                        "device_details"
+                        "device_details",
+                        "get_policy_details",
+                        "list_software_packages",
+                        "update_server_group",
+                        "update_tags"
                     ]
                 }
             },
@@ -274,7 +278,7 @@
             "ref": "automox",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-automox",
             "stackstorm_version": ">=3.0.1",
-            "version": "0.9.1"
+            "version": "0.9.2"
         },
         "aws_guardduty": {
             "author": "Syncurity",
