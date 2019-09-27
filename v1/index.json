@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1569379475,
-        "hash": "4818fb27d6ac7882c373dd9f56a50d82"
+        "generated_ts": 1569607140,
+        "hash": "fab10ddf9bd182f3f6ed2893d520cc0f"
     },
     "packs": {
         "activedirectory": {
@@ -1619,7 +1619,7 @@
             "ref": "stellarcyber",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-stellarcyber",
             "stackstorm_version": ">=3.0.1",
-            "version": "0.9.0"
+            "version": "0.9.1"
         },
         "tenable_io": {
             "author": "Syncurity",
