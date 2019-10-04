@@ -6,36 +6,43 @@
     "parameters": {
         "credential_name": {
             "description": "Credential Name for Tenant",
+            "position": 0,
             "required": true,
             "type": "string"
         },
         "device_id": {
             "description": "A list of one or more device ids to filter on. If left blank defaults to all endpoints",
+            "position": 3,
             "required": false,
             "type": "array"
         },
         "device_type": {
             "description": "The type of device OS to filter on. If left blank, defaults to all device types. The valid types are: [ WINDOWS, ANDROID, MAC, IOS, LINUX, OTHER ] ",
+            "position": 4,
             "required": false,
             "type": "array"
         },
         "name": {
             "description": "The name of the query",
+            "position": 2,
             "required": false,
             "type": "string"
         },
         "notify_on_finish": {
             "description": "Sends an email when the query is finished if set to 'true",
+            "position": 6,
             "required": false,
             "type": "boolean"
         },
         "policy_ids": {
             "description": "A list of device policies to. If left blank defaults to all all policies",
+            "position": 5,
             "required": false,
             "type": "array"
         },
         "query": {
             "description": "The osquery query for CB LiveQuery",
+            "position": 1,
             "required": true,
             "type": "string"
         }

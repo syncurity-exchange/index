@@ -6,11 +6,13 @@
     "parameters": {
         "credential_name": {
             "description": "Credential Name for Tenant",
+            "position": 0,
             "required": true,
             "type": "string"
         },
         "search_id": {
             "description": "The CB Live Response search id",
+            "position": 1,
             "required": true,
             "type": "string"
         }

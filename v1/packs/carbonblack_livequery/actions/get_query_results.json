@@ -6,51 +6,61 @@
     "parameters": {
         "credential_name": {
             "description": "Credential Name for Tenant",
+            "position": 0,
             "required": true,
             "type": "string"
         },
         "criteria": {
             "description": "A JSON object of the {\"key\": \"value\"} pairs to search for.",
+            "position": 9,
             "required": false,
             "type": "object"
         },
         "device_id": {
             "description": "A list of one or more device ids to filter on. If left blank defaults to all endpoints",
+            "position": 3,
             "required": false,
             "type": "array"
         },
         "device_name": {
             "description": "List of device names to filter on",
+            "position": 4,
             "required": false,
             "type": "array"
         },
         "query": {
             "description": "A query to perform as part of the results search. Supports Apache Lucene syntax",
+            "position": 2,
             "required": false,
             "type": "string"
         },
         "rows": {
             "description": "For pagination, how many results to return at the moment, we pagination is not supported, so we will just return the first N rows",
+            "position": 6,
             "required": false,
             "type": "integer"
         },
         "search_id": {
             "description": "The LiveQuery run ID",
+            "position": 1,
             "required": true,
             "type": "string"
         },
         "sort": {
             "description": "List of dicts. key:value pairs of field to sort on, and sort direction. eg. field: SQL Response Column, order: [ASC or DESC]. Example json:  \"[ \"{\"field\": \"SQL Response Column\", \"order\": \"[ASC or DESC]\"}\" ]\"",
+            "position": 8,
             "required": false,
             "type": "object"
         },
         "start": {
             "description": "For pagination, where to start retrieving results from",
+            "position": 7,
             "required": false,
             "type": "integer"
         },
         "status": {
             "description": "List of device statuses to filter on\u00a0Values: [ matched, error, not_matched, not_supported, cancelled, unrecognized ]",
+            "position": 5,
             "required": false,
             "type": "array"
         }

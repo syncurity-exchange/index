@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1569607409,
-        "hash": "7361e711214f9cd879ad98ed0a06a71d"
+        "generated_ts": 1570220459,
+        "hash": "cf4bdcac0d1150935cbe437f31298f3d"
     },
     "packs": {
         "activedirectory": {
@@ -431,7 +431,7 @@
             "ref": "carbonblack_livequery",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-carbonblack_livequery",
             "stackstorm_version": ">=3.1.0",
-            "version": "0.9.1"
+            "version": "0.9.2"
         },
         "cb_response": {
             "author": "Syncurity",
