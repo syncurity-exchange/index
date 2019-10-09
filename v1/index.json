@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1570648713,
-        "hash": "8561201ead4c724a031c1d49579990ed"
+        "generated_ts": 1570649334,
+        "hash": "ad00548fecfc32f1711941ba4b8836cb"
     },
     "packs": {
         "activedirectory": {
@@ -1644,14 +1644,14 @@
                 "security",
                 "Syncurity"
             ],
-            "name": "syncurity-stellarcyber",
+            "name": "Stellar Cyber Starlight",
             "python version": [
                 "2"
             ],
             "ref": "stellarcyber",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-stellarcyber",
             "stackstorm_version": ">=3.0.1",
-            "version": "0.9.2"
+            "version": "0.9.3"
         },
         "tenable_io": {
             "author": "Syncurity",

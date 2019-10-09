@@ -1,4 +1,4 @@
-name: syncurity-stellarcyber
+name: Stellar Cyber Starlight
 ref: stellarcyber
 description: Stellar Cyber Starlight SIEM
 keywords:
@@ -7,7 +7,7 @@ keywords:
 - security
 - Syncurity
 stackstorm_version: '>=3.0.1'
-version: 0.9.2
+version: 0.9.3
 author: Syncurity
 email: support@syncurity.net
 python version:
