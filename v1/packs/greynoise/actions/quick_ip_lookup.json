@@ -5,7 +5,7 @@
     "name": "quick_ip_lookup",
     "parameters": {
         "ip_address": {
-            "description": "IP Address to lookup",
+            "description": "IP Address to lookup. Response codes can be found in Greynoise API docs: http://docs.greynoise.io/#ip-quick-check",
             "position": 0,
             "required": true,
             "type": "string"
