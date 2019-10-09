@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1570641867,
-        "hash": "9155dd2052a48159781c9d7be6ef10eb"
+        "generated_ts": 1570642087,
+        "hash": "1f1b8da472ee9ba880cda36e5854ace3"
     },
     "packs": {
         "activedirectory": {
@@ -789,7 +789,7 @@
                 "security",
                 "Syncurity"
             ],
-            "name": "syncurity-greynoise",
+            "name": "Greynoise",
             "python version": [
                 "2",
                 "3"
@@ -797,7 +797,7 @@
             "ref": "greynoise",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-greynoise",
             "stackstorm_version": ">=3.0.1",
-            "version": "0.9.2"
+            "version": "0.9.3"
         },
         "hybrid_analysis": {
             "author": "Syncurity",
