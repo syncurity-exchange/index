@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1570220459,
-        "hash": "cf4bdcac0d1150935cbe437f31298f3d"
+        "generated_ts": 1570641500,
+        "hash": "07f555dee899763f59387bd7eb568a04"
     },
     "packs": {
         "activedirectory": {
@@ -764,6 +764,38 @@
             ],
             "ref": "forcepoint_web",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-forcepoint_web",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.1"
+        },
+        "greynoise": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 2,
+                    "resources": [
+                        "ip_lookup",
+                        "quick_ip_lookup"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>"
+            ],
+            "description": "Greynoise Honeypot",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "greynoise",
+                "honeypot",
+                "security",
+                "Syncurity"
+            ],
+            "name": "syncurity-greynoise",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "greynoise",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-greynoise",
             "stackstorm_version": ">=3.0.1",
             "version": "0.9.1"
         },

@@ -1,0 +1,15 @@
+{
+    "description": "Greynoise Quick IP Context Lookup",
+    "enabled": true,
+    "entry_point": "quick_ip_lookup.py",
+    "name": "quick_ip_lookup",
+    "parameters": {
+        "ip_address": {
+            "description": "IP Address to lookup",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

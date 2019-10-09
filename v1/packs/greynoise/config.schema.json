@@ -1,0 +1,8 @@
+{
+    "api_key": {
+        "description": "Greynoise API Key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    }
+}
