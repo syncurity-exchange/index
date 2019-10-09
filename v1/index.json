@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1570642087,
-        "hash": "1f1b8da472ee9ba880cda36e5854ace3"
+        "generated_ts": 1570648713,
+        "hash": "8561201ead4c724a031c1d49579990ed"
     },
     "packs": {
         "activedirectory": {
@@ -1752,7 +1752,7 @@
             "version": "0.9.1"
         },
         "virustotal": {
-            "author": "JP Bourget",
+            "author": "Syncurity",
             "content": {
                 "actions": {
                     "count": 6,
@@ -1773,10 +1773,13 @@
                 }
             },
             "contributors": [
-                "Max Meinhold <mmeinhold@syncurity.net>"
+                "Max Meinhold <mmeinhold@syncurity.net>",
+                "JP Bourget <jp@syncurity.net>",
+                "Grace Lombardi <glombardi@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>"
             ],
             "description": "Virus Total Integration",
-            "email": "jp@syncurity.net",
+            "email": "support@syncurity.net",
             "name": "Virustotal",
             "python_versions": [
                 "2",
@@ -1784,7 +1787,7 @@
             ],
             "ref": "virustotal",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-virustotal",
-            "version": "0.9.4"
+            "version": "0.9.5"
         },
         "vmray": {
             "author": "Syncurity",

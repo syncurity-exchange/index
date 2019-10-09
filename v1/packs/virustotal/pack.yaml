@@ -1,14 +1,17 @@
 name: Virustotal
 ref: virustotal
 description: Virus Total Integration
-version: 0.9.4
-author: JP Bourget
-email: jp@syncurity.net
+version: 0.9.5
+author: Syncurity
+email: support@syncurity.net
 python_versions:
 - '2'
 - '3'
 contributors:
 - Max Meinhold <mmeinhold@syncurity.net>
+- JP Bourget <jp@syncurity.net>
+- Grace Lombardi <glombardi@syncurity.net>
+- Brian Tackett <btackett@syncurity.net>
 content:
   actions:
     count: 6
