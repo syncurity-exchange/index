@@ -1,0 +1,50 @@
+{
+    "description": "This endpoint fetches categorized reports in the Processed folder that match specified parameters. If no parameters are specified, fetches all reports in the Processed folder.",
+    "entry_point": "get_processed_reports.py",
+    "name": "get_processed_reports",
+    "parameters": {
+        "category_id": {
+            "description": "The category ID (1-5) for processed reports.\nThe Cofense Triage API uses category IDs to map processed reports to categories. Category IDs correspond to the ranking that determines the prioritization of categories and to the default category names as seen on the Administration > System > Categories page as follows: \u2022 ID: 1 Rank: 2 Name: Non-Malicious \u2022 ID: 2 Rank: 3 Name: Spam \u2022 ID: 3 Rank: 4 Name: Crimeware \u2022 ID: 4 Rank: 5 (highest) Name: Advanced Threats \u2022 ID: 5 Rank: 1 (lowest) Name: Phishing Simulation A superuser may have changed the default category names shown above.",
+            "position": 2,
+            "required": false,
+            "type": "integer"
+        },
+        "end_date": {
+            "description": "End Date; default is now",
+            "position": 6,
+            "required": false,
+            "type": "string"
+        },
+        "fields": {
+            "description": "Report fields to extract.",
+            "position": 4,
+            "required": false,
+            "type": "array"
+        },
+        "match_priority": {
+            "description": "The highest match priority based on rule hits for the report.",
+            "position": 1,
+            "required": false,
+            "type": "integer"
+        },
+        "start_date": {
+            "description": "Start Date; default is 6 days ago",
+            "position": 5,
+            "required": false,
+            "type": "string"
+        },
+        "tags": {
+            "description": "One or more tags of processed reports to filter on. Separate multiple tags with commas.",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Name of tenant whose credentials will be used",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

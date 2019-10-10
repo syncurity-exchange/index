@@ -1,0 +1,20 @@
+{
+    "description": "This endpoint downloads the raw email attachment for a single report that matches the specified report ID.",
+    "entry_point": "get_report_text.py",
+    "name": "get_report_text",
+    "parameters": {
+        "report_id": {
+            "description": "Report ID.",
+            "position": 1,
+            "required": true,
+            "type": "integer"
+        },
+        "tenant": {
+            "description": "Name of tenant whose credentials will be used",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

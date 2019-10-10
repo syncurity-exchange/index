@@ -1,0 +1,28 @@
+{
+    "cofense_triage": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "credentials": {
+        "properties": {
+            "api_token": {
+                "description": "Cofense Triage api token",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "host": {
+                "description": "Cofense Triage host",
+                "required": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    }
+}

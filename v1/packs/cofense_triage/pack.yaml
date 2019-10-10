@@ -1,0 +1,24 @@
+name: Cofense Triage API
+ref: cofense_triage
+description: Cofense Triage API
+keywords:
+- Cofense Triage
+stackstorm_version: '>=3.0.1'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+contributors:
+- JP Bourget <jp@syncurity.net>
+- Ryan Markle <rmarkle@syncurity.net>
+- Brian Tackett <btackett@syncurity.net>
+- Alex Schieppati <alex@syncurity.net>
+content:
+  actions:
+    count: 3
+    resources:
+    - get_processed_reports
+    - get_report_text
+    - get_threat_indicators

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1570740306,
-        "hash": "fa4c14eb4dfa9764eccdc00f3c9ad412"
+        "generated_ts": 1570740646,
+        "hash": "c9af14cefe02dba6fcd5b78521189d8d"
     },
     "packs": {
         "activedirectory": {
@@ -692,6 +692,39 @@
             ],
             "ref": "cofense_intel",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-cofense_intel",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.1"
+        },
+        "cofense_triage": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 3,
+                    "resources": [
+                        "get_processed_reports",
+                        "get_report_text",
+                        "get_threat_indicators"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>",
+                "Alex Schieppati <alex@syncurity.net>"
+            ],
+            "description": "Cofense Triage API",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Cofense Triage"
+            ],
+            "name": "Cofense Triage API",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "cofense_triage",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-cofense_triage",
             "stackstorm_version": ">=3.0.1",
             "version": "0.9.1"
         },

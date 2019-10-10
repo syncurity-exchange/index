@@ -1,0 +1,51 @@
+{
+    "description": "This endpoint fetches the subjects, senders, domains, URLs, or MD5 or SHA256 hashes that operators identified in Cofense Triage as threat indicators within a specified timeframe. If no parameters are specified, fetches all identified threat indicators.",
+    "entry_point": "get_threat_indicators.py",
+    "name": "get_threat_indicators",
+    "parameters": {
+        "end_date": {
+            "description": "End Date; default is now",
+            "position": 4,
+            "required": false,
+            "type": "string"
+        },
+        "indicator_type": {
+            "description": "Indicator Type",
+            "enum": [
+                "Subject",
+                "Sender",
+                "Domain",
+                "URL",
+                "MD5",
+                "SHA256"
+            ],
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "level": {
+            "description": "Threat Level",
+            "enum": [
+                "Malicious",
+                "Suspicious",
+                "Benign"
+            ],
+            "position": 2,
+            "required": false,
+            "type": "string"
+        },
+        "start_date": {
+            "description": "Start Date; default is 6 days ago",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Name of tenant whose credentials will be used",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
