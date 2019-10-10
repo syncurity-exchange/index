@@ -1,0 +1,28 @@
+name: Cofense Intel API
+ref: cofense_intel
+description: Cofense Intel API
+keywords:
+- Cofense Intel
+- Threat Intel
+- Phishing
+- security
+- Syncurity
+stackstorm_version: '>=3.0.1'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+contributors:
+- JP Bourget <jp@syncurity.net>
+- Brian Tackett <btackett@syncurity.net>
+content:
+  actions:
+    count: 5
+    resources:
+    - domain_search
+    - hash_search
+    - ip_search
+    - md5_search
+    - url_search

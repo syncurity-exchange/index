@@ -1,0 +1,32 @@
+{
+    "description": "Search for a domain in Cofense Intel",
+    "entry_point": "threat_search.py",
+    "name": "domain_search",
+    "parameters": {
+        "domain": {
+            "description": "Domain to search for",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "end_time": {
+            "description": "End date in epoch time",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "start_time": {
+            "description": "Start date in epoch time",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Name of tenant whose credentials will be used",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

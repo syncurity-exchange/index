@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1570729842,
-        "hash": "bd1aebe9449ff5f394c5f85e3666dd82"
+        "generated_ts": 1570740306,
+        "hash": "fa4c14eb4dfa9764eccdc00f3c9ad412"
     },
     "packs": {
         "activedirectory": {
@@ -655,6 +655,43 @@
             ],
             "ref": "cisco_umbrella_investigate",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-cisco_umbrella_investigate",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.1"
+        },
+        "cofense_intel": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 5,
+                    "resources": [
+                        "domain_search",
+                        "hash_search",
+                        "ip_search",
+                        "md5_search",
+                        "url_search"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>"
+            ],
+            "description": "Cofense Intel API",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Cofense Intel",
+                "Threat Intel",
+                "Phishing",
+                "security",
+                "Syncurity"
+            ],
+            "name": "Cofense Intel API",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "cofense_intel",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-cofense_intel",
             "stackstorm_version": ">=3.0.1",
             "version": "0.9.1"
         },
