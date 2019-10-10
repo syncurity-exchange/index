@@ -1,0 +1,27 @@
+name: McAfee ESM
+ref: mcafee_esm
+description: Sensors for McAfee ESM.
+keywords:
+- syncurity
+- security
+- mcafee
+- esm
+stackstorm_version: '>=3.0.1'
+version: 0.1.0
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+contributors:
+- Zach Hart <zach@syncurity.net>
+content:
+  sensors:
+    count: 1
+    resources:
+    - McAfeeESMAlarmSensor
+  tests:
+    count: 3
+    resources:
+    - __init__.py
+    - mcafee_esm_base_sensor_test_case.py
+    - test_sensor_esm_alarms.py

@@ -1,0 +1,75 @@
+{
+    "class_name": "McAfeeESMAlarmSensor",
+    "description": "Get Alarms from McAfee ESM",
+    "entry_point": "esm_alarms.py",
+    "poll_interval": 30,
+    "trigger_types": [
+        {
+            "description": "Alarm from McAfee ESM",
+            "name": "alarm",
+            "payload_schema": {
+                "properties": {
+                    "alarm": {
+                        "description": "The ESM Alarm object",
+                        "type": "object"
+                    },
+                    "eventData": {
+                        "description": "Optional list of raw event data, can be enabled/disabled via pack config",
+                        "type": "array"
+                    },
+                    "notificationDetails": {
+                        "description": "Notification details on the cause of the alarm",
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "description": "Authentication was unsuccessful",
+            "name": "auth_failure",
+            "payload_schema": {
+                "properties": {
+                    "host": {
+                        "description": "The ESM host that responded with the failure",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The message received from ESM",
+                        "type": "string"
+                    },
+                    "username": {
+                        "description": "The username used during the failed authentication attempt",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "description": "An alarm was dispatched but could not be acknowledged",
+            "name": "acknowledge_failure",
+            "payload_schema": {
+                "properties": {
+                    "alarm_ids": {
+                        "description": "The ID(s) of the alarm that failed acknowledgement",
+                        "type": "array"
+                    },
+                    "host": {
+                        "description": "The ESM host on which acknowledgement failed",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The message received from ESM",
+                        "type": "string"
+                    },
+                    "username": {
+                        "description": "The user that failed to acknowledge the alarm",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

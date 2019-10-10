@@ -1,0 +1,47 @@
+{
+    "credentials": {
+        "additionalProperties": false,
+        "properties": {
+            "host": {
+                "description": "The IP Address or Hostname of the ESM instance",
+                "required": true,
+                "secret": false,
+                "type": "string"
+            },
+            "include_events": {
+                "description": "Enable to include event data in the alarm payload",
+                "required": false,
+                "type": "boolean"
+            },
+            "password": {
+                "description": "The password for the provided user",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "username": {
+                "description": "The username with which to authenticate",
+                "required": true,
+                "secret": false,
+                "type": "string"
+            },
+            "verify_ssl": {
+                "default": true,
+                "description": "Enable SSL verification for requests",
+                "required": false,
+                "type": "boolean"
+            }
+        },
+        "type": "object"
+    },
+    "mcafee_esm": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
+    }
+}

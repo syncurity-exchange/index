@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1570649334,
-        "hash": "ad00548fecfc32f1711941ba4b8836cb"
+        "generated_ts": 1570729842,
+        "hash": "bd1aebe9449ff5f394c5f85e3666dd82"
     },
     "packs": {
         "activedirectory": {
@@ -1032,6 +1032,44 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-joesandbox",
             "stackstorm_version": ">=3.0.0",
             "version": "0.9.2"
+        },
+        "mcafee_esm": {
+            "author": "Syncurity",
+            "content": {
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "McAfeeESMAlarmSensor"
+                    ]
+                },
+                "tests": {
+                    "count": 3,
+                    "resources": [
+                        "__init__.py",
+                        "mcafee_esm_base_sensor_test_case.py",
+                        "test_sensor_esm_alarms.py"
+                    ]
+                }
+            },
+            "contributors": [
+                "Zach Hart <zach@syncurity.net>"
+            ],
+            "description": "Sensors for McAfee ESM.",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "syncurity",
+                "security",
+                "mcafee",
+                "esm"
+            ],
+            "name": "McAfee ESM",
+            "python version": [
+                "2"
+            ],
+            "ref": "mcafee_esm",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-mcafee_esm",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.1.0"
         },
         "mcafee_mwg": {
             "author": "Syncurity",
