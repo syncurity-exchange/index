@@ -1,0 +1,13 @@
+{
+    "description": "Threat info workflow",
+    "enabled": true,
+    "entry_point": "workflows/threat_info_workflow.yaml",
+    "name": "threat_info_workflow",
+    "pack": "carbonblack_defense",
+    "parameters": {
+        "data": {
+            "type": "object"
+        }
+    },
+    "runner_type": "orquesta"
+}

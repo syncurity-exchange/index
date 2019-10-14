@@ -1,0 +1,27 @@
+{
+    "action": {
+        "parameters": {
+            "data": "{{ trigger }}"
+        },
+        "ref": "carbonblack_defense.threat_hunter_info_workflow"
+    },
+    "context": {
+        "user": "st2admin"
+    },
+    "criteria": {},
+    "description": "Starts workflow to submit alerts to IR-Flow",
+    "enabled": true,
+    "metadata_file": "",
+    "name": "Carbon Black Defense start threat hunter info workflow",
+    "pack": "carbonblack_defense",
+    "ref": "carbonblack_defense.start_threat_hunter_info_workflow",
+    "trigger": {
+        "description": "A notification from Carbon Black Defense",
+        "parameters": {},
+        "type": "carbonblack_defense.threat_hunter_info_notification"
+    },
+    "type": {
+        "parameters": {},
+        "ref": "standard"
+    }
+}

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1570740646,
-        "hash": "c9af14cefe02dba6fcd5b78521189d8d"
+        "generated_ts": 1571068328,
+        "hash": "3a540739bb697a15830e68cc4d53ff9e"
     },
     "packs": {
         "activedirectory": {
@@ -358,19 +358,21 @@
             "author": "Syncurity",
             "content": {
                 "actions": {
-                    "count": 4,
+                    "count": 6,
                     "resources": [
                         "change_device_policy",
                         "get_all_devices_status",
                         "get_device_status_by_device_id",
-                        "get_device_status_by_name"
+                        "get_device_status_by_name",
+                        "threat_hunter_info_workflow",
+                        "threat_info_workflow"
                     ]
                 },
                 "rules": {
                     "count": 2,
                     "resources": [
-                        "Carbon Black Defense Notification",
-                        "Carbon Black Threat Hunter Notification"
+                        "Carbon Black Defense start threat hunter info workflow",
+                        "Carbon Black Defense start threat info workflow"
                     ]
                 },
                 "sensors": {
@@ -396,7 +398,7 @@
             ],
             "ref": "carbonblack_defense",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-carbonblack_defense",
-            "version": "0.9.7"
+            "version": "0.9.8"
         },
         "carbonblack_livequery": {
             "author": "Syncurity",

@@ -10,22 +10,24 @@ keywords:
 - Carbon Black Threat Hunter
 python version:
 - '2'
-version: 0.9.7
+version: 0.9.8
 author: Syncurity
 email: support@syncurity.net
 content:
   actions:
-    count: 4
+    count: 6
     resources:
     - change_device_policy
     - get_all_devices_status
     - get_device_status_by_device_id
     - get_device_status_by_name
+    - threat_hunter_info_workflow
+    - threat_info_workflow
   rules:
     count: 2
     resources:
-    - Carbon Black Defense Notification
-    - Carbon Black Threat Hunter Notification
+    - Carbon Black Defense start threat hunter info workflow
+    - Carbon Black Defense start threat info workflow
   sensors:
     count: 1
     resources:
