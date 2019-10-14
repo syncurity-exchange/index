@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1571068328,
-        "hash": "3a540739bb697a15830e68cc4d53ff9e"
+        "generated_ts": 1571068772,
+        "hash": "d6e801ab3273ca52cde0f3e45561b899"
     },
     "packs": {
         "activedirectory": {
@@ -1124,7 +1124,8 @@
                 }
             },
             "contributors": [
-                "Zach Hart <zach@syncurity.net>"
+                "Zach Hart <zach@syncurity.net>",
+                "JP Bourget <jp@syncurity.net>"
             ],
             "description": "Sensors for McAfee ESM.",
             "email": "support@syncurity.net",
@@ -1132,7 +1133,8 @@
                 "syncurity",
                 "security",
                 "mcafee",
-                "esm"
+                "esm",
+                "SIEM"
             ],
             "name": "McAfee ESM",
             "python version": [
@@ -1141,7 +1143,7 @@
             "ref": "mcafee_esm",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-mcafee_esm",
             "stackstorm_version": ">=3.0.1",
-            "version": "0.1.0"
+            "version": "0.9.0"
         },
         "mcafee_mwg": {
             "author": "Syncurity",

@@ -6,14 +6,16 @@ keywords:
 - security
 - mcafee
 - esm
+- SIEM
 stackstorm_version: '>=3.0.1'
-version: 0.1.0
+version: 0.9.0
 author: Syncurity
 email: support@syncurity.net
 python version:
 - '2'
 contributors:
 - Zach Hart <zach@syncurity.net>
+- JP Bourget <jp@syncurity.net>
 content:
   sensors:
     count: 1
