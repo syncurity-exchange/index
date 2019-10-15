@@ -1,0 +1,29 @@
+{
+    "description": "Extract Indicators From Inline Email",
+    "enabled": true,
+    "entry_point": "extract_indicators_from_inline_email.py",
+    "name": "extract_indicators_from_inline_email",
+    "parameters": {
+        "alert_num": {
+            "description": "IR-Flow alert number",
+            "position": 0,
+            "required": true,
+            "type": "integer"
+        },
+        "refang": {
+            "default": false,
+            "description": "Whether to make urls, ips, etc. live again",
+            "position": 1,
+            "required": false,
+            "type": "boolean"
+        },
+        "strip": {
+            "default": false,
+            "description": "",
+            "position": 2,
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

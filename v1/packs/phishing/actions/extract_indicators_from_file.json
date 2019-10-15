@@ -1,0 +1,35 @@
+{
+    "description": "Extract Indicators From File",
+    "enabled": true,
+    "entry_point": "extract_indicators_from_file.py",
+    "name": "extract_indicators_from_file",
+    "parameters": {
+        "alert_num": {
+            "description": "IR-Flow alert number",
+            "position": 0,
+            "required": true,
+            "type": "integer"
+        },
+        "file_name": {
+            "description": "Name of attached file to search",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "refang": {
+            "default": false,
+            "description": "Whether to make urls, ips, etc. live again",
+            "position": 2,
+            "required": false,
+            "type": "boolean"
+        },
+        "strip": {
+            "default": false,
+            "description": "",
+            "position": 3,
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

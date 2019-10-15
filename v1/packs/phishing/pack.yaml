@@ -2,7 +2,7 @@ name: Phishing
 ref: phishing
 description: Actions to permform phishing email analysis
 stackstorm_version: '>=3.0.0'
-version: 0.3.0
+version: 0.3.2
 author: Syncurity
 email: support@syncurity.net
 python_versions:
@@ -17,9 +17,11 @@ keywords:
 - Syncurity
 content:
   actions:
-    count: 4
+    count: 6
     resources:
     - determine_email_type
     - extract_indicators
+    - extract_indicators_from_file
+    - extract_indicators_from_inline_email
     - phishing_analysis
     - user-submitted-phishing-analysis

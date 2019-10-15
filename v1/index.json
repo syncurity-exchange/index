@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1571068772,
-        "hash": "d6e801ab3273ca52cde0f3e45561b899"
+        "generated_ts": 1571153560,
+        "hash": "e3c6e603c5065b0ab7f43911db27238a"
     },
     "packs": {
         "activedirectory": {
@@ -1323,10 +1323,12 @@
             "author": "Syncurity",
             "content": {
                 "actions": {
-                    "count": 4,
+                    "count": 6,
                     "resources": [
                         "determine_email_type",
                         "extract_indicators",
+                        "extract_indicators_from_file",
+                        "extract_indicators_from_inline_email",
                         "phishing_analysis",
                         "user-submitted-phishing-analysis"
                     ]
@@ -1351,7 +1353,7 @@
             "ref": "phishing",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-phishing",
             "stackstorm_version": ">=3.0.0",
-            "version": "0.3.0"
+            "version": "0.3.2"
         },
         "proofpoint_tap": {
             "author": "Syncurity",
