@@ -1,0 +1,32 @@
+{
+    "action": {
+        "parameters": {
+            "credential_name": "{{ st2kv.system.irflow.default_cred_name }}",
+            "description": "{{ trigger.alarm.summary }}",
+            "incoming_field_group_name": "ESM Alarm",
+            "log_level": "DEBUG",
+            "payload": "{{ trigger }}",
+            "suppress_missing_field_warning": true
+        },
+        "ref": "irflow.create_alert"
+    },
+    "context": {
+        "user": "st2admin"
+    },
+    "criteria": {},
+    "description": "Create an IR-Flow Alert for an Alarm from McAfee ESM",
+    "enabled": false,
+    "metadata_file": "",
+    "name": "create_esm_alert_in_irflow",
+    "pack": "mcafee_esm",
+    "ref": "mcafee_esm.alarm",
+    "trigger": {
+        "description": "McAfee ESM Alarm",
+        "parameters": {},
+        "type": "mcafee_esm.alarm"
+    },
+    "type": {
+        "parameters": {},
+        "ref": "standard"
+    }
+}

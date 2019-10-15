@@ -8,7 +8,7 @@ keywords:
 - esm
 - SIEM
 stackstorm_version: '>=3.0.1'
-version: 0.9.0
+version: 0.9.1
 author: Syncurity
 email: support@syncurity.net
 python version:
@@ -17,6 +17,10 @@ contributors:
 - Zach Hart <zach@syncurity.net>
 - JP Bourget <jp@syncurity.net>
 content:
+  rules:
+    count: 1
+    resources:
+    - create_esm_alert_in_irflow
   sensors:
     count: 1
     resources:
