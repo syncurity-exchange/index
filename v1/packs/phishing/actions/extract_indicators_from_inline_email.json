@@ -6,23 +6,29 @@
     "parameters": {
         "alert_num": {
             "description": "IR-Flow alert number",
-            "position": 0,
+            "position": 1,
             "required": true,
             "type": "integer"
         },
         "refang": {
             "default": false,
             "description": "Whether to make urls, ips, etc. live again",
-            "position": 1,
+            "position": 2,
             "required": false,
             "type": "boolean"
         },
         "strip": {
             "default": false,
             "description": "",
-            "position": 2,
+            "position": 3,
             "required": false,
             "type": "boolean"
+        },
+        "tenant": {
+            "description": "Tenant name",
+            "position": 0,
+            "required": true,
+            "type": "string"
         }
     },
     "runner_type": "python-script"

@@ -6,18 +6,21 @@
     "parameters": {
         "content": {
             "description": "Text to extract from",
+            "position": 0,
             "required": true,
             "type": "string"
         },
         "refang": {
             "default": false,
             "description": "Whether to make urls, ips, etc. live again",
+            "position": 1,
             "required": false,
             "type": "boolean"
         },
         "strip": {
             "default": false,
             "description": "",
+            "position": 2,
             "required": false,
             "type": "boolean"
         }

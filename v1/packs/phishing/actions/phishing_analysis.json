@@ -6,41 +6,32 @@
     "parameters": {
         "alert_num": {
             "description": "IR-Flow Alert Number which contains phishing attachment",
+            "position": 1,
             "required": true,
             "type": "string"
         },
         "exclude_image_extensions": {
             "default": "true",
             "description": "Excludes images from analysis",
+            "position": 4,
             "required": false,
             "type": "boolean"
         },
         "internal_domains": {
             "description": "A comma and space separated list of internal domains",
+            "position": 3,
             "required": false,
             "type": "array"
         },
-        "irflow_api_key": {
-            "default": "{{ st2kv.system.irflow_api_key | decrypt_kv }}",
-            "description": "IR-Flow API Key",
-            "required": true,
-            "secret": true,
-            "type": "string"
-        },
-        "irflow_api_user": {
-            "default": "{{ st2kv.system.irflow_api_user}}",
-            "description": "IR-Flow API User",
-            "required": true,
-            "type": "string"
-        },
-        "irflow_server": {
-            "default": "{{ st2kv.system.irflow_server}}",
-            "description": "IR-Flow Server Address",
+        "tenant": {
+            "description": "Tenant name",
+            "position": 0,
             "required": true,
             "type": "string"
         },
         "whitelist": {
             "description": "A comma and space separated list of domains to whitelist",
+            "position": 2,
             "required": false,
             "type": "array"
         }

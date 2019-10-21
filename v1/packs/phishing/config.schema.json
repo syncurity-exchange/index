@@ -1,30 +1,47 @@
 {
-    "address": {
-        "default": "{{ st2kv.system.irflow_server}}",
-        "description": "IR-Flow server address",
-        "required": false,
-        "type": "string"
+    "credentials": {
+        "additionalProperties": false,
+        "properties": {
+            "address": {
+                "default": "{{ st2kv.system.irflow_server}}",
+                "description": "IR-Flow Hostname or IP Address",
+                "required": true,
+                "type": "string"
+            },
+            "api_key": {
+                "default": "{{ st2kv.system.irflow_api_key | decrypt_kv }}",
+                "description": "IR-Flow API Key",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "api_user": {
+                "default": "{{ st2kv.system.irflow_api_user }}",
+                "description": "IR-Flow API User Password",
+                "required": true,
+                "type": "string"
+            },
+            "protocol": {
+                "default": "https",
+                "description": "HTTP or HTTPS, defaults to http",
+                "enum": [
+                    "http",
+                    "https"
+                ],
+                "required": false,
+                "type": "string"
+            }
+        },
+        "type": "object"
     },
-    "api_key": {
-        "default": "{{ st2kv.system.irflow_api_key | decrypt_kv }}",
-        "description": "IR-Flow API Key",
-        "required": false,
-        "type": "string"
-    },
-    "api_user": {
-        "default": "{{ st2kv.system.irflow_api_user }}",
-        "description": "IR-Flow API User",
-        "required": false,
-        "type": "string"
-    },
-    "protocol": {
-        "default": "https",
-        "description": "Configure http or https - defaults to https",
-        "enum": [
-            "http",
-            "https"
-        ],
-        "required": false,
-        "type": "string"
+    "phishing": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
     }
 }
