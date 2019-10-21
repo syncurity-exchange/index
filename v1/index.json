@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1571176138,
-        "hash": "847544d0ddec44b405f75f1dff0fa1ba"
+        "generated_ts": 1571684682,
+        "hash": "1ac7a01070ec8a90adf00a37e072f916"
     },
     "packs": {
         "activedirectory": {
@@ -1359,7 +1359,7 @@
             "ref": "phishing",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-phishing",
             "stackstorm_version": ">=3.0.0",
-            "version": "0.3.2"
+            "version": "0.3.3"
         },
         "proofpoint_tap": {
             "author": "Syncurity",
