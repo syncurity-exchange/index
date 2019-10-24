@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1571690947,
-        "hash": "1ac7a01070ec8a90adf00a37e072f916"
+        "generated_ts": 1571926891,
+        "hash": "639dae457a53cee868a684f021b0473e"
     },
     "packs": {
         "activedirectory": {
@@ -796,8 +796,8 @@
             ],
             "ref": "eclecticiq",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-eclecticiq",
-            "stackstorm_version": ">=3.0.0",
-            "version": "0.9.0"
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.1"
         },
         "forcepoint_web": {
             "author": "Syncurity",

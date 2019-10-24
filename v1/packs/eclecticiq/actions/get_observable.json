@@ -6,7 +6,8 @@
     "parameters": {
         "value": {
             "description": "the value to filter by",
-            "required": false,
+            "position": 1,
+            "required": true,
             "type": "string"
         },
         "value_type": {
@@ -21,7 +22,8 @@
                 "hash-sha512",
                 "uri"
             ],
-            "required": false,
+            "position": 0,
+            "required": true,
             "type": "string"
         }
     },

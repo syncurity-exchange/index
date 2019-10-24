@@ -6,31 +6,37 @@
     "parameters": {
         "description": {
             "description": "the sighting description",
+            "position": 4,
             "required": true,
             "type": "string"
         },
         "extract_kind": {
             "description": "the type of extract value",
+            "position": 2,
             "required": true,
             "type": "string"
         },
         "extract_value": {
             "description": "the value of th eextract",
+            "position": 3,
             "required": true,
             "type": "string"
         },
         "group_name": {
             "description": "the name of the source group",
+            "position": 1,
             "required": true,
             "type": "string"
         },
         "tags": {
             "description": "the list of tags to include",
+            "position": 5,
             "required": false,
             "type": "array"
         },
         "title": {
             "description": "the title of the sighting",
+            "position": 0,
             "required": true,
             "type": "string"
         }
