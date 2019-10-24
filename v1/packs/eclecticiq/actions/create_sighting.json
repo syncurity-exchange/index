@@ -17,7 +17,7 @@
             "type": "string"
         },
         "extract_value": {
-            "description": "the value of th eextract",
+            "description": "the value of the extract",
             "position": 3,
             "required": true,
             "type": "string"
