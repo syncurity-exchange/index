@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1572289142,
-        "hash": "576ff7577d8009d02877e19c4f3b4a9e"
+        "generated_ts": 1572637794,
+        "hash": "4bb04ca5c2a25114617c04bc79b9a8d3"
     },
     "packs": {
         "activedirectory": {
@@ -398,7 +398,7 @@
             ],
             "ref": "carbonblack_defense",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-carbonblack_defense",
-            "version": "0.9.8"
+            "version": "0.9.9"
         },
         "carbonblack_livequery": {
             "author": "Syncurity",
