@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1572637794,
-        "hash": "4bb04ca5c2a25114617c04bc79b9a8d3"
+        "generated_ts": 1572892967,
+        "hash": "b03091fe031e3ad6a24632350abc58c4"
     },
     "packs": {
         "activedirectory": {
@@ -1744,6 +1744,18 @@
         "stellarcyber": {
             "author": "Syncurity",
             "content": {
+                "actions": {
+                    "count": 1,
+                    "resources": [
+                        "unicode_workflow"
+                    ]
+                },
+                "rules": {
+                    "count": 1,
+                    "resources": [
+                        "Stellar Rule to Kick Off Submit Workflow"
+                    ]
+                },
                 "sensors": {
                     "count": 1,
                     "resources": [
@@ -1771,7 +1783,7 @@
             "ref": "stellarcyber",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-stellarcyber",
             "stackstorm_version": ">=3.0.1",
-            "version": "0.9.3"
+            "version": "0.9.4"
         },
         "tenable_io": {
             "author": "Syncurity",

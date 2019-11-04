@@ -7,7 +7,7 @@ keywords:
 - security
 - Syncurity
 stackstorm_version: '>=3.0.1'
-version: 0.9.3
+version: 0.9.4
 author: Syncurity
 email: support@syncurity.net
 python version:
@@ -17,6 +17,14 @@ contributors:
 - Ryan Markle <rmarkle@syncurity.net>
 - Brian Tackett <btackett@syncurity.net>
 content:
+  actions:
+    count: 1
+    resources:
+    - unicode_workflow
+  rules:
+    count: 1
+    resources:
+    - Stellar Rule to Kick Off Submit Workflow
   sensors:
     count: 1
     resources:

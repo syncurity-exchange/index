@@ -1,0 +1,27 @@
+{
+    "action": {
+        "parameters": {
+            "data": "{{ trigger }}"
+        },
+        "ref": "stellarcyber.unicode_workflow"
+    },
+    "context": {
+        "user": "st2admin"
+    },
+    "criteria": {},
+    "description": "Stellar Rule to Kick Off Submit Workflow",
+    "enabled": true,
+    "metadata_file": "",
+    "name": "Stellar Rule to Kick Off Submit Workflow",
+    "pack": "stellarcyber",
+    "ref": "stellarcyber.unicode_workflow_experiment",
+    "trigger": {
+        "description": "An alert from Stellar Cyber",
+        "parameters": {},
+        "type": "stellarcyber.alert"
+    },
+    "type": {
+        "parameters": {},
+        "ref": "standard"
+    }
+}
