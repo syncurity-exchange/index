@@ -1,20 +1,45 @@
 {
-    "client": {
-        "description": "Alienvault Central Client",
+    "alienvault_central": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
         "required": true,
-        "secret": false,
-        "type": "string"
+        "type": "object"
     },
-    "secret": {
-        "description": "Alienvault Central Secret",
-        "required": true,
-        "secret": true,
-        "type": "string"
-    },
-    "tenant": {
-        "description": "Alienvault Central Tenant",
-        "required": true,
-        "secret": false,
-        "type": "string"
+    "credentials": {
+        "properties": {
+            "client": {
+                "description": "Alienvault Central Client",
+                "required": true,
+                "secret": false,
+                "type": "string"
+            },
+            "secret": {
+                "description": "Alienvault Central Secret",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "skip_rules": {
+                "description": "Rules to skip in this instance",
+                "required": false,
+                "type": "array"
+            },
+            "skip_tenants": {
+                "description": "Tenants to skip in this instance",
+                "required": false,
+                "type": "array"
+            },
+            "tenant": {
+                "description": "Alienvault Central Tenant",
+                "required": true,
+                "secret": false,
+                "type": "string"
+            }
+        },
+        "type": "object"
     }
 }

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1573103093,
-        "hash": "25682e09200cfdc471dc71907b1563a1"
+        "generated_ts": 1573103379,
+        "hash": "ac0ded3cf7a4894d7460aafa55a216a3"
     },
     "packs": {
         "activedirectory": {
@@ -170,7 +170,7 @@
             "ref": "alienvault",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-alienvault",
             "stackstorm_version": ">=2.9.0",
-            "version": "0.9.1"
+            "version": "0.9.2"
         },
         "alienvault_otx": {
             "author": "Syncurity",

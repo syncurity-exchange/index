@@ -1,6 +1,7 @@
 {
     "class_name": "AVCentralSensor",
     "description": "Get AlienVault Central Alerts",
+    "enabled": false,
     "entry_point": "av_central_sensor.py",
     "poll_interval": 120,
     "trigger_types": [
