@@ -1,0 +1,19 @@
+{
+    "description": "Check if an IP address is in a network group through Cisco FirePower",
+    "enabled": true,
+    "entry_point": "query_ip.py",
+    "name": "query_ip",
+    "parameters": {
+        "ip_name": {
+            "description": "Name of the IP address to query for in the network group - should match value",
+            "required": true,
+            "type": "string"
+        },
+        "network_group": {
+            "description": "Network group to query for the IP address to",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

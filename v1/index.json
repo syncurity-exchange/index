@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1573140964,
-        "hash": "211e9dfffacf1919f1c106f10bfa34d4"
+        "generated_ts": 1573144618,
+        "hash": "8c5fea24c3d984ed4dedf3f3749e9137"
     },
     "packs": {
         "activedirectory": {
@@ -526,6 +526,41 @@
             ],
             "ref": "cisco_amp",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-cisco_amp",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.1"
+        },
+        "cisco_firepower": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 3,
+                    "resources": [
+                        "add_ip",
+                        "create_deployment_request",
+                        "query_ip"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Grace Lombardi <glombardi@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>"
+            ],
+            "description": "Cisco FirePower NGFW API Pack",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Cisco FirePower",
+                "security",
+                "firewall",
+                "syncurity"
+            ],
+            "name": "Cisco FirePower",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "cisco_firepower",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-cisco_firepower",
             "stackstorm_version": ">=3.0.1",
             "version": "0.9.1"
         },

@@ -1,0 +1,26 @@
+name: Cisco FirePower
+ref: cisco_firepower
+description: Cisco FirePower NGFW API Pack
+stackstorm_version: '>=3.0.1'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+keywords:
+- Cisco FirePower
+- security
+- firewall
+- syncurity
+contributors:
+- JP Bourget <jp@syncurity.net>
+- Grace Lombardi <glombardi@syncurity.net>
+- Brian Tackett <btackett@syncurity.net>
+content:
+  actions:
+    count: 3
+    resources:
+    - add_ip
+    - create_deployment_request
+    - query_ip

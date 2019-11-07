@@ -1,0 +1,48 @@
+{
+    "address": {
+        "default": "{{ st2kv.system.irflow_server}}",
+        "description": "IR-Flow server address",
+        "required": false,
+        "type": "string"
+    },
+    "api_key": {
+        "default": "{{ st2kv.system.irflow_api_key | decrypt_kv }}",
+        "description": "IR-Flow API Key",
+        "required": false,
+        "type": "string"
+    },
+    "api_user": {
+        "default": "{{ st2kv.system.irflow_api_user }}",
+        "description": "IR-Flow API User",
+        "required": false,
+        "type": "string"
+    },
+    "plugin_pass": {
+        "default": "{{ st2kv.system.cisco_firepower_plugin_pass | decrypt_kv }}",
+        "description": "Cisco FirePower user's password",
+        "required": true,
+        "type": "string"
+    },
+    "plugin_user": {
+        "default": "{{ st2kv.system.cisco_firepower_plugin_user }}",
+        "description": "Cisco FirePower user's username",
+        "required": true,
+        "type": "string"
+    },
+    "protocol": {
+        "default": "https",
+        "description": "Configure http or https - defaults to https",
+        "enum": [
+            "http",
+            "https"
+        ],
+        "required": false,
+        "type": "string"
+    },
+    "target_host": {
+        "default": "172.16.24.20",
+        "description": "Cisco FirePower host to target with API queries",
+        "required": false,
+        "type": "string"
+    }
+}

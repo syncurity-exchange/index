@@ -1,0 +1,26 @@
+{
+    "description": "Create a deployment request for a device through Cisco FirePower",
+    "enabled": true,
+    "entry_point": "create_deployment_request.py",
+    "name": "create_deployment_request",
+    "parameters": {
+        "description": {
+            "default": "Created via IR-Flow",
+            "description": "Description to attach to the newly created deployment request",
+            "required": false,
+            "type": "string"
+        },
+        "device_name": {
+            "description": "Name of the device to create the deployment request for",
+            "required": true,
+            "type": "string"
+        },
+        "request_name": {
+            "default": "",
+            "description": "Name of the deployment request to create",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

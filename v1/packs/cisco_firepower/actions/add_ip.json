@@ -1,0 +1,43 @@
+{
+    "description": "Add an IP address to a network group through Cisco FirePower",
+    "enabled": true,
+    "entry_point": "add_ip.py",
+    "name": "add_ip",
+    "parameters": {
+        "deploy": {
+            "default": "False",
+            "description": "Whether to automatically create a deployment request after adding the IP address",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "default": "Added via IR-Flow",
+            "description": "Description to attach to the newly created network object for the IP address to add",
+            "required": false,
+            "type": "string"
+        },
+        "device_name": {
+            "default": "",
+            "description": "Name of the device to create the deployment request for",
+            "required": false,
+            "type": "string"
+        },
+        "ip_addr": {
+            "description": "IP address to add to the network group",
+            "required": true,
+            "type": "string"
+        },
+        "network_group": {
+            "description": "Network group to add the IP address to",
+            "required": true,
+            "type": "string"
+        },
+        "request_name": {
+            "default": "",
+            "description": "Name of the deployment request to create",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
