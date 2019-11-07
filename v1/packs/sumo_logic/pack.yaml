@@ -1,0 +1,22 @@
+name: Sumo Logic
+ref: sumo_logic
+description: Sumo Logic
+keywords:
+- Sumo Logic
+stackstorm_version: '>=3.0.1'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+contributors:
+- JP Bourget <jp@syncurity.net>
+- Ryan Markle <rmarkle@syncurity.net>
+- Brian Tackett <btackett@syncurity.net>
+- Alex Schieppati <alex@syncurity.net>
+content:
+  actions:
+    count: 1
+    resources:
+    - search

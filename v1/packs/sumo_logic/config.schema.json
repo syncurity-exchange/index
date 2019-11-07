@@ -1,0 +1,34 @@
+{
+    "credentials": {
+        "properties": {
+            "access_id": {
+                "description": "Sumo Logic Access id",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "api_key": {
+                "description": "Sumo Logic API Key",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "host": {
+                "description": "Sumo Logic Hostname",
+                "required": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "sumo_logic": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
+    }
+}

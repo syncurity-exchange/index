@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1573106225,
-        "hash": "8eca769ca44088f190214f35e65bdb28"
+        "generated_ts": 1573138961,
+        "hash": "1108fce5d4b47836d2214c627372738a"
     },
     "packs": {
         "activedirectory": {
@@ -1820,6 +1820,37 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-stellarcyber",
             "stackstorm_version": ">=3.0.1",
             "version": "0.9.4"
+        },
+        "sumo_logic": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 1,
+                    "resources": [
+                        "search"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>",
+                "Alex Schieppati <alex@syncurity.net>"
+            ],
+            "description": "Sumo Logic",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Sumo Logic"
+            ],
+            "name": "Sumo Logic",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "sumo_logic",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-sumo_logic",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.1"
         },
         "tenable_io": {
             "author": "Syncurity",

@@ -1,0 +1,38 @@
+{
+    "description": "Search",
+    "entry_point": "search.py",
+    "name": "search",
+    "parameters": {
+        "from_date": {
+            "description": "start date",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        },
+        "query": {
+            "description": "Query",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Name of tenant whose credentials will be used",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "time_zone": {
+            "description": "Timezone; default is UTC",
+            "position": 4,
+            "required": false,
+            "type": "string"
+        },
+        "to_date": {
+            "description": "end date",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
