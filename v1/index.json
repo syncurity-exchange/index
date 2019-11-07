@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1573138961,
-        "hash": "1108fce5d4b47836d2214c627372738a"
+        "generated_ts": 1573140964,
+        "hash": "211e9dfffacf1919f1c106f10bfa34d4"
     },
     "packs": {
         "activedirectory": {
@@ -1850,7 +1850,7 @@
             "ref": "sumo_logic",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-sumo_logic",
             "stackstorm_version": ">=3.0.1",
-            "version": "0.9.1"
+            "version": "0.9.2"
         },
         "tenable_io": {
             "author": "Syncurity",
