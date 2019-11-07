@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1572892967,
-        "hash": "b03091fe031e3ad6a24632350abc58c4"
+        "generated_ts": 1573102814,
+        "hash": "99c55e2a4bbbeba6de4146199a3b2d0f"
     },
     "packs": {
         "activedirectory": {
@@ -1324,6 +1324,34 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-opswat",
             "stackstorm_version": ">=3.0.1",
             "version": "0.9.3"
+        },
+        "pan_wildfire": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 4,
+                    "resources": [
+                        "get_report",
+                        "get_verdict",
+                        "submit",
+                        "wildfire_results"
+                    ]
+                }
+            },
+            "contributors": [
+                "Grace Lombardi <glombardi@syncurity.net>"
+            ],
+            "description": "PAN Wildfire API Pack",
+            "email": "support@syncurity.net",
+            "name": "PAN Wildfire",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "pan_wildfire",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-pan_wildfire",
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.9.1"
         },
         "phishing": {
             "author": "Syncurity",

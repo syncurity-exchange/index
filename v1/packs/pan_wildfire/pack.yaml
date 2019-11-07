@@ -1,0 +1,20 @@
+name: PAN Wildfire
+ref: pan_wildfire
+description: PAN Wildfire API Pack
+stackstorm_version: '>=3.0.0'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+contributors:
+- Grace Lombardi <glombardi@syncurity.net>
+content:
+  actions:
+    count: 4
+    resources:
+    - get_report
+    - get_verdict
+    - submit
+    - wildfire_results

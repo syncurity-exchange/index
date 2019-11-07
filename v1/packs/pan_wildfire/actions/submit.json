@@ -1,0 +1,34 @@
+{
+    "description": "Submits to PAN WildFire",
+    "enabled": true,
+    "entry_point": "submit.py",
+    "name": "submit",
+    "parameters": {
+        "alert_num": {
+            "description": "The Alert Number of the IR-Flow alert to run this enrichment on, and to pull file attachment from for submission",
+            "required": false,
+            "type": "string"
+        },
+        "filename": {
+            "description": "Name of the attachment in IR-Flow, if submitting from IR-Flow",
+            "required": false,
+            "type": "string"
+        },
+        "local_file_path": {
+            "description": "The local file path for the file to submit to PAN WildFire",
+            "required": false,
+            "type": "string"
+        },
+        "remote_file_url": {
+            "description": "The remote file path for the file to submit to PAN WildFire",
+            "required": false,
+            "type": "string"
+        },
+        "website_link": {
+            "description": "The link for a website to be submitted to PAN WildFire",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

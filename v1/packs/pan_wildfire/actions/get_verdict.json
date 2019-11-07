@@ -1,0 +1,14 @@
+{
+    "description": "Retrieves the submission results from PAN WildFire",
+    "enabled": true,
+    "entry_point": "get_verdict.py",
+    "name": "get_verdict",
+    "parameters": {
+        "file_hash": {
+            "description": "The hash whose results are needed",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

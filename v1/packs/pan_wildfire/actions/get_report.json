@@ -1,0 +1,19 @@
+{
+    "description": "Retrieves the submission results from PAN WildFire",
+    "enabled": true,
+    "entry_point": "get_report.py",
+    "name": "get_report",
+    "parameters": {
+        "alert_num": {
+            "description": "The Alert Number of the IR-Flow alert to run this enrichment on, and to pull file attachment from for submission",
+            "required": false,
+            "type": "string"
+        },
+        "file_hash": {
+            "description": "The hash whose results are needed",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
