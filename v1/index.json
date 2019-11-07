@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1573102814,
-        "hash": "99c55e2a4bbbeba6de4146199a3b2d0f"
+        "generated_ts": 1573103093,
+        "hash": "25682e09200cfdc471dc71907b1563a1"
     },
     "packs": {
         "activedirectory": {
@@ -1339,10 +1339,18 @@
                 }
             },
             "contributors": [
-                "Grace Lombardi <glombardi@syncurity.net>"
+                "Grace Lombardi <glombardi@syncurity.net>",
+                "JP Bourget <jp@syncurity.net>"
             ],
             "description": "PAN Wildfire API Pack",
             "email": "support@syncurity.net",
+            "keywords": [
+                "Syncurity",
+                "security",
+                "Palo Alto",
+                "Wildfire",
+                "sandbox"
+            ],
             "name": "PAN Wildfire",
             "python version": [
                 "2",
@@ -1350,8 +1358,8 @@
             ],
             "ref": "pan_wildfire",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-pan_wildfire",
-            "stackstorm_version": ">=3.0.0",
-            "version": "0.9.1"
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.2"
         },
         "phishing": {
             "author": "Syncurity",
