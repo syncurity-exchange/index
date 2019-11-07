@@ -1,0 +1,51 @@
+{
+    "description": "Submit a report to TruStar",
+    "enabled": true,
+    "entry_point": "submit_report.py",
+    "name": "submit_report",
+    "parameters": {
+        "body": {
+            "description": "The body of the report. Include indicators",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "enclaves_to": {
+            "description": "enclave ids to submit to. Default is all internal enclaves.",
+            "position": 3,
+            "required": false,
+            "type": "array"
+        },
+        "external_id": {
+            "description": "External id",
+            "position": 4,
+            "required": false,
+            "type": "string"
+        },
+        "external_url": {
+            "description": "External url",
+            "position": 5,
+            "required": false,
+            "type": "string"
+        },
+        "is_enclave": {
+            "description": "If true, submit to the specified enclaves. ' 'If false, submit to community.",
+            "position": 6,
+            "required": true,
+            "type": "boolean"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "title": {
+            "description": "The title of the report.",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

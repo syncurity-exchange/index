@@ -1,0 +1,15 @@
+{
+    "description": "Get available enclaves from TruSTAR",
+    "enabled": true,
+    "entry_point": "get_available_enclaves.py",
+    "name": "get_available_enclaves",
+    "parameters": {
+        "tenant": {
+            "description": "Tenant",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

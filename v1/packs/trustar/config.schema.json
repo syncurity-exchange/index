@@ -1,0 +1,30 @@
+{
+    "credentials": {
+        "properties": {
+            "key": {
+                "default": "{{ st2kv.system.trustar_key }}",
+                "description": "TruSTAR Key",
+                "required": true,
+                "type": "string"
+            },
+            "secret": {
+                "default": "{{ st2kv.system.trustar_secret }}",
+                "description": "TruSTAR Key",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "trustar": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
+    }
+}

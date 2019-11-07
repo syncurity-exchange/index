@@ -1,0 +1,53 @@
+{
+    "description": "Submit indicators to TruSTAR",
+    "enabled": true,
+    "entry_point": "submit_indicator.py",
+    "name": "submit_indicator",
+    "parameters": {
+        "enclaves": {
+            "description": "Enclave to submit to",
+            "position": 4,
+            "required": true,
+            "type": "array"
+        },
+        "indicator_type": {
+            "description": "Indicator type. If multiple indicators are submitted, they must all be of this type.",
+            "enum": [
+                "BITCOIN_ADDRESS",
+                "CIDR_BLOCK",
+                "CVE",
+                "EMAIL_ADDRESS",
+                "IP",
+                "MALWARE",
+                "MD5",
+                "REGISTRY_KEY",
+                "SHA1",
+                "SHA256",
+                "SOFTWARE",
+                "URL"
+            ],
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "indicators": {
+            "description": "Indicator to submit",
+            "position": 1,
+            "required": true,
+            "type": "array"
+        },
+        "tags": {
+            "description": "A comma and space separated list of tags to add to the indicators",
+            "position": 3,
+            "required": false,
+            "type": "array"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

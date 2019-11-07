@@ -1,0 +1,41 @@
+{
+    "description": "Remove an indicator from a whitelist in TruStar",
+    "enabled": true,
+    "entry_point": "remove_from_whitelist.py",
+    "name": "remove_from_whitelist",
+    "parameters": {
+        "indicator": {
+            "description": "Indicator to remove",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "indicator_type": {
+            "description": "Indicator type.",
+            "enum": [
+                "BITCOIN_ADDRESS",
+                "CIDR_BLOCK",
+                "CVE",
+                "EMAIL_ADDRESS",
+                "IP",
+                "MALWARE",
+                "MD5",
+                "REGISTRY_KEY",
+                "SHA1",
+                "SHA256",
+                "SOFTWARE",
+                "URL"
+            ],
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

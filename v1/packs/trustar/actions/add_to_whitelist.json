@@ -1,0 +1,21 @@
+{
+    "description": "Add terms to a whitelist in TruStar",
+    "enabled": true,
+    "entry_point": "add_to_whitelist.py",
+    "name": "add_to_whitelist",
+    "parameters": {
+        "tenant": {
+            "description": "Tenant",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "terms": {
+            "description": "A list of terms to whitelist",
+            "position": 1,
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,30 @@
+name: TruSTAR
+ref: trustar
+description: TruSTAR API Integrations
+keywords:
+- TruSTAR
+- TIP
+- Threat Intel
+- security
+- Syncurity
+stackstorm_version: '>=3.1.0'
+version: 0.9.2
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+contributors:
+- JP Bourget <jp@syncurity.net>
+- Ryan Markle <rmarkle@syncurity.net>
+- Brian Tackett <btackett@syncurity.net>
+content:
+  actions:
+    count: 6
+    resources:
+    - add_to_whitelist
+    - get_available_enclaves
+    - remove_from_whitelist
+    - search_indicator
+    - submit_indicator
+    - submit_report
