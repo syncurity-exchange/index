@@ -23,6 +23,11 @@
                 "secret": true,
                 "type": "string"
             },
+            "skip_priorities": {
+                "description": "Priorities to skip in this instance",
+                "required": false,
+                "type": "array"
+            },
             "skip_rules": {
                 "description": "Rules to skip in this instance",
                 "required": false,
