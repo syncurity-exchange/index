@@ -2,6 +2,11 @@
     "credentials": {
         "additionalProperties": false,
         "properties": {
+            "filtered_out_event_names": {
+                "description": "Event names to filter out",
+                "required": false,
+                "type": "array"
+            },
             "password": {
                 "description": "Password",
                 "required": true,
