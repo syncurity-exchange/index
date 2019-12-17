@@ -2,7 +2,7 @@ name: Alienvault
 ref: alienvault
 description: Alienvault Central Alert API
 stackstorm_version: '>=2.9.0'
-version: 0.9.4
+version: 0.9.5
 author: Syncurity
 email: support@syncurity.net
 keywords:
