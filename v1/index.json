@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1578082689,
-        "hash": "0e0278066b825814de32bb3116ee7972"
+        "generated_ts": 1578082782,
+        "hash": "99a5a540c3f251d2af177119e1f90208"
     },
     "packs": {
         "activedirectory": {
@@ -1143,6 +1143,15 @@
         "mcafee_esm": {
             "author": "Syncurity",
             "content": {
+                "actions": {
+                    "count": 4,
+                    "resources": [
+                        "add_watchlist_value_by_name",
+                        "get_watchlist_by_name",
+                        "get_watchlist_fields",
+                        "remove_watchlist_value_by_name"
+                    ]
+                },
                 "rules": {
                     "count": 1,
                     "resources": [
@@ -1156,10 +1165,15 @@
                     ]
                 },
                 "tests": {
-                    "count": 3,
+                    "count": 8,
                     "resources": [
                         "__init__.py",
+                        "mcafee_esm_base_action_test_case.py",
                         "mcafee_esm_base_sensor_test_case.py",
+                        "test_action_add_watchlist_value_by_name.py",
+                        "test_action_get_watchlist_by_name.py",
+                        "test_action_get_watchlist_fields.py",
+                        "test_action_remove_watchlist_value_by_name.py",
                         "test_sensor_esm_alarms.py"
                     ]
                 }
@@ -1168,7 +1182,7 @@
                 "Zach Hart <zach@syncurity.net>",
                 "JP Bourget <jp@syncurity.net>"
             ],
-            "description": "Sensors for McAfee ESM.",
+            "description": "Actions and sensors for McAfee ESM",
             "email": "support@syncurity.net",
             "keywords": [
                 "syncurity",
@@ -1184,7 +1198,7 @@
             "ref": "mcafee_esm",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-mcafee_esm",
             "stackstorm_version": ">=3.0.1",
-            "version": "0.9.1"
+            "version": "0.9.2"
         },
         "mcafee_mwg": {
             "author": "Syncurity",

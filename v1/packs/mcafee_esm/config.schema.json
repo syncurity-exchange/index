@@ -28,7 +28,7 @@
             "verify_ssl": {
                 "default": true,
                 "description": "Enable SSL verification for requests",
-                "required": false,
+                "required": true,
                 "type": "boolean"
             }
         },

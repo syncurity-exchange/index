@@ -1,6 +1,6 @@
 name: McAfee ESM
 ref: mcafee_esm
-description: Sensors for McAfee ESM.
+description: Actions and sensors for McAfee ESM
 keywords:
 - syncurity
 - security
@@ -8,7 +8,7 @@ keywords:
 - esm
 - SIEM
 stackstorm_version: '>=3.0.1'
-version: 0.9.1
+version: 0.9.2
 author: Syncurity
 email: support@syncurity.net
 python version:
@@ -17,6 +17,13 @@ contributors:
 - Zach Hart <zach@syncurity.net>
 - JP Bourget <jp@syncurity.net>
 content:
+  actions:
+    count: 4
+    resources:
+    - add_watchlist_value_by_name
+    - get_watchlist_by_name
+    - get_watchlist_fields
+    - remove_watchlist_value_by_name
   rules:
     count: 1
     resources:
@@ -26,8 +33,13 @@ content:
     resources:
     - McAfeeESMAlarmSensor
   tests:
-    count: 3
+    count: 8
     resources:
     - __init__.py
+    - mcafee_esm_base_action_test_case.py
     - mcafee_esm_base_sensor_test_case.py
+    - test_action_add_watchlist_value_by_name.py
+    - test_action_get_watchlist_by_name.py
+    - test_action_get_watchlist_fields.py
+    - test_action_remove_watchlist_value_by_name.py
     - test_sensor_esm_alarms.py

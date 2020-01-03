@@ -1,0 +1,24 @@
+{
+    "description": "Remove a provided value from a watchlist, given the watchlist name",
+    "enabled": true,
+    "entry_point": "remove_watchlist_value_by_name.py",
+    "name": "remove_watchlist_value_by_name",
+    "parameters": {
+        "tenant": {
+            "description": "Name of the desired tenant for which this action should be run",
+            "required": true,
+            "type": "string"
+        },
+        "values": {
+            "description": "One or more values to remove from this watchlist",
+            "required": true,
+            "type": "array"
+        },
+        "watchlist_name": {
+            "description": "Name of the watchlist",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

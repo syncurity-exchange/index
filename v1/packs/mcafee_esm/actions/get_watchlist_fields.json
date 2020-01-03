@@ -1,0 +1,14 @@
+{
+    "description": "Get all watchlist fields present on the system",
+    "enabled": true,
+    "entry_point": "get_watchlist_fields.py",
+    "name": "get_watchlist_fields",
+    "parameters": {
+        "tenant": {
+            "description": "Name of the desired tenant for which this action should be run",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
