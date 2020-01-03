@@ -28,6 +28,11 @@
             "required": false,
             "type": "array"
         },
+        "fields_type": {
+            "position": 5,
+            "required": false,
+            "type": "array"
+        },
         "query": {
             "description": "A query to perform as part of the results search. Supports Apache Lucene syntax",
             "position": 2,
@@ -57,12 +62,6 @@
             "position": 7,
             "required": false,
             "type": "integer"
-        },
-        "status": {
-            "description": "List of device statuses to filter on\u00a0Values: [ matched, error, not_matched, not_supported, cancelled, unrecognized ]",
-            "position": 5,
-            "required": false,
-            "type": "array"
         }
     },
     "runner_type": "python-script"
