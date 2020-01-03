@@ -11,7 +11,7 @@
             "type": "string"
         },
         "exclude_image_extensions": {
-            "default": "true",
+            "default": true,
             "description": "Excludes images from analysis",
             "position": 4,
             "required": false,

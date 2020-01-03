@@ -7,41 +7,47 @@
     "parameters": {
         "alert_num": {
             "description": "IR-Flow Alert Number which contains phishing attachment",
+            "position": 1,
             "required": true,
             "type": "string"
         },
         "exclude_image_extensions": {
             "default": true,
             "description": "Excludes images from analysis",
+            "position": 4,
             "required": false,
             "type": "boolean"
         },
         "internal_domains": {
             "description": "A comma and space separated list of internal domains",
+            "position": 3,
             "required": false,
             "type": "array"
         },
         "irflow_credential_name": {
-            "description": "Name of credentials to use from irflow pack",
-            "position": 1,
+            "description": "Name of credentials to use from irflow pack (should be same as this pack)",
+            "position": 0,
             "required": true,
             "type": "string"
         },
         "mxtoolbox_api_key": {
             "default": "{{ st2kv.system.mxtoolbox_api_key | decrypt_kv }}",
             "description": "MXToolbox API Key",
-            "required": true,
+            "position": 5,
+            "required": false,
             "secret": true,
             "type": "string"
         },
-        "tenant": {
-            "description": "Tenant name",
-            "position": 0,
-            "required": true,
-            "type": "string"
+        "use_mx": {
+            "default": false,
+            "description": "Whether to use MX",
+            "position": 6,
+            "required": false,
+            "type": "boolean"
         },
         "whitelist": {
             "description": "A comma and space separated list of domains to whitelist",
+            "position": 2,
             "required": false,
             "type": "array"
         }
