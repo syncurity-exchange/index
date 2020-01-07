@@ -27,3 +27,8 @@ content:
     - get_user
     - remove_user_from_group
     - reset_password_at_login
+  sensors:
+    count: 2
+    resources:
+    - EmailAlerts
+    - SecurityAlerts

@@ -7,11 +7,19 @@
         "action": {
             "default": "disable",
             "immutable": true,
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Tenant to use",
+            "position": 0,
             "required": true,
             "type": "string"
         },
         "user_guid": {
             "description": "A UPN or uid for the user to disable",
+            "position": 2,
             "required": true,
             "type": "string"
         }

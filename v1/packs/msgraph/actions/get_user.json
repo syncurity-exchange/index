@@ -4,8 +4,15 @@
     "entry_point": "get_user.py",
     "name": "get_user",
     "parameters": {
+        "tenant": {
+            "description": "Tenant to use",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
         "user_guid": {
             "description": "A UPN or uid for the user to query",
+            "position": 1,
             "required": true,
             "type": "string"
         }

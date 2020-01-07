@@ -6,11 +6,19 @@
     "parameters": {
         "group_id": {
             "description": "Group ID",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Tenant to use",
+            "position": 0,
             "required": true,
             "type": "string"
         },
         "user_id": {
             "description": "User ID",
+            "position": 2,
             "required": true,
             "type": "string"
         }

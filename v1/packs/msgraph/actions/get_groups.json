@@ -3,5 +3,13 @@
     "enabled": true,
     "entry_point": "get_groups.py",
     "name": "get_groups",
+    "parameters": {
+        "tenant": {
+            "description": "Tenant to use",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
     "runner_type": "python-script"
 }

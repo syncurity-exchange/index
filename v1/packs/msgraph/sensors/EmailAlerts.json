@@ -1,0 +1,21 @@
+{
+    "class_name": "EmailAlerts",
+    "description": "Create alerts for messages pulled from Azure Active Directory using the Microsoft Graph API",
+    "enabled": false,
+    "entry_point": "email_alerts.py",
+    "poll_interval": 30,
+    "trigger_types": [
+        {
+            "description": "Email Alert from MS Graph",
+            "name": "email",
+            "payload_schema": {
+                "properties": {
+                    "response": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

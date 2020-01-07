@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1578084509,
-        "hash": "c2c284c9cf43c4b261a0a4b1ec2fb3ca"
+        "generated_ts": 1578412613,
+        "hash": "75cc05f0a43f7f55ee689f0e7a2b9cd6"
     },
     "packs": {
         "activedirectory": {
@@ -1246,6 +1246,13 @@
                         "get_user",
                         "remove_user_from_group",
                         "reset_password_at_login"
+                    ]
+                },
+                "sensors": {
+                    "count": 2,
+                    "resources": [
+                        "EmailAlerts",
+                        "SecurityAlerts"
                     ]
                 }
             },

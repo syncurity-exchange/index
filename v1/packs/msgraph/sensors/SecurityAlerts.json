@@ -1,0 +1,21 @@
+{
+    "class_name": "SecurityAlerts",
+    "description": "Get security alerts from MS Graph",
+    "enabled": false,
+    "entry_point": "security_alerts.py",
+    "poll_interval": 30,
+    "trigger_types": [
+        {
+            "description": "Security Alert from MS Graph",
+            "name": "security",
+            "payload_schema": {
+                "properties": {
+                    "response": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}
