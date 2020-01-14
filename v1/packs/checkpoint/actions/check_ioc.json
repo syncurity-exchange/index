@@ -1,0 +1,21 @@
+{
+    "description": "Check if Indicator is present in CSV file",
+    "enabled": true,
+    "entry_point": "check_ioc.py",
+    "name": "check_ioc",
+    "parameters": {
+        "filepath": {
+            "description": "Filepath for the CSV",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "indicator": {
+            "description": "Indicator to add",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

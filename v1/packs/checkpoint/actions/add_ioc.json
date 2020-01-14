@@ -1,0 +1,45 @@
+{
+    "description": "Add Checkpoint IOC to CSV file",
+    "enabled": true,
+    "entry_point": "add_ioc.py",
+    "name": "add_ioc",
+    "parameters": {
+        "comment": {
+            "default": "An optional comment. If none is provided, a default comment will be used",
+            "description": "Contact Name",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "filepath": {
+            "default": "/opt/syncurity/syn-st2-docker/syn_st2_blocklists/static/checkpoint/domain_list.csv",
+            "description": "Filepath for the CSV",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "indicator": {
+            "description": "Indicator to add",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "ioc_type": {
+            "description": "Type of Indicator.",
+            "enum": [
+                "md5",
+                "domain",
+                "url",
+                "ip",
+                "ip range",
+                "Mail-to",
+                "Mail-from",
+                "Mail-cc",
+                "Mail-reply-to"
+            ],
+            "position": 2,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

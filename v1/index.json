@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1579037164,
-        "hash": "d211d7de64205ce99fb077cb7557aa2c"
+        "generated_ts": 1579039285,
+        "hash": "b433cdb25bae44574de0784bccd50df6"
     },
     "packs": {
         "activedirectory": {
@@ -478,6 +478,39 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-cb_response",
             "stackstorm_version": ">=3.0.1",
             "version": "0.9.1"
+        },
+        "checkpoint": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 2,
+                    "resources": [
+                        "add_ioc",
+                        "check_ioc"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>",
+                "Alex Schieppati <alex@syncurity.net>"
+            ],
+            "description": "Checkpoint actions",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "checkpoint",
+                "firewall"
+            ],
+            "name": "checkpoint",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "checkpoint",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-checkpoint",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.1.0"
         },
         "cisco_amp": {
             "author": "Syncurity",
