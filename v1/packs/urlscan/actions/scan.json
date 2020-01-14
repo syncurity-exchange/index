@@ -8,6 +8,12 @@
             "description": "The domain to scan for submission",
             "required": false,
             "type": "string"
+        },
+        "public": {
+            "default": true,
+            "description": "Whether the scan is public",
+            "required": false,
+            "type": "boolean"
         }
     },
     "runner_type": "python-script"

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1578412613,
-        "hash": "75cc05f0a43f7f55ee689f0e7a2b9cd6"
+        "generated_ts": 1579037164,
+        "hash": "d211d7de64205ce99fb077cb7557aa2c"
     },
     "packs": {
         "activedirectory": {
@@ -2057,7 +2057,7 @@
             "ref": "urlscan",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-urlscan",
             "stackstorm_version": ">=2.9.0",
-            "version": "0.9.1"
+            "version": "0.9.2"
         },
         "virustotal": {
             "author": "Syncurity",
