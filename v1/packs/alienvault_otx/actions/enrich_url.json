@@ -1,0 +1,15 @@
+{
+    "description": "Use AlienVault to enrich a URL",
+    "enabled": true,
+    "entry_point": "enrich_url.py",
+    "name": "enrich_url",
+    "parameters": {
+        "indicator": {
+            "description": "The resource indicator being enriched with AlienVault",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,15 @@
+{
+    "description": "Use AlienVault to enrich a MD5 hash",
+    "enabled": true,
+    "entry_point": "enrich_md5.py",
+    "name": "enrich_md5",
+    "parameters": {
+        "indicator": {
+            "description": "The resource indicator being enriched with AlienVault",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

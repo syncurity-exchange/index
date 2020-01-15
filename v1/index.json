@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1579039285,
-        "hash": "b433cdb25bae44574de0784bccd50df6"
+        "generated_ts": 1579124633,
+        "hash": "3d7823a1773286dd032c7c6e26f5be25"
     },
     "packs": {
         "activedirectory": {
@@ -176,9 +176,15 @@
             "author": "Syncurity",
             "content": {
                 "actions": {
-                    "count": 1,
+                    "count": 7,
                     "resources": [
-                        "enrich"
+                        "enrich",
+                        "enrich_domain",
+                        "enrich_hostname",
+                        "enrich_ip",
+                        "enrich_md5",
+                        "enrich_sha256",
+                        "enrich_url"
                     ]
                 }
             },
@@ -196,7 +202,7 @@
             "ref": "alienvault_otx",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-alienvault_otx",
             "stackstorm_version": ">=2.9.0",
-            "version": "0.9.2"
+            "version": "0.9.3"
         },
         "anomali": {
             "author": "Syncurity",

@@ -1,0 +1,15 @@
+{
+    "description": "Use AlienVault to enrich an IPv4 address",
+    "enabled": true,
+    "entry_point": "enrich_ip.py",
+    "name": "enrich_ip",
+    "parameters": {
+        "indicator": {
+            "description": "The resource indicator being enriched with AlienVault",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
