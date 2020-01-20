@@ -1,0 +1,60 @@
+{
+    "class_name": "PAAutofocusSensor",
+    "description": "Get Palo Alto Auto Focus Alerts",
+    "enabled": false,
+    "entry_point": "sensor.py",
+    "trigger_types": [
+        {
+            "description": "An Alert from Palo Alto Auto Focus",
+            "name": "alert",
+            "payload_schema": {
+                "properties": {
+                    "artifacts": {
+                        "type": "array"
+                    },
+                    "createdDateTime": {
+                        "type": "string"
+                    },
+                    "endTime": {
+                        "type": "string"
+                    },
+                    "fileSize": {
+                        "type": "integer"
+                    },
+                    "fileType": {
+                        "type": "string"
+                    },
+                    "malware": {
+                        "type": "string"
+                    },
+                    "md5": {
+                        "type": "string"
+                    },
+                    "regions": {
+                        "type": "array"
+                    },
+                    "sha1": {
+                        "type": "string"
+                    },
+                    "sha256": {
+                        "type": "string"
+                    },
+                    "tagGroups": {
+                        "type": "array"
+                    },
+                    "url": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "description": "Palo Alto Autofocus sensor failure",
+            "name": "fail",
+            "payload_schema": {
+                "type": "object"
+            }
+        }
+    ]
+}

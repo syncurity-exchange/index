@@ -1,0 +1,29 @@
+name: Palo Alto Auto Focus
+ref: pan_autofocus
+description: Palo Alto Autofocus Sensor
+stackstorm_version: '>=3.0.0'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+keywords:
+- Palo Alto Autofocus
+contributors:
+- JP Bourget <jp@syncurity.net>
+- Ryan Markle <rmarkle@syncurity.net>
+- Grace Lombardi <glombardi@syncurity.net>
+- Brian Tackett <btackett@syncurity.net>
+- Max Meinhold <mmeinhold@syncurity.net>
+- Alex Schieppati <alex@syncurity.net>
+content:
+  rules:
+    count: 2
+    resources:
+    - Create Palo Alto Auto Focus Alert in IR-Flow
+    - send_alerts_N_destinations
+  sensors:
+    count: 1
+    resources:
+    - PAAutofocusSensor

@@ -1,0 +1,41 @@
+{
+    "autofocus": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "credentials": {
+        "properties": {
+            "key": {
+                "description": "Autofocus Key",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "skip": {
+                "description": "Whether to skip this tenant",
+                "required": false,
+                "secret": false,
+                "type": "boolean"
+            },
+            "time_zone": {
+                "description": "Autofocus Time Zone",
+                "required": true,
+                "secret": false,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "sleep_time": {
+        "description": "Autofocus Sleep Time",
+        "required": true,
+        "secret": false,
+        "type": "integer"
+    }
+}

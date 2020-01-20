@@ -1,0 +1,31 @@
+{
+    "action": {
+        "description": "Fires off create_alert to one or more (N) IR-Flow destinations",
+        "parameters": {
+            "description": "Palo Alto Auto Focus Alert",
+            "incoming_field_group_name": "Palo Alto Auto Focus",
+            "payload": "{{ trigger }}",
+            "suppress_missing_field_warning": true
+        },
+        "ref": "irflow.n_create_alert_destinations"
+    },
+    "context": {
+        "user": "st2admin"
+    },
+    "criteria": {},
+    "description": "Sends alerts to two or more IR-Flow servers",
+    "enabled": false,
+    "metadata_file": "",
+    "name": "send_alerts_N_destinations",
+    "pack": "pan_autofocus",
+    "ref": "pan_autofocus.send_alerts_N_destinations",
+    "trigger": {
+        "description": "An Alert from Palo Alto Auto Focus",
+        "parameters": {},
+        "type": "pan_autofocus.alert"
+    },
+    "type": {
+        "parameters": {},
+        "ref": "standard"
+    }
+}

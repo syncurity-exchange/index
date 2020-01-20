@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1579559596,
-        "hash": "6c3cf056cf6010e1f9fb14d9f3f3a4b7"
+        "generated_ts": 1579559799,
+        "hash": "c430da1697600c5fb41071648dede2f8"
     },
     "packs": {
         "activedirectory": {
@@ -1419,6 +1419,46 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-opswat",
             "stackstorm_version": ">=3.0.1",
             "version": "0.9.3"
+        },
+        "pan_autofocus": {
+            "author": "Syncurity",
+            "content": {
+                "rules": {
+                    "count": 2,
+                    "resources": [
+                        "Create Palo Alto Auto Focus Alert in IR-Flow",
+                        "send_alerts_N_destinations"
+                    ]
+                },
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "PAAutofocusSensor"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>",
+                "Grace Lombardi <glombardi@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>",
+                "Max Meinhold <mmeinhold@syncurity.net>",
+                "Alex Schieppati <alex@syncurity.net>"
+            ],
+            "description": "Palo Alto Autofocus Sensor",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Palo Alto Autofocus"
+            ],
+            "name": "Palo Alto Auto Focus",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "pan_autofocus",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-pan_autofocus",
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.9.1"
         },
         "pan_wildfire": {
             "author": "Syncurity",
