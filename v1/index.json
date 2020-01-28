@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580226495,
-        "hash": "904bcf6a29c4c52d8907174d371e480d"
+        "generated_ts": 1580226672,
+        "hash": "5e2113272d3a904675e1590ddaef99b9"
     },
     "packs": {
         "activedirectory": {
@@ -2174,7 +2174,7 @@
             ],
             "ref": "virustotal",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-virustotal",
-            "version": "0.9.5"
+            "version": "0.9.6"
         },
         "vmray": {
             "author": "Syncurity",

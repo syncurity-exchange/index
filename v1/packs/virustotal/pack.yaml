@@ -1,7 +1,7 @@
 name: Virustotal
 ref: virustotal
 description: Virus Total Integration
-version: 0.9.5
+version: 0.9.6
 author: Syncurity
 email: support@syncurity.net
 python_versions:

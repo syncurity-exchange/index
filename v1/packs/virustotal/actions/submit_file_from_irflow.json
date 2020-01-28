@@ -1,5 +1,5 @@
 {
-    "description": "Submit a URL to Virustotal",
+    "description": "Submit a File to Virustotal",
     "enabled": true,
     "entry_point": "submit_file_from_irflow.py",
     "name": "submit_file_from_irflow",
