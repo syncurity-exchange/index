@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580229257,
-        "hash": "f8130336ba68d6818184a3cd4710b1f3"
+        "generated_ts": 1580235437,
+        "hash": "7c0479a68272d0099e438378d077481d"
     },
     "packs": {
         "activedirectory": {
@@ -1114,8 +1114,9 @@
             "author": "Syncurity",
             "content": {
                 "actions": {
-                    "count": 11,
+                    "count": 13,
                     "resources": [
+                        "assign_user_to_alert",
                         "attach_alert_to_incident",
                         "close_alert",
                         "create_alert",
@@ -1126,7 +1127,8 @@
                         "get_attachment_string",
                         "get_fact_group",
                         "n_create_alert_destinations",
-                        "put_fact_group"
+                        "put_fact_group",
+                        "update_incident"
                     ]
                 }
             },
@@ -1139,7 +1141,7 @@
             ],
             "ref": "irflow",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-irflow",
-            "version": "0.3.8"
+            "version": "0.9.0"
         },
         "joesandbox": {
             "author": "Syncurity",

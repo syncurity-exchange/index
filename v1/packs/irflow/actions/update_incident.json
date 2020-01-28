@@ -1,0 +1,55 @@
+{
+    "description": "Update an Incident in IR-Flow",
+    "enabled": true,
+    "entry_point": "update_incident.py",
+    "name": "update_incident",
+    "parameters": {
+        "credential_name": {
+            "description": "Name of credentials from this pack's configuration to use, which includes hostname and api creds.",
+            "required": true,
+            "type": "string"
+        },
+        "description": {
+            "description": "Incident Description",
+            "required": false,
+            "type": "string"
+        },
+        "group_ids": {
+            "description": "The ids of the groups this incident will belong to.",
+            "required": false,
+            "type": "array"
+        },
+        "incident_fields": {
+            "description": "Dictionary of Incident Fields to set values for Example: {\"actors\": \"Internal\", \"vmName\": \"labimage001\"}",
+            "required": false,
+            "type": "object"
+        },
+        "incident_num": {
+            "description": "Incident num to update",
+            "required": true,
+            "type": "integer"
+        },
+        "incident_subtype_name": {
+            "description": "Incident Subtype Name Example: Inbound Phishing",
+            "required": false,
+            "type": "string"
+        },
+        "incident_type_name": {
+            "description": "Incident Type Name. Example: Phishing",
+            "required": false,
+            "type": "string"
+        },
+        "owner_id": {
+            "description": "The id of the user that will own this incident",
+            "required": false,
+            "type": "integer"
+        },
+        "simple_response": {
+            "default": false,
+            "description": "True to only return incident num; False to return entire json",
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}
