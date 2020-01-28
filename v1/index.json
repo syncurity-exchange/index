@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580226672,
-        "hash": "5e2113272d3a904675e1590ddaef99b9"
+        "generated_ts": 1580229257,
+        "hash": "f8130336ba68d6818184a3cd4710b1f3"
     },
     "packs": {
         "activedirectory": {
@@ -2124,7 +2124,8 @@
                 }
             },
             "contributors": [
-                "Grace Lombardi <glombardi@syncurity.net>"
+                "Grace Lombardi <glombardi@syncurity.net>",
+                "Brad Chiappetta <brad@syncurity.net>"
             ],
             "description": "URLScan Pack",
             "email": "support@syncurity.net",
@@ -2136,7 +2137,7 @@
             "ref": "urlscan",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-urlscan",
             "stackstorm_version": ">=2.9.0",
-            "version": "0.9.2"
+            "version": "0.9.3"
         },
         "virustotal": {
             "author": "Syncurity",
