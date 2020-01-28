@@ -1,0 +1,34 @@
+{
+    "description": "Check IP",
+    "enabled": true,
+    "entry_point": "check_ip.py",
+    "name": "check_ip",
+    "parameters": {
+        "ip": {
+            "description": "the ip to check",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "max_age": {
+            "description": "Days back to look, between 1 and 365; defaults to 30",
+            "position": 2,
+            "required": false,
+            "type": "integer"
+        },
+        "tenant": {
+            "description": "tenant",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "verbose": {
+            "default": false,
+            "description": "True to include reports and country name",
+            "position": 3,
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

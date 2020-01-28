@@ -1,0 +1,24 @@
+{
+    "abuseipdb": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "credentials": {
+        "properties": {
+            "key": {
+                "default": "{{ st2kv.system.abuseipdb_key }}",
+                "description": "AbuseIPDB API key",
+                "required": false,
+                "secret": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    }
+}

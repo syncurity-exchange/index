@@ -1,0 +1,27 @@
+{
+    "description": "Check a block of IP addresses",
+    "enabled": true,
+    "entry_point": "check_ip_block.py",
+    "name": "check_ip_block",
+    "parameters": {
+        "max_age": {
+            "description": "Days back to look, between 1 and 365; defaults to 30",
+            "position": 2,
+            "required": false,
+            "type": "integer"
+        },
+        "network": {
+            "description": "subnet (v4 or v6) denoted with CIDR notation; e.g.: 127.0.0.1/24",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "tenant",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

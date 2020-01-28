@@ -1,0 +1,171 @@
+{
+    "description": "Report IP",
+    "enabled": true,
+    "entry_point": "report_ip.py",
+    "name": "report_ip",
+    "parameters": {
+        "bad_web_bot": {
+            "default": false,
+            "description": "Webpage scraping (for email addresses, content, etc) and crawlers that do not honor robots.txt. Excessive requests and user agent spoofing can also be reported here.",
+            "position": 19,
+            "required": false,
+            "type": "boolean"
+        },
+        "blog_spam": {
+            "default": false,
+            "description": "CMS blog comment spam.",
+            "position": 12,
+            "required": false,
+            "type": "boolean"
+        },
+        "brute_force": {
+            "default": false,
+            "description": "Credential brute-force attacks on webpage logins and services like SSH, FTP, SIP, SMTP, RDP, etc. This category is seperate from DDoS attacks.",
+            "position": 18,
+            "required": false,
+            "type": "boolean"
+        },
+        "comment": {
+            "description": "Comment",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        },
+        "ddos_attack": {
+            "default": false,
+            "description": "Participating in distributed denial-of-service (usually part of botnet).",
+            "position": 4,
+            "required": false,
+            "type": "boolean"
+        },
+        "email_spam": {
+            "default": false,
+            "description": "Spam email content, infected attachments, and phishing emails. Note: Limit comments to only relevent information (instead of log dumps) and be sure to remove PII if you want to remain anonymous.",
+            "position": 11,
+            "required": false,
+            "type": "boolean"
+        },
+        "exploited_host": {
+            "default": false,
+            "description": "Host is likely infected with malware and being used for other attacks or to host malicious content. The host owner may not be aware of the compromise. This category is often used in combination with other attack categories.",
+            "position": 20,
+            "required": false,
+            "type": "boolean"
+        },
+        "fraud_orders": {
+            "default": false,
+            "description": "Fraudulent orders.",
+            "position": 3,
+            "required": false,
+            "type": "boolean"
+        },
+        "fraud_voip": {
+            "default": false,
+            "position": 8,
+            "required": false,
+            "type": "boolean"
+        },
+        "ftp_brute_force": {
+            "default": false,
+            "position": 5,
+            "required": false,
+            "type": "boolean"
+        },
+        "hacking": {
+            "default": false,
+            "position": 15,
+            "required": false,
+            "type": "boolean"
+        },
+        "iot_targeted": {
+            "default": false,
+            "description": "Abuse was targeted at an Internet of Things type device. Include information about what type of device was targeted in the comments.",
+            "position": 23,
+            "required": false,
+            "type": "boolean"
+        },
+        "ip": {
+            "description": "the ip to check",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "open_proxy": {
+            "default": false,
+            "description": "Open proxy, open relay, or Tor exit node.",
+            "position": 9,
+            "required": false,
+            "type": "boolean"
+        },
+        "phishing": {
+            "default": false,
+            "description": "Phishing websites and/or email.",
+            "position": 7,
+            "required": false,
+            "type": "boolean"
+        },
+        "ping_of_death": {
+            "default": false,
+            "description": "Oversized IP packet.",
+            "position": 6,
+            "required": false,
+            "type": "boolean"
+        },
+        "port_scan": {
+            "default": false,
+            "description": "Scanning for open ports and vulnerable services.",
+            "position": 14,
+            "required": false,
+            "type": "boolean"
+        },
+        "spoofing": {
+            "default": false,
+            "description": "Email sender spoofing.",
+            "position": 17,
+            "required": false,
+            "type": "boolean"
+        },
+        "sql_injection": {
+            "default": false,
+            "description": "Attempts at SQL injection.",
+            "position": 16,
+            "required": false,
+            "type": "boolean"
+        },
+        "ssh": {
+            "default": false,
+            "description": "Secure Shell (SSH) abuse. Use this category in combination with more specific categories.",
+            "position": 22,
+            "required": false,
+            "type": "boolean"
+        },
+        "tenant": {
+            "description": "tenant",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "vpn_ip": {
+            "default": false,
+            "description": "Conjunctive category.",
+            "position": 13,
+            "required": false,
+            "type": "boolean"
+        },
+        "web_app_attack": {
+            "default": false,
+            "description": "Attempts to probe for or exploit installed web applications such as a CMS like WordPress/Drupal, e-commerce solutions, forum software, phpMyAdmin and various other software plugins/solutions.",
+            "position": 21,
+            "required": false,
+            "type": "boolean"
+        },
+        "web_spam": {
+            "default": false,
+            "description": "Comment/forum spam, HTTP referer spam, or other CMS spam.",
+            "position": 10,
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

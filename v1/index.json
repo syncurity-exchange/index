@@ -1,9 +1,42 @@
 {
     "metadata": {
-        "generated_ts": 1580235437,
-        "hash": "7c0479a68272d0099e438378d077481d"
+        "generated_ts": 1580238604,
+        "hash": "04f1c4bf5d0297a725c2f484e58d4c7c"
     },
     "packs": {
+        "abuseipdb": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 3,
+                    "resources": [
+                        "check_ip",
+                        "check_ip_block",
+                        "report_ip"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>",
+                "Alex Schieppati <alex@syncurity.net>"
+            ],
+            "description": "AbuseIPDB",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "ip_lookup"
+            ],
+            "name": "abuseipdb",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "abuseipdb",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-abuseipdb",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.0"
+        },
         "activedirectory": {
             "author": "Encore Technologies",
             "content": {
