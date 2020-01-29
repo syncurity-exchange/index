@@ -2,7 +2,7 @@ name: AWS GuardDuty
 ref: aws_guardduty
 description: AWS GuardDuty Integration
 stackstorm_version: '>=3.0.0'
-version: 0.9.1
+version: 0.9.2
 author: Syncurity
 email: support@syncurity.net
 python version:
