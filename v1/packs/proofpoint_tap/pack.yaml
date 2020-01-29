@@ -1,14 +1,14 @@
 name: Proofpoint TAP
 ref: proofpoint_tap
-description: The Proofpoint integrations provided in this module allow data from the
-  _Clicks Permitted_ and _Messages Delivered_
+description: Sensors to pull Clicks Permitted and Messages Delivered alerts from Proofpoint
+  TAP
 keywords:
 - Proofpoint TAP
 - Phishing
 - Syncurity
 - security
 stackstorm_version: '>=3.0.0'
-version: 0.9.1
+version: 0.9.3
 author: Syncurity
 email: support@syncurity.net
 python version:
@@ -35,3 +35,8 @@ content:
     resources:
     - ClickAlerts
     - MessageAlerts
+  tests:
+    count: 2
+    resources:
+    - base_test_case.py
+    - test_message_alerts.py

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580325858,
-        "hash": "01ab29d159b8e3896713e128e79b5176"
+        "generated_ts": 1580327892,
+        "hash": "3d18a72c4980fc0d9bf61858cc5ee055"
     },
     "packs": {
         "abuseipdb": {
@@ -1591,6 +1591,13 @@
                         "ClickAlerts",
                         "MessageAlerts"
                     ]
+                },
+                "tests": {
+                    "count": 2,
+                    "resources": [
+                        "base_test_case.py",
+                        "test_message_alerts.py"
+                    ]
                 }
             },
             "contributors": [
@@ -1599,7 +1606,7 @@
                 "Grace Lombardi <glombardi@syncurity.net>",
                 "Brian Tackett <btackett@syncurity.net>"
             ],
-            "description": "The Proofpoint integrations provided in this module allow data from the _Clicks Permitted_ and _Messages Delivered_",
+            "description": "Sensors to pull Clicks Permitted and Messages Delivered alerts from Proofpoint TAP",
             "email": "support@syncurity.net",
             "keywords": [
                 "Proofpoint TAP",
@@ -1614,7 +1621,7 @@
             "ref": "proofpoint_tap",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-proofpoint_tap",
             "stackstorm_version": ">=3.0.0",
-            "version": "0.9.1"
+            "version": "0.9.3"
         },
         "qradar": {
             "author": "Syncurity",

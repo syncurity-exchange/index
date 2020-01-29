@@ -16,6 +16,18 @@
                 },
                 "type": "object"
             }
+        },
+        {
+            "description": "ProofPoint Message Alert sensor failure",
+            "name": "message.fail",
+            "payload_schema": {
+                "properties": {
+                    "response": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
         }
     ]
 }
