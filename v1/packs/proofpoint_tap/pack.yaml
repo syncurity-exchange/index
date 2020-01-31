@@ -8,7 +8,7 @@ keywords:
 - Syncurity
 - security
 stackstorm_version: '>=3.0.0'
-version: 0.9.3
+version: 0.9.4
 author: Syncurity
 email: support@syncurity.net
 python version:
@@ -18,11 +18,13 @@ contributors:
 - Ryan Markle <rmarkle@syncurity.net>
 - Grace Lombardi <glombardi@syncurity.net>
 - Brian Tackett <btackett@syncurity.net>
+- Brad Chiappetta <brad@syncurity.net>
 content:
   actions:
-    count: 1
+    count: 2
     resources:
     - decode_url
+    - submit_messages_to_irflow
   rules:
     count: 4
     resources:

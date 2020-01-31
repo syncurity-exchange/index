@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580327892,
-        "hash": "3d18a72c4980fc0d9bf61858cc5ee055"
+        "generated_ts": 1580486301,
+        "hash": "222d3787d78c18b9ca9bf787da50b67a"
     },
     "packs": {
         "abuseipdb": {
@@ -1571,9 +1571,10 @@
             "author": "Syncurity",
             "content": {
                 "actions": {
-                    "count": 1,
+                    "count": 2,
                     "resources": [
-                        "decode_url"
+                        "decode_url",
+                        "submit_messages_to_irflow"
                     ]
                 },
                 "rules": {
@@ -1604,7 +1605,8 @@
                 "JP Bourget <jp@syncurity.net>",
                 "Ryan Markle <rmarkle@syncurity.net>",
                 "Grace Lombardi <glombardi@syncurity.net>",
-                "Brian Tackett <btackett@syncurity.net>"
+                "Brian Tackett <btackett@syncurity.net>",
+                "Brad Chiappetta <brad@syncurity.net>"
             ],
             "description": "Sensors to pull Clicks Permitted and Messages Delivered alerts from Proofpoint TAP",
             "email": "support@syncurity.net",
@@ -1621,7 +1623,7 @@
             "ref": "proofpoint_tap",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-proofpoint_tap",
             "stackstorm_version": ">=3.0.0",
-            "version": "0.9.3"
+            "version": "0.9.4"
         },
         "qradar": {
             "author": "Syncurity",

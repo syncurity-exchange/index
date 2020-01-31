@@ -4,8 +4,24 @@
             "credential_name": "integrations_team",
             "description": "Proofpoint Clicks Allowed",
             "incoming_field_group_name": "Proofpoint Clicks Allowed - {{ trigger.tenant }}",
-            "log_level": "DEBUG",
-            "payload": "{{ trigger.response }}",
+            "log_level": "INFO",
+            "payload": {
+                "GUID": "{{trigger.response.GUID}}",
+                "campaignId": "{{trigger.response.campaignId}}",
+                "category": "{{trigger.response.classification}}",
+                "clickTime": "{{ trigger.response.clickTime }}",
+                "destinationAddress": "{{trigger.response.clickIP}}",
+                "deviceExternalId": "{{trigger.response.threatID}}",
+                "emailMessageId": "{{trigger.response.messageID}}",
+                "emailSender": "{{trigger.response.sender}}",
+                "emailTo": "{{trigger.response.recipient}}",
+                "emailURL": "{{trigger.response.url}}",
+                "originalAlertURL": "{{trigger.response.threatURL}}",
+                "sourceAddress": "{{trigger.response.senderIP }}",
+                "threatStatus": "{{trigger.response.threatStatus}}",
+                "timeReported": "{{trigger.response.threatTime}}",
+                "userAgent": "{{trigger.response.userAgent}}"
+            },
             "suppress_missing_field_warning": true
         },
         "ref": "irflow.create_alert"

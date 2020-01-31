@@ -1,0 +1,16 @@
+{
+    "description": "Workflow for Submitting to IR-Flow",
+    "enabled": true,
+    "entry_point": "workflows/submit_messages_to_irflow.yaml",
+    "name": "submit_messages_to_irflow",
+    "pack": "proofpoint_tap",
+    "parameters": {
+        "credential_name": {
+            "type": "string"
+        },
+        "data": {
+            "type": "object"
+        }
+    },
+    "runner_type": "orquesta"
+}

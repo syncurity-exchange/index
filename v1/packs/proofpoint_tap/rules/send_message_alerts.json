@@ -2,13 +2,9 @@
     "action": {
         "parameters": {
             "credential_name": "integrations_team",
-            "description": "Proofpoint Messages Delivered",
-            "incoming_field_group_name": "Proofpoint Messages Delivered - {{ trigger.tenant }}",
-            "log_level": "DEBUG",
-            "payload": "{{ trigger.response }}",
-            "suppress_missing_field_warning": true
+            "data": "{{ trigger }}"
         },
-        "ref": "irflow.create_alert"
+        "ref": "proofpoint_tap.submit_messages_to_irflow"
     },
     "context": {
         "user": "st2admin"
