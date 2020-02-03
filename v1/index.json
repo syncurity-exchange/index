@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580486301,
-        "hash": "222d3787d78c18b9ca9bf787da50b67a"
+        "generated_ts": 1580746775,
+        "hash": "1e40eb38a9f4363d35c7913e78954b3d"
     },
     "packs": {
         "abuseipdb": {
@@ -1623,7 +1623,7 @@
             "ref": "proofpoint_tap",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-proofpoint_tap",
             "stackstorm_version": ">=3.0.0",
-            "version": "0.9.4"
+            "version": "0.9.5"
         },
         "qradar": {
             "author": "Syncurity",
