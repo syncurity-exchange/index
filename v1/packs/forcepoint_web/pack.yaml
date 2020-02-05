@@ -2,7 +2,7 @@ name: Forcepoint Web
 ref: forcepoint_web
 description: Forcepoint Web API Integration
 stackstorm_version: '>=3.0.1'
-version: 0.9.1
+version: 0.9.2
 author: Syncurity
 email: support@syncurity.net
 keywords:
@@ -17,12 +17,13 @@ contributors:
 - Ryan Markle <rmarkle@syncurity.net>
 content:
   actions:
-    count: 4
+    count: 5
     resources:
     - add_api_managed_categories
-    - addremove_ipurl_blocklist
+    - add_ipurl_blocklist
     - check_urlip_blocklist
     - list_api_managed_categories
+    - remove_ipurl_blocklist
   tests:
     count: 1
     resources:

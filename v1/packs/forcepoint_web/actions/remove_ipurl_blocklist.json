@@ -1,0 +1,27 @@
+{
+    "description": "Remove URL or IP to a category",
+    "enabled": true,
+    "entry_point": "remove_ipurl_blocklist.py",
+    "name": "remove_ipurl_blocklist",
+    "parameters": {
+        "category": {
+            "description": "Category to be updated",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "ip": {
+            "description": "IP address to removed",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        },
+        "url": {
+            "description": "URL to be removed",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
