@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580746775,
-        "hash": "1e40eb38a9f4363d35c7913e78954b3d"
+        "generated_ts": 1580919020,
+        "hash": "6c04e233fa4dd75332d552b3bd3a94fd"
     },
     "packs": {
         "abuseipdb": {
@@ -593,13 +593,12 @@
             ],
             "name": "Cisco AMP",
             "python_versions": [
-                "2",
-                "3"
+                "2"
             ],
             "ref": "cisco_amp",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-cisco_amp",
             "stackstorm_version": ">=3.0.1",
-            "version": "0.9.1"
+            "version": "0.9.2"
         },
         "cisco_firepower": {
             "author": "Syncurity",

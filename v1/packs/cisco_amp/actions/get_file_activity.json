@@ -6,6 +6,13 @@
     "parameters": {
         "file_hash": {
             "description": "sha256 indicator to query for",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "position": 0,
             "required": true,
             "type": "string"
         }

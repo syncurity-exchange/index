@@ -1,6 +1,7 @@
 {
     "class_name": "CiscoAMPGetFileActivity",
     "description": "Get File Activity Service",
+    "enabled": false,
     "entry_point": "get_file_activity.py",
     "poll_interval": 30,
     "trigger_types": [
@@ -13,6 +14,13 @@
                         "type": "object"
                     }
                 },
+                "type": "object"
+            }
+        },
+        {
+            "description": "Cisco AMP sensor failure",
+            "name": "fail",
+            "payload_schema": {
                 "type": "object"
             }
         }

@@ -6,11 +6,19 @@
     "parameters": {
         "blacklist": {
             "description": "Blacklist to remove from",
+            "position": 2,
             "required": true,
             "type": "string"
         },
         "file_hash": {
             "description": "Indicator to remove",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "position": 0,
             "required": true,
             "type": "string"
         }

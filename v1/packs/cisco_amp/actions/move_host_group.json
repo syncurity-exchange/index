@@ -6,11 +6,19 @@
     "parameters": {
         "connector_hostname": {
             "description": "Comma separated list of the hostnames to move",
+            "position": 1,
             "required": true,
             "type": "string"
         },
         "group_name": {
             "description": "Name of the group to move the computer to",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "position": 0,
             "required": true,
             "type": "string"
         }
