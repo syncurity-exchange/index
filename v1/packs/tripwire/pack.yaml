@@ -1,0 +1,23 @@
+name: Tripwire
+ref: tripwire
+description: Tripwire reporting
+stackstorm_version: '>=3.0.1'
+version: 0.9.4
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+contributors:
+- JP Bourget <jp@syncurity.net>
+- Ryan Markle <rmarkle@syncurity.net>
+- Brian Tackett <btackett@syncurity.net>
+content:
+  rules:
+    count: 1
+    resources:
+    - Create Tripwire Alert in IR-Flow
+  sensors:
+    count: 1
+    resources:
+    - TripwireAlertSensor

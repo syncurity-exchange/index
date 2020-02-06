@@ -1,0 +1,43 @@
+{
+    "credentials": {
+        "properties": {
+            "sensor": {
+                "description": "Sensor specific settings.",
+                "properties": {
+                    "tripwire_host": {
+                        "default": "{{ st2kv.system.tripwire_host }}",
+                        "description": "Tripwire instance host",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "tripwire_password": {
+                        "default": "{{ st2kv.system.tripwire_password }}",
+                        "description": "Tripwire instance password",
+                        "required": true,
+                        "secret": true,
+                        "type": "string"
+                    },
+                    "tripwire_username": {
+                        "default": "{{ st2kv.system.tripwire_username }}",
+                        "description": "Tripwire instance username",
+                        "required": true,
+                        "type": "string"
+                    }
+                },
+                "required": false,
+                "type": "object"
+            }
+        },
+        "type": "object"
+    },
+    "tripwire": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
+    }
+}

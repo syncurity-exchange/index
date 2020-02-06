@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580953216,
-        "hash": "b40a821c21db7e498bcc200c06f9b718"
+        "generated_ts": 1581026273,
+        "hash": "30b9b1123008125fbbd0c597cd7f4761"
     },
     "packs": {
         "abuseipdb": {
@@ -2101,6 +2101,39 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-threat_quotient",
             "stackstorm_version": ">=2.9.0",
             "version": "0.9.0"
+        },
+        "tripwire": {
+            "author": "Syncurity",
+            "content": {
+                "rules": {
+                    "count": 1,
+                    "resources": [
+                        "Create Tripwire Alert in IR-Flow"
+                    ]
+                },
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "TripwireAlertSensor"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>"
+            ],
+            "description": "Tripwire reporting",
+            "email": "support@syncurity.net",
+            "name": "Tripwire",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "tripwire",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-tripwire",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.4"
         },
         "trustar": {
             "author": "Syncurity",

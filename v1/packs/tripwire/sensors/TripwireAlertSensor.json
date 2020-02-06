@@ -1,0 +1,20 @@
+{
+    "class_name": "TripwireAlertSensor",
+    "description": "Get Tripwire Alerts",
+    "enabled": true,
+    "entry_point": "get_alerts.py",
+    "trigger_types": [
+        {
+            "description": "An Alert from tripwire",
+            "name": "alert",
+            "payload_schema": {
+                "properties": {
+                    "response": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

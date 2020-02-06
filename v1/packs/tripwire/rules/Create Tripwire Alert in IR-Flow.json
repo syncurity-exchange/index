@@ -1,0 +1,32 @@
+{
+    "action": {
+        "parameters": {
+            "credential_name": "integrations_team",
+            "description": "Tripwire Alert",
+            "incoming_field_group_name": "Tripwire",
+            "log_level": "DEBUG",
+            "payload": "{{ trigger }}",
+            "suppress_missing_field_warning": true
+        },
+        "ref": "irflow.create_alert"
+    },
+    "context": {
+        "user": "st2admin"
+    },
+    "criteria": {},
+    "description": "Create IR-Flow Alert From Tripwire Alert",
+    "enabled": true,
+    "metadata_file": "",
+    "name": "Create Tripwire Alert in IR-Flow",
+    "pack": "tripwire",
+    "ref": "tripwire.alert",
+    "trigger": {
+        "description": "An Alert from Tripwire",
+        "parameters": {},
+        "type": "tripwire.alert"
+    },
+    "type": {
+        "parameters": {},
+        "ref": "standard"
+    }
+}
