@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580939767,
-        "hash": "c0340a5f1a293b4e5b18495000e62c07"
+        "generated_ts": 1580953216,
+        "hash": "b40a821c21db7e498bcc200c06f9b718"
     },
     "packs": {
         "abuseipdb": {
@@ -2271,6 +2271,31 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-vmray",
             "stackstorm_version": ">=3.0.0",
             "version": "0.9.2"
+        },
+        "zoho_desk": {
+            "author": "Syncurity",
+            "content": {},
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Ryan Markle <rmarkle@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>",
+                "Alex Schieppati <alex@syncurity.net>"
+            ],
+            "description": "Zoho Desk ticketing",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "Zoho Desk",
+                "Ticketing"
+            ],
+            "name": "zoho-desk",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "zoho_desk",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-zoho_desk",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.0"
         }
     }
 }

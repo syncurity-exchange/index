@@ -1,0 +1,18 @@
+{
+    "api_token": {
+        "description": "Authenticated API token",
+        "secret": true,
+        "type": "string"
+    },
+    "oauth_token": {
+        "description": "Authenticated OAuth2 token",
+        "secret": true,
+        "type": "string"
+    },
+    "org_id": {
+        "description": "Required Organization ID",
+        "required": true,
+        "secret": false,
+        "type": "integer"
+    }
+}

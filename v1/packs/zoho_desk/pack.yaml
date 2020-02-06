@@ -1,0 +1,19 @@
+name: zoho-desk
+ref: zoho_desk
+description: Zoho Desk ticketing
+keywords:
+- Zoho Desk
+- Ticketing
+stackstorm_version: '>=3.0.1'
+version: 0.9.0
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+contributors:
+- JP Bourget <jp@syncurity.net>
+- Ryan Markle <rmarkle@syncurity.net>
+- Brian Tackett <btackett@syncurity.net>
+- Alex Schieppati <alex@syncurity.net>
+content: {}
