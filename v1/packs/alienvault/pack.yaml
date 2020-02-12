@@ -2,7 +2,7 @@ name: Alienvault
 ref: alienvault
 description: Alienvault Central Alert API
 stackstorm_version: '>=2.9.0'
-version: 0.9.5
+version: 0.9.6
 author: Syncurity
 email: support@syncurity.net
 keywords:
@@ -15,6 +15,7 @@ python_versions:
 - '3'
 contributors:
 - JP Bourget <jp@syncurity.net>
+- Brad Chiappetta <brad@syncurity.net>
 content:
   rules:
     count: 2

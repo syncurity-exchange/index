@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581026273,
-        "hash": "30b9b1123008125fbbd0c597cd7f4761"
+        "generated_ts": 1581471210,
+        "hash": "f97ae0eba9e3e3769a4840f0c6a4c536"
     },
     "packs": {
         "abuseipdb": {
@@ -185,7 +185,8 @@
                 }
             },
             "contributors": [
-                "JP Bourget <jp@syncurity.net>"
+                "JP Bourget <jp@syncurity.net>",
+                "Brad Chiappetta <brad@syncurity.net>"
             ],
             "description": "Alienvault Central Alert API",
             "email": "support@syncurity.net",
@@ -203,7 +204,7 @@
             "ref": "alienvault",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-alienvault",
             "stackstorm_version": ">=2.9.0",
-            "version": "0.9.5"
+            "version": "0.9.6"
         },
         "alienvault_otx": {
             "author": "Syncurity",
