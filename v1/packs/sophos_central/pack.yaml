@@ -1,16 +1,20 @@
 name: Sophos Central
 ref: sophos_central
 description: Sophos Central Sensor
-stackstorm_version: '>=3.0.0'
-version: 0.9.1
+stackstorm_version: '>=3.1.0'
+version: 0.9.2
 author: Syncurity
 email: support@syncurity.net
 python version:
 - '2'
 keywords:
 - Sophos
+- EDR
+- security
 contributors:
 - Grace Lombardi <glombardi@syncurity.net>
+- JP Bourget <jp@syncurity.net>
+- Brian Tackett <btackett@syncurity.net>
 content:
   rules:
     count: 4

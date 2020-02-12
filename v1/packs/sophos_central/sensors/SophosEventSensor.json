@@ -1,6 +1,7 @@
 {
     "class_name": "SophosEventSensor",
     "description": "Get Sophos Events",
+    "enabled": false,
     "entry_point": "get_events.py",
     "trigger_types": [
         {

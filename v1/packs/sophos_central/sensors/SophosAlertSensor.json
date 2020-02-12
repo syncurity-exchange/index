@@ -1,6 +1,7 @@
 {
     "class_name": "SophosAlertSensor",
     "description": "Get Sophos Alerts",
+    "enabled": false,
     "entry_point": "get_alerts.py",
     "trigger_types": [
         {

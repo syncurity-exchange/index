@@ -5,6 +5,12 @@
         "secret": true,
         "type": "string"
     },
+    "api_url": {
+        "default": "https://api5.central.sophos.com/gateway",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
     "auth": {
         "description": "The authorization key to use when connecting to Sophos Central SIEM",
         "required": true,

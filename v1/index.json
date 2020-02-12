@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581471210,
-        "hash": "f97ae0eba9e3e3769a4840f0c6a4c536"
+        "generated_ts": 1581524237,
+        "hash": "43ec80151bb7115f764857fa17b4b314"
     },
     "packs": {
         "abuseipdb": {
@@ -1941,12 +1941,16 @@
                 }
             },
             "contributors": [
-                "Grace Lombardi <glombardi@syncurity.net>"
+                "Grace Lombardi <glombardi@syncurity.net>",
+                "JP Bourget <jp@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>"
             ],
             "description": "Sophos Central Sensor",
             "email": "support@syncurity.net",
             "keywords": [
-                "Sophos"
+                "Sophos",
+                "EDR",
+                "security"
             ],
             "name": "Sophos Central",
             "python version": [
@@ -1954,8 +1958,8 @@
             ],
             "ref": "sophos_central",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-sophos_central",
-            "stackstorm_version": ">=3.0.0",
-            "version": "0.9.1"
+            "stackstorm_version": ">=3.1.0",
+            "version": "0.9.2"
         },
         "stellarcyber": {
             "author": "Syncurity",
