@@ -1,20 +1,35 @@
 {
-    "api_key": {
-        "description": "Sophos SIEM API Key",
-        "required": true,
-        "secret": true,
-        "type": "string"
+    "credentials": {
+        "properties": {
+            "api_key": {
+                "description": "Sophos SIEM API Key",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "api_url": {
+                "default": "https://api5.central.sophos.com/gateway",
+                "required": true,
+                "secret": false,
+                "type": "string"
+            },
+            "auth": {
+                "description": "The authorization key to use when connecting to Sophos Central SIEM",
+                "required": true,
+                "secret": false,
+                "type": "string"
+            }
+        },
+        "type": "object"
     },
-    "api_url": {
-        "default": "https://api5.central.sophos.com/gateway",
+    "sophos_central": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
         "required": true,
-        "secret": false,
-        "type": "string"
-    },
-    "auth": {
-        "description": "The authorization key to use when connecting to Sophos Central SIEM",
-        "required": true,
-        "secret": false,
-        "type": "string"
+        "type": "object"
     }
 }
