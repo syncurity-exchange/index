@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581627833,
-        "hash": "43ec80151bb7115f764857fa17b4b314"
+        "generated_ts": 1583272955,
+        "hash": "d138b632c3a40708818a676474771478"
     },
     "packs": {
         "abuseipdb": {
@@ -467,7 +467,6 @@
             ],
             "name": "Carbonblack LiveQuery API",
             "python version": [
-                "2",
                 "3"
             ],
             "ref": "carbonblack_livequery",

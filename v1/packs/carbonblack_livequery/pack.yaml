@@ -13,7 +13,6 @@ version: 0.9.4
 author: Syncurity
 email: support@syncurity.net
 python version:
-- '2'
 - '3'
 contributors:
 - JP Bourget <jp@syncurity.net>
