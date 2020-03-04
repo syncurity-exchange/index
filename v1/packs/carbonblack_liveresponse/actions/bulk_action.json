@@ -3,7 +3,7 @@
     "enabled": true,
     "entry_point": "workflows/bulk_action.yaml",
     "name": "bulk_action",
-    "pack": "carbonblack_live_response",
+    "pack": "carbonblack_liveresponse",
     "parameters": {
         "action": {
             "type": "string"
