@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1583272955,
-        "hash": "d138b632c3a40708818a676474771478"
+        "generated_ts": 1583343724,
+        "hash": "44481e945190f7a5779f15df940de740"
     },
     "packs": {
         "abuseipdb": {
@@ -1985,7 +1985,8 @@
             "contributors": [
                 "JP Bourget <jp@syncurity.net>",
                 "Ryan Markle <rmarkle@syncurity.net>",
-                "Brian Tackett <btackett@syncurity.net>"
+                "Brian Tackett <btackett@syncurity.net>",
+                "Brad Chiappetta <brad@syncurity.net>"
             ],
             "description": "Stellar Cyber Starlight SIEM",
             "email": "support@syncurity.net",
@@ -2002,7 +2003,7 @@
             "ref": "stellarcyber",
             "repo_url": "https://github.com/syncurity-exchange/syncurity-stellarcyber",
             "stackstorm_version": ">=3.0.1",
-            "version": "0.9.7"
+            "version": "0.9.8"
         },
         "sumo_logic": {
             "author": "Syncurity",

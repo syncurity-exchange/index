@@ -7,7 +7,7 @@ keywords:
 - security
 - Syncurity
 stackstorm_version: '>=3.0.1'
-version: 0.9.7
+version: 0.9.8
 author: Syncurity
 email: support@syncurity.net
 python version:
@@ -16,6 +16,7 @@ contributors:
 - JP Bourget <jp@syncurity.net>
 - Ryan Markle <rmarkle@syncurity.net>
 - Brian Tackett <btackett@syncurity.net>
+- Brad Chiappetta <brad@syncurity.net>
 content:
   actions:
     count: 1

@@ -10,7 +10,7 @@
     },
     "criteria": {},
     "description": "Stellar Rule to Kick Off Submit Workflow",
-    "enabled": true,
+    "enabled": false,
     "metadata_file": "",
     "name": "Stellar Rule to Kick Off Submit Workflow",
     "pack": "stellarcyber",
