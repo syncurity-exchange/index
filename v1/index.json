@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1583348316,
-        "hash": "22ba372b70f17fab3188125b215bea7d"
+        "generated_ts": 1583350459,
+        "hash": "b7950b80d28aa8cb6b3ab63faf28cc90"
     },
     "packs": {
         "abuseipdb": {
@@ -503,7 +503,8 @@
             },
             "contributors": [
                 "JP Bourget <jp@syncurity.net>",
-                "Brian Tackett <btackett@syncurity.net>"
+                "Brian Tackett <btackett@syncurity.net>",
+                "Brad Chiappetta <brad@syncurity.net>"
             ],
             "description": "Carbon Black Live Response API",
             "email": "support@syncurity.net",
