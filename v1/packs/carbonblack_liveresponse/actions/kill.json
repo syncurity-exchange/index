@@ -1,0 +1,34 @@
+{
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "kill",
+    "parameters": {
+        "device_id": {
+            "description": "Device id",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "default": "kill",
+            "description": "Name of command",
+            "immutable": true,
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "object": {
+            "description": "the pid to kill",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Credential Name for Tenant",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

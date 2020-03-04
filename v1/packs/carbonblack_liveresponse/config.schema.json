@@ -1,0 +1,42 @@
+{
+    "carbonblack_live_response": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "credentials": {
+        "properties": {
+            "siem_api_token": {
+                "description": "CB Live Response API key. Notifications a SIEM API token is needed. https://developer.carbonblack.com/reference/cb-defense/authentication/ ",
+                "required": true,
+                "type": "string"
+            },
+            "siem_connector_id": {
+                "description": "CB Live Response API connector ID.",
+                "required": true,
+                "type": "string"
+            },
+            "url": {
+                "description": "CB Live Response API Endpoint, including https://",
+                "required": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "sleep_time": {
+        "description": "Time in seconds to wait before re-checking the status of a session or command.",
+        "required": false,
+        "type": "integer"
+    },
+    "wait_time": {
+        "description": "Time in seconds to wait for a session to start or a task to complete.",
+        "required": false,
+        "type": "integer"
+    }
+}

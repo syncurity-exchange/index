@@ -1,0 +1,40 @@
+{
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "put_file",
+    "parameters": {
+        "device_id": {
+            "description": "Device id",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "file_id": {
+            "description": "the file id of the file in session storage (use second api to add new files)",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "default": "put file",
+            "description": "Name of command",
+            "immutable": true,
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "object": {
+            "description": "the destination path of the file",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Credential Name for Tenant",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

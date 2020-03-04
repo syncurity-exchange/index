@@ -1,0 +1,40 @@
+name: carbonblack_liveresponse
+ref: carbonblack_liveresponse
+description: Carbon Black Live Response API
+keywords:
+- CarbonBlack
+- security
+- Syncurity
+- EDR
+stackstorm_version: '>=3.0.1'
+version: 0.9.1
+author: Syncurity
+email: support@syncurity.net
+python version:
+- '2'
+- '3'
+contributors:
+- JP Bourget <jp@syncurity.net>
+- Brian Tackett <btackett@syncurity.net>
+content:
+  actions:
+    count: 18
+    resources:
+    - bulk_action
+    - close_session
+    - create_process
+    - delete_file
+    - directory_listing
+    - get_command_status
+    - get_file
+    - get_session_status
+    - kill
+    - memdump
+    - process_list
+    - put_file
+    - reg_create_key
+    - reg_delete_key
+    - reg_delete_value
+    - reg_enum_key
+    - reg_query_value
+    - reg_set_value

@@ -1,0 +1,21 @@
+{
+    "description": "Gets status of a session.",
+    "enabled": true,
+    "entry_point": "get_session_status.py",
+    "name": "get_session_status",
+    "parameters": {
+        "session_id": {
+            "description": "Session to check",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Credential Name for Tenant",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

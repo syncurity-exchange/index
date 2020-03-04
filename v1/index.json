@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1583343724,
-        "hash": "44481e945190f7a5779f15df940de740"
+        "generated_ts": 1583348316,
+        "hash": "22ba372b70f17fab3188125b215bea7d"
     },
     "packs": {
         "abuseipdb": {
@@ -473,6 +473,55 @@
             "repo_url": "https://github.com/syncurity-exchange/syncurity-carbonblack_livequery",
             "stackstorm_version": ">=3.1.0",
             "version": "0.9.4"
+        },
+        "carbonblack_liveresponse": {
+            "author": "Syncurity",
+            "content": {
+                "actions": {
+                    "count": 18,
+                    "resources": [
+                        "bulk_action",
+                        "close_session",
+                        "create_process",
+                        "delete_file",
+                        "directory_listing",
+                        "get_command_status",
+                        "get_file",
+                        "get_session_status",
+                        "kill",
+                        "memdump",
+                        "process_list",
+                        "put_file",
+                        "reg_create_key",
+                        "reg_delete_key",
+                        "reg_delete_value",
+                        "reg_enum_key",
+                        "reg_query_value",
+                        "reg_set_value"
+                    ]
+                }
+            },
+            "contributors": [
+                "JP Bourget <jp@syncurity.net>",
+                "Brian Tackett <btackett@syncurity.net>"
+            ],
+            "description": "Carbon Black Live Response API",
+            "email": "support@syncurity.net",
+            "keywords": [
+                "CarbonBlack",
+                "security",
+                "Syncurity",
+                "EDR"
+            ],
+            "name": "carbonblack_liveresponse",
+            "python version": [
+                "2",
+                "3"
+            ],
+            "ref": "carbonblack_liveresponse",
+            "repo_url": "https://github.com/syncurity-exchange/syncurity-carbonblack_liveresponse",
+            "stackstorm_version": ">=3.0.1",
+            "version": "0.9.1"
         },
         "cb_response": {
             "author": "Syncurity",

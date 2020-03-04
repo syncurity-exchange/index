@@ -1,0 +1,57 @@
+{
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "create_process",
+    "parameters": {
+        "device_id": {
+            "description": "Device id",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "default": "create process",
+            "description": "Name of command",
+            "immutable": true,
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "object": {
+            "description": "the path and command line of the executable",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "output_file": {
+            "description": "An option file that STDERR and STDOUT will be redirected to.",
+            "position": 6,
+            "required": false,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Credential Name for Tenant",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "wait": {
+            "default": true,
+            "description": "An optional parameter to specify whether to wait for the process to complete execution before reporting the result",
+            "enum": [
+                "true",
+                "false"
+            ],
+            "position": 4,
+            "required": false,
+            "type": "string"
+        },
+        "working_directory": {
+            "description": "An optional parameter to specify the working directory of the executable",
+            "position": 5,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

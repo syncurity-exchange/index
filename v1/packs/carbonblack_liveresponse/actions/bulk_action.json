@@ -1,0 +1,25 @@
+{
+    "description": "Workflow for performing the same action on a number of devices",
+    "enabled": true,
+    "entry_point": "workflows/bulk_action.yaml",
+    "name": "bulk_action",
+    "pack": "carbonblack_live_response",
+    "parameters": {
+        "action": {
+            "type": "string"
+        },
+        "concurrency": {
+            "type": "integer"
+        },
+        "device_ids": {
+            "type": "array"
+        },
+        "parameters": {
+            "type": "object"
+        },
+        "tenant": {
+            "type": "string"
+        }
+    },
+    "runner_type": "orquesta"
+}

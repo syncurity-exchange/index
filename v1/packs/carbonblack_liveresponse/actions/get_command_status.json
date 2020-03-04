@@ -1,0 +1,27 @@
+{
+    "description": "Get command status.",
+    "enabled": true,
+    "entry_point": "get_command_status.py",
+    "name": "get_command_status",
+    "parameters": {
+        "command_id": {
+            "description": "Command to check",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "session_id": {
+            "description": "Session",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Credential Name for Tenant",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
