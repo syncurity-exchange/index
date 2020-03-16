@@ -28,6 +28,16 @@
             "description": "Incident Type Name. Example: Phishing",
             "required": true,
             "type": "string"
+        },
+        "owner_id": {
+            "description": "ID of IR-Flow user to assign as Incident Owner.",
+            "required": false,
+            "type": "string"
+        },
+        "priority_id": {
+            "description": "Priority ID to set on Incident.",
+            "required": false,
+            "type": "string"
         }
     },
     "runner_type": "python-script"

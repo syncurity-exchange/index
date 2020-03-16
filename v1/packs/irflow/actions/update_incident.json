@@ -44,6 +44,11 @@
             "required": false,
             "type": "integer"
         },
+        "priority_id": {
+            "description": "Priority ID to set on Incident.",
+            "required": false,
+            "type": "string"
+        },
         "simple_response": {
             "default": false,
             "description": "True to only return incident num; False to return entire json",
